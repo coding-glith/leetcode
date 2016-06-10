@@ -18,7 +18,7 @@ class Solution(object):
             digits[index] = (digits[index] + 1) % 10
             if flag == 0:
                 break
-        if index == -len(digits) and flag != 0:
-            digits.insert(0,1)
+            if index == -len(digits) and flag != 0:
+                digits.insert(0,1)
         return digits
 ```
