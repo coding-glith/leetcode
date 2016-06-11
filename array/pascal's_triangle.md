@@ -50,10 +50,22 @@ class Solution(object):
 
 > Could you optimize your algorithm to use only O(k) extra space?
 
-Solution 1: in place modify return list.
+Solution 1: in place modify return list. After initializing the list to be all 1s, updating the list for each row and always starts from end to the beginning.
 
 ```Python
-
+class Solution(object):
+    def getRow(self, rowIndex):
+        """
+        :type rowIndex: int
+        :rtype: List[int]
+        """
+        if rowIndex < 0:
+            return []
+        triRow = [1 for i in xrange(rowIndex+1)]
+        for row in xrange(rowIndex+1):
+            for index in xrange(row-1, 0, -1):
+                triRow[index] = triRow[index] + triRow[index-1]
+        return triRow
 ```
 
 Solution 2: backtracking, call getRow() for each row. Time limit exceeded.
