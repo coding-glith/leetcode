@@ -25,8 +25,8 @@ class Solution(object):
         """
         if numRows <= 0:
             return []
-        pascalTri = [[1]]
-        for row in xrange(1, numRows):
+        pascalTri = []
+        for row in xrange(numRows):
             rowList = []
             for index in xrange(row+1):
                 if index == 0 or index == row:
@@ -36,4 +36,43 @@ class Solution(object):
             pascalTri.insert(row, rowList)
 
         return pascalTri
+```
+
+# Pascal's Triangle II
+
+> Given an index k, return the kth row of the Pascal's triangle.
+
+> For example, given k = 3,
+
+> Return [1,3,3,1].
+
+> Note:
+
+> Could you optimize your algorithm to use only O(k) extra space?
+
+Solution 1: in place modify return list.
+
+```Python
+
+```
+
+Solution 2: backtracking, call getRow() for each row. Time limit exceeded.
+
+```Python
+class Solution(object):
+    def getRow(self, rowIndex):
+        """
+        :type rowIndex: int
+        :rtype: List[int]
+        """
+        if rowIndex < 0:
+            return []
+        triRow = []
+        for index in xrange(rowIndex+1):
+            if index == 0 or index == rowIndex:
+                triRow.insert(index, 1)
+            else:
+                triRow.insert(index, self.getRow(rowIndex-1)[index-1] + self.getRow(rowIndex-1)[index])
+
+        return triRow
 ```
