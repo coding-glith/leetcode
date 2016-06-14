@@ -43,6 +43,8 @@ class Solution(object):
 
 > Output: index1=1, index2=2
 
+Using dictionary, same as above.
+
 ```Python
 class Solution(object):
     def twoSum(self, numbers, target):
