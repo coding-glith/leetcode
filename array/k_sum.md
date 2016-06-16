@@ -233,5 +233,25 @@ class Solution(object):
 > Follow up: Could you solve it in O(n^2) runtime?
 
 ```Python
-
+class Solution(object):
+    def threeSumSmaller(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: int
+        """
+        if len(nums) <= 2:
+            return 0
+        nums.sort()
+        result = 0
+        for indx, val in enumerate(nums[:-2]):
+            left, right = indx + 1, len(nums) -1
+            while left < right:
+                total = val + nums[left] + nums[right]
+                if total < target:
+                    result += right -left
+                    left += 1
+                else:
+                    right -= 1
+        return result
 ```
