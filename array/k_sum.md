@@ -134,6 +134,60 @@ A solution set is:
 ]
 ```
 
-```Python
+Solution 1: O(n^2), fix one value, then use two pointers to find possible combination.
 
+```Python
+class Solution(object):
+    def threeSum(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        if len(nums) <= 2:
+            return []
+        nums.sort()
+        result = set()   # ensure no duplicate result
+        for indx, val in enumerate(nums[:-2]):   # leave the last two elems
+            left, right = indx + 1, len(nums) - 1   # two pointers
+            while left < right:
+                if nums[left] + nums[right] + val == 0:
+                    result.add((val, nums[left], nums[right]))
+                    left += 1
+                elif val + nums[left] + nums[right] < 0:
+                    left += 1
+                else:
+                    right -= 1
+        return map(list, result)
+```
+
+Solution 2: finx one value, use dictionary to better find the other two combinations.
+
+```Python
+class Solution(object):
+    def threeSum(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        if len(nums) <= 2:
+            return []
+        nums.sort()
+        result = set()   # ensure no duplicate result
+        for indx, val in enumerate(nums[:-2]):   # leave the last two elems
+            dic = {}  # dic contains the waiting value to find a pair
+            for innerVal in nums[indx+1:]:  # now the goal is to find combination of -val
+                if innerVal in dic:   # means innerVal == -val - innerVal  -> reach the goal to find -val
+                    result.add((val, innerVal, -val - innerVal))
+                else:
+                    dic[-val - innerVal] = 1
+        return map(list, result)
+```
+
+# 3Sum Closest
+
+> Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target. Return the sum of the three integers. You may assume that each input would have exactly one solution.
+
+> ```
+For example, given array S = {-1 2 1 -4}, and target = 1.
+The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
 ```
