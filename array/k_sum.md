@@ -160,7 +160,7 @@ class Solution(object):
         return map(list, result)
 ```
 
-Solution 2: finx one value, use dictionary to better find the other two combinations.
+Solution 2: fix one value, use dictionary to better find the other two combinations.
 
 ```Python
 class Solution(object):
