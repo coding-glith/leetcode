@@ -17,3 +17,4 @@
   * [Find Peak Element ](array/find_peak_element.md)
 * [Tree](tree/README.md)
   * [Depth of Binary Tree](tree/depth_of_binary_tree.md)
+  * [Construct Binary Tree](tree/construct_binary_tree.md)
