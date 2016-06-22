@@ -59,5 +59,32 @@ class Solution(object):
 > Note: You may assume that duplicates do not exist in the tree.
 
 ```Python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
 
+class Solution(object):
+    def buildTree(self, inorder, postorder):
+        """
+        :type inorder: List[int]
+        :type postorder: List[int]
+        :rtype: TreeNode
+        """
+        if postorder == []:
+            return None
+        inorderDict = {}
+        for indx, val in enumerate(inorder):
+            inorderDict[val] = indx
+        return self.buildTreeRecursion(inorder, postorder, inorderDict, 0, len(inorder)-1, len(postorder)-1)
+    
+    def buildTreeRecursion(self, inorder, postorder, inorderDict, inStart, inEnd, postIndx):
+        if inStart > inEnd:
+            return None
+        root = TreeNode(postorder[postIndx])
+        root.left = self.buildTreeRecursion(inorder, postorder, inorderDict, inStart, inorderDict[postorder[postIndx]]-1, postIndx-(inEnd-inorderDict[postorder[postIndx]])-1)
+        root.right = self.buildTreeRecursion(inorder, postorder, inorderDict, inorderDict[postorder[postIndx]]+1, inEnd, postIndx-1)
+        return root
 ```
