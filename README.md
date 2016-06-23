@@ -19,3 +19,7 @@
   * [Depth of Binary Tree](tree/depth_of_binary_tree.md)
   * [Construct Binary Tree](tree/construct_binary_tree.md)
   * [Binary Tree Level Order Traversal](tree/binary_tree_level_order_traversal.md)
+  * [Symmetric Tree](tree/symmetric_tree.md)
+  * [Same Tree](tree/same_tree.md)
+  * [Balanced Binary Tree](tree/balanced_binary_tree.md)
+  * [Path Sum](tree/path_sum.md)
