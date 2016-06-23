@@ -97,25 +97,16 @@ class Solution(object):
         if root == None:
             return []
         result = []
-        height = self.getHeight(root)
-        heightVal = height
-        while heightVal > 0:
-            result.append([])
-            heightVal -= 1
-        self.dfs(root, height, result, 0)
+        self.dfs(root, result, 0)
+        result.reverse()
         return result
     
-    def dfs(self, root, height, result, level):
+    def dfs(self, root, result, level):
         if root == None:
             return []
-        result[height-level-1].append(root.val)
-        self.dfs(root.left, height, result, level + 1)
-        self.dfs(root.right, height, result, level + 1)
-    
-    def getHeight(self, root):
-        if root.left == None or root.right == None:
-            return 0
-        left = self.getHeight(root.left)
-        right = self.getHeight(root.right)
-        return left + 1 if left > right else right + 1
+        if len(result) < level + 1:
+            result.append([])
+        result[level].append(root.val)
+        self.dfs(root.left, result, level + 1)
+        self.dfs(root.right, result, level + 1)
 ```
