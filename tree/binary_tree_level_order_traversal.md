@@ -136,3 +136,36 @@ class Solution(object):
   [15,7]
 ]
 ```
+
+```Python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def zigzagLevelOrder(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[List[int]]
+        """
+        if root == None:
+            return []
+        result = []
+        self.dfs(root, result, 0)
+        return result
+    
+    def dfs(self, root, result, level):
+        if root == None:
+            return []
+        if len(result) < level + 1:
+            result.append([])
+        if level % 2 == 0:
+            result[level].append(root.val)
+        else:
+            result[level].insert(0, root.val)
+        self.dfs(root.left, result, level + 1)
+        self.dfs(root.right, result, level + 1)
+```
