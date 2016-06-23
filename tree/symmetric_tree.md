@@ -24,6 +24,34 @@
 
 > Note: Bonus points if you could solve it both recursively and iteratively.
 
-```Python
+Recursive solution:
 
+```Python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def isSymmetric(self, root):
+        """
+        :type root: TreeNode
+        :rtype: bool
+        """
+        if root == None:
+            return True
+        return self.symTree(root.left, root.right)
+            
+
+    def symTree(self, left, right):
+        if left == None and right == None:
+            return True
+        if left == None or right == None:
+            return False
+        nodeBool = (left.val == right.val)
+        leftBool = self.symTree(left.left, right.right)
+        rightBool = self.symTree(left.right, right.left)
+        return nodeBool and leftBool and rightBool
 ```
