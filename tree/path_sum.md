@@ -78,6 +78,39 @@ class Solution(object):
 ]
 ```
 
-```Python
+Don't understand why need to add list() statement when appending pathList to result.
 
+```Python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def pathSum(self, root, sum):
+        """
+        :type root: TreeNode
+        :type sum: int
+        :rtype: List[List[int]]
+        """
+        if root == None:
+            return []
+        result = []
+        self.dfs(root, sum, 0, [], result)
+        return result
+
+    def dfs(self, root, target, pathSum, pathList, result):
+        if root == None:
+            return
+        pathList.append(root.val)
+        pathSum += root.val
+        if root.left == None and root.right == None:
+            if pathSum == target:
+                result.append(list(pathList))  # need to state list() here, otherwise return [[]]
+        else:
+            self.dfs(root.left, target, pathSum, pathList, result)
+            self.dfs(root.right, target, pathSum, pathList, result)
+        pathList.pop()
 ```
