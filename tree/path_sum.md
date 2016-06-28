@@ -134,6 +134,33 @@ class Solution(object):
 > Return 6.
 
 ```Python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
 
+class Solution(object):
+    
+    maxSum = float('-inf')
+    
+    def maxPathSum(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        if root == None:
+            return
+        self.pathSum(root)
+        return self.maxSum
+    
+    def pathSum(self, root):
+        if root == None:
+            return 0
+        leftSum = max(0, self.pathSum(root.left))
+        rightSum = max(0, self.pathSum(root.right))
+        self.maxSum = max(leftSum + rightSum + root.val, self.maxSum)
+        return root.val + max(leftSum, rightSum)
 ```
 
