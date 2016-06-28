@@ -23,3 +23,4 @@
   * [Same Tree](tree/same_tree.md)
   * [Balanced Binary Tree](tree/balanced_binary_tree.md)
   * [Path Sum](tree/path_sum.md)
+  * [Binary Tree Depth Order Traversal](tree/binary_tree_depth_order_traversal.md)
