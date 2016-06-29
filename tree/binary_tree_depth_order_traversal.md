@@ -68,5 +68,54 @@ class Solution(object):
 > Note: Recursive solution is trivial, could you do it iteratively?
 
 ```Python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def inorderTraversal(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[int]
+        """
+        if root == None:
+            return []
+        result, stack = [], []
+        tmpNode = root
+        while tmpNode or stack != []:
+            while tmpNode:
+                stack.append(tmpNode)
+                tmpNode = tmpNode.left
+            if stack != []:
+                tmpNode = stack.pop()
+                result.append(tmpNode.val)
+                tmpNode = tmpNode.right
+        return result
+```
+
+# Binary Tree Postorder Traversal
+
+> Given a binary tree, return the postorder traversal of its nodes' values.
+
+> For example:
+
+> Given binary tree {1,#,2,3},
+
+> ```
+   1
+    \
+     2
+    /
+   3
+```
+
+> return [3,2,1].
+
+> Note: Recursive solution is trivial, could you do it iteratively?
+
+```Python
 
 ```
