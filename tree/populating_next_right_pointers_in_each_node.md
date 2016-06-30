@@ -104,5 +104,45 @@ class Solution(object):
 ```
 
 ```Python
+# Definition for binary tree with next pointer.
+# class TreeLinkNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+#         self.next = None
 
+class Solution(object):
+    def connect(self, root):
+        """
+        :type root: TreeLinkNode
+        :rtype: nothing
+        """
+        if root == None:
+            return
+        currentNode = root
+        prevNode = currentNode  # prevNode stores the leftmost node at a level
+        while currentNode:
+            nextNode, itsChild = self.popNext(currentNode.next)
+            if currentNode.left:
+                currentNode.left.next = currentNode.right if currentNode.right else itsChild
+            if currentNode.right:
+                currentNode.right.next = itsChild
+            if nextNode:  # in case currentNode changes, prevNode will help
+                currentNode = nextNode
+            else:   # move to the next level
+                currentNode = prevNode.left if prevNode.left else prevNode.right
+                currentNode, _ = self.popNext(currentNode)  # in case currentNode is a leaf
+                prevNode = currentNode
+    
+    def popNext(self, root):
+        # this function is to return the node at the same level
+        # and its available child
+        while root:
+            if root.left:
+                return root, root.left
+            if root.right:
+                return root, root.right
+            root = root.next
+        return None, None
 ```
