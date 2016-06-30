@@ -25,3 +25,4 @@
   * [Path Sum](tree/path_sum.md)
   * [Binary Tree Depth Order Traversal](tree/binary_tree_depth_order_traversal.md)
   * [Populating Next Right Pointers in Each Node](tree/populating_next_right_pointers_in_each_node.md)
+  * [Convert Sorted List/Array to Binary Search Tree ](tree/convert_sorted_listarray_to_binary_search_tree.md)
