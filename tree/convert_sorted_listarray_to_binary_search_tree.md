@@ -20,11 +20,7 @@ class Solution(object):
         """
         if len(nums) == 0:
             return None
-        mid =  len(nums) / 2
-        root = TreeNode(nums[mid])  # put the middle number in the root
-        root.left = self.arrayToBST(nums, 0, mid - 1)
-        root.right = self.arrayToBST(nums, mid + 1, len(nums) - 1)
-        return root
+        return self.arrayToBST(nums, 0, len(nums) - 1)
 
     def arrayToBST(self, nums, startIndx, endIndx):
         if startIndx > endIndx:
