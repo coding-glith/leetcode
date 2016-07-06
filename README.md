@@ -28,3 +28,4 @@
   * [Convert Sorted List/Array to Binary Search Tree ](tree/convert_sorted_listarray_to_binary_search_tree.md)
   * [Flatten Binary Tree to Linked List](tree/flatten_binary_tree_to_linked_list.md)
   * [Validate Binary Search Tree](tree/validate_binary_search_tree.md)
+  * [Recover Binary Search Tree](tree/recover_binary_search_tree.md)
