@@ -19,6 +19,7 @@ Input: [7, 6, 4, 3, 1]
 Output: 0
 In this case, no transaction is done, i.e. max profit = 0.
 ```
+
 ```Python
 class Solution(object):
     def maxProfit(self, prices):
