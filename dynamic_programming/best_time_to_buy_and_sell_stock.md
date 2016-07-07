@@ -19,3 +19,20 @@ Input: [7, 6, 4, 3, 1]
 Output: 0
 In this case, no transaction is done, i.e. max profit = 0.
 ```
+```Python
+class Solution(object):
+    def maxProfit(self, prices):
+        """
+        :type prices: List[int]
+        :rtype: int
+        """
+        if len(prices) <= 1:
+            return 0
+        profit = 0
+        prevMin = prices[0]
+        for indx in xrange(1, len(prices)):
+            profit = max(profit, prices[indx] - prevMin)
+            if prices[indx] < prevMin:
+                prevMin = prices[indx]
+        return profit
+```
