@@ -8,6 +8,8 @@
 
 > A solution using O(n) space is pretty straight forward. Could you devise a constant space solution?
 
+This solution is based on in-order traversal, it's not the O(n) space solution - needs Morris Traversal. The idea here is use in-order traversal to find out the wrongly placed nodes, and store them in two variables: first/second. After find out the two nodes, swap them.
+
 ```Python
 # Definition for a binary tree node.
 # class TreeNode(object):
