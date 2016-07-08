@@ -71,6 +71,38 @@ class Solution(object):
 
 > You may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).
 
-```Python
+The idea is to check for each index inside list of the maximum profit in the left and right, then the maximum sum would be the maximum profit for two transactions limit.
 
+```Python
+class Solution(object):
+    def maxProfit(self, prices):
+        """
+        :type prices: List[int]
+        :rtype: int
+        """
+        if len(prices) <= 1:
+            return 0
+        
+        # define two lists for maxProfit of left/right sublist of a specific index
+        leftProfit = [0 for i in xrange(len(prices))]
+        rightProfit = [0 for i in xrange(len(prices))]
+        
+        # calculate maxProfit for list from 0 to index
+        minValue = prices[0]
+        for indx in xrange(1, len(prices)):
+            minValue = min(minValue, prices[indx])
+            leftProfit[indx] = max(leftProfit[indx-1], prices[indx]-minValue)
+        
+        # calculate maxProfit for list from index to the end
+        maxValue = prices[-1]
+        for indx in xrange(len(prices)-2, -1, -1):
+            maxValue = max(maxValue, prices[indx])
+            rightProfit[indx] = max(rightProfit[indx+1], maxValue - prices[indx])
+        
+        # the result would be: max of leftProfit + rightProfit
+        result = 0
+        for indx in xrange(1, len(prices)):
+            result = max(result, leftProfit[indx] + rightProfit[indx])
+        
+        return result
 ```
