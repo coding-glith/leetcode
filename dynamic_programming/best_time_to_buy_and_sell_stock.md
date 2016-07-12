@@ -117,6 +117,31 @@ class Solution(object):
 
 > You may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).
 
-```Python
+Didn't fully understand yet :-(
 
+```Python
+class Solution(object):
+    def maxProfit(self, k, prices):
+        """
+        :type k: int
+        :type prices: List[int]
+        :rtype: int
+        """
+        if len(prices) <= 1:
+            return 0
+        if k >= len(prices) / 2:  # becomes unlimited number of transaction
+            return self.maxProfitNoLimit(prices)
+
+        dp = [None] * (2 * k + 1)
+        dp[0] = 0
+        for day in xrange(len(prices)):
+            for transac in xrange(1, min(2*k, day+1)+1):
+                dp[transac] = max(dp[transac], dp[transac-1]+prices[day]*[1,-1][transac%2])
+        return dp[2*k]
+
+    def maxProfitNoLimit(self, prices):
+        maxProfit = 0
+        for indx in xrange(1, len(prices)):
+            maxProfit = max(maxProfit, maxProfit + prices[indx] - prices[indx - 1])
+        return maxProfit
 ```
