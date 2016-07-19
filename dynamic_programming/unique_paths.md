@@ -58,5 +58,34 @@ class Solution(object):
 > Note: m and n will be at most 100.
 
 ```Python
-
+class Solution(object):
+    def uniquePathsWithObstacles(self, obstacleGrid):
+        """
+        :type obstacleGrid: List[List[int]]
+        :rtype: int
+        """
+        if len(obstacleGrid) == 0 or len(obstacleGrid[0]) == 0:
+            return 0
+        m = len(obstacleGrid)
+        n = len(obstacleGrid[0])
+        pathNum = [[0 for col in range(n)] for row in range(m)]
+        for row in range(m):
+            if obstacleGrid[row][0] == 1:
+                pathNum[row:][0] = [0 for indx in range(row, m)]
+                break
+            else:
+                pathNum[row][0] = 1
+        for col in range(n):
+            if obstacleGrid[0][col] == 1:
+                pathNum[0][col:] = [0 for indx in range(col, n)]
+                break
+            else:
+                pathNum[0][col] = 1
+        for row in range(1, m):
+            for col in range(1, n):
+                if obstacleGrid[row][col] == 1:
+                    pathNum[row][col] = 0
+                else:
+                    pathNum[row][col] = pathNum[row-1][col] + pathNum[row][col-1]
+        return pathNum[m-1][n-1]
 ```
