@@ -39,3 +39,5 @@
    * [Climbing Stairs](dynamic_programming/climbing_stairs.md)
    * [Triangle](dynamic_programming/triangle.md)
    * [Unique Binary Search Trees](dynamic_programming/unique_binary_search_trees.md)
+* [Backtracking](backtracking/README.md)
+   * [Combinations](backtracking/combinations.md)
