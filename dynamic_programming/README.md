@@ -5,3 +5,4 @@
  * [Maximum (Product) Subarray](maximum_subarray.md)
  * [Climbing Stairs](climbing_stairs.md)
  * [Triangle](triangle.md)
+ * [Unique Binary Search Trees](unique_binary_search_trees.md)
