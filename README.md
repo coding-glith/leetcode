@@ -36,3 +36,4 @@
    * [Unique Paths](dynamic_programming/unique_paths.md)
    * [Minimum Path Sum](dynamic_programming/minimum_path_sum.md)
    * [Maximum (Product) Subarray](dynamic_programming/maximum_subarray.md)
+   * [Climbing Stairs](dynamic_programming/climbing_stairs.md)
