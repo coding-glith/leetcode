@@ -4,3 +4,4 @@
  * [Minimum Path Sum](minimum_path_sum.md)
  * [Maximum (Product) Subarray](maximum_subarray.md)
  * [Climbing Stairs](climbing_stairs.md)
+ * [Triangle](triangle.md)
