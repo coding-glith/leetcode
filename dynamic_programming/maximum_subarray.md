@@ -42,5 +42,20 @@ class Solution(object):
 > the contiguous subarray [2,3] has the largest product = 6.
 
 ```Python
-
+class Solution(object):
+    def maxProduct(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        if len(nums) == 0:
+            return
+        maxProd, maxSub, minSub = nums[0], nums[0], nums[0]
+        # maintain minSub to deal with negative value
+        for indx in range(1, len(nums)):
+            maxTmp = maxSub
+            maxSub = max(max(maxSub * nums[indx], nums[indx]), minSub * nums[indx])
+            minSub = min(min(maxTmp * nums[indx], nums[indx]), minSub * nums[indx])
+            maxProd = max(maxProd, maxSub)
+        return maxProd
 ```
