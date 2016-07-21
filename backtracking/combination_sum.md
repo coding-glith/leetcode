@@ -115,5 +115,26 @@ class Solution(object):
 > Output: [[1,2,6], [1,3,5], [2,3,4]]
 
 ```Python
+class Solution(object):
+    def combinationSum3(self, k, n):
+        """
+        :type k: int
+        :type n: int
+        :rtype: List[List[int]]
+        """
+        if k <= 0 or n <= 0:
+            return [[]]
+        result = []
+        self.combineSum(result, [], 1, k, n)
+        return result
 
+    def combineSum(self, result, subList, start, k, n):
+        if n == 0 and len(subList) == k and subList not in result:
+            result.append(list(subList))
+            return
+        for num in range(start, 10):
+            if num <= n:
+                subList.append(num)
+                self.combineSum(result, subList, num+1, k, n - num)
+                subList.pop()
 ```
