@@ -42,3 +42,4 @@
 * [Backtracking](backtracking/README.md)
    * [Combinations](backtracking/combinations.md)
    * [Combination Sum](backtracking/combination_sum.md)
+   * [Letter Combinations of a Phone Number](backtracking/letter_combinations_of_a_phone_number.md)
