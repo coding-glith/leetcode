@@ -41,3 +41,4 @@
    * [Unique Binary Search Trees](dynamic_programming/unique_binary_search_trees.md)
 * [Backtracking](backtracking/README.md)
    * [Combinations](backtracking/combinations.md)
+   * [Combination Sum](backtracking/combination_sum.md)
