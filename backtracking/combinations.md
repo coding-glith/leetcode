@@ -44,7 +44,7 @@ class Solution(object):
         return result
 ```
 
-The following backtracking method is 'run time exceeds'. :-(
+The following backtracking method is 'Time Limit Exceeded'. :-(
 
 ```Python
 class Solution(object):
