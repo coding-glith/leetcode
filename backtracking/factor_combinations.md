@@ -44,6 +44,49 @@
 ]
 ```
 
-```Python
+Recursive solution.
 
+```Python
+class Solution(object):
+    def getFactors(self, n):
+        """
+        :type n: int
+        :rtype: List[List[int]]
+        """
+        if n <= 1:
+            return []
+        def factor(n, elem, resList, result):
+            while elem * elem <= n:  # no need to consider value > n/2
+                if n % elem == 0:
+                    result.append(list(resList+[elem, n/elem]))
+                    factor(n/elem, elem, resList+[elem], result)
+                elem += 1
+            return result
+        return factor(n, 2, [], [])
+```
+
+The following code is "Memory Limit Exceeded" for input = 23848713. :-(
+
+```Python
+class Solution(object):
+    def getFactors(self, n):
+        """
+        :type n: int
+        :rtype: List[List[int]]
+        """
+        if n <= 1:
+            return []
+        result = []
+        self.factor(result, [], n, 2, n)
+        return result
+
+    def factor(self, result, elems, n, start, remain):
+        if remain <= 1:
+            result.append(list(elems))
+            return
+        for val in range(start, n):
+            if remain % val == 0:
+                elems.append(val)
+                self.factor(result, elems, n, val, remain/val)
+                elems.pop()
 ```
