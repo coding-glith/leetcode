@@ -47,4 +47,4 @@
    * [Subsets](backtracking/subsets.md)
    * [Permutations](backtracking/permutations.md)
 * [Greedy](greedy/README.md)
-   * [Combinations](backtracking/combinations.md)
+   * [Jump Game](jump_game.md)
