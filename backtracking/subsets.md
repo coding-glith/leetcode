@@ -65,5 +65,24 @@ class Solution(object):
 ```
 
 ```Python
+class Solution(object):
+    def subsetsWithDup(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        if len(nums) == 0:
+            return [[]]
+        result = []
+        nums.sort()  # make sure check no duplicates works
+        self.subset(result, [], 0, nums)
+        return result
 
+    def subset(self, result, subList, start, nums):
+        if subList not in result:
+            result.append(list(subList))
+        for indx in xrange(start, len(nums)):
+            subList.append(nums[indx])
+            self.subset(result, subList, indx + 1, nums)
+            subList.pop()
 ```
