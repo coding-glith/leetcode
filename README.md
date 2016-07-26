@@ -44,3 +44,5 @@
    * [Combination Sum](backtracking/combination_sum.md)
    * [Letter Combinations of a Phone Number](backtracking/letter_combinations_of_a_phone_number.md)
    * [Factor Combinations](backtracking/factor_combinations.md)
+   * [Subsets](backtracking/subsets.md)
+   * [Permutations](backtracking/permutations.md)
