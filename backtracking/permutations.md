@@ -57,6 +57,33 @@ class Solution(object):
 ]
 ```
 
-```Python
+The key idea is how to eleminate duplicate permutations. We maintain a visitFlag and check constantly to see if we are checking a duplicate value at the start level.
 
+```Python
+class Solution(object):
+    def permuteUnique(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        if len(nums) == 0:
+            return [[]]
+        result = []
+        visitFlag = [0 for indx in range(len(nums))]
+        nums.sort()
+        self.permute(result, [], visitFlag, nums)
+        return result
+
+    def permute(self, result, subList, visitFlag, nums):
+        if len(subList) == len(nums):
+            result.append(list(subList))
+            return
+        for indx in xrange(len(nums)):
+            if visitFlag[indx] == 1 or (indx != 0 and nums[indx] == nums[indx-1] and visitFlag[indx-1] == 0):
+                continue
+            subList.append(nums[indx])
+            visitFlag[indx] = 1
+            self.permute(result, subList, visitFlag, nums)
+            subList.pop()
+            visitFlag[indx] = 0
 ```
