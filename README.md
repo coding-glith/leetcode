@@ -1,6 +1,6 @@
 # [leetcode-1stRound](https://leetcode.com/problemset/algorithms/)
 
-> #### [Array](array/README.md), [Tree](tree/README.md), [Dynamic Programming](dynamic_programming/README.md), [Backtracking](backtracking/README.md)
+> #### [Array](array/README.md), [Tree](tree/README.md), [Dynamic Programming](dynamic_programming/README.md), [Backtracking](backtracking/README.md), [Greedy](greedy/README.md)
 
 * [Array](array/README.md)
   * [Remove Element](array/remove_element.md)
@@ -46,3 +46,5 @@
    * [Factor Combinations](backtracking/factor_combinations.md)
    * [Subsets](backtracking/subsets.md)
    * [Permutations](backtracking/permutations.md)
+* [Greedy](greedy/README.md)
+   * [Combinations](backtracking/combinations.md)
