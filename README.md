@@ -49,3 +49,4 @@
 * [Greedy](greedy/README.md)
    * [Jump Game](greedy/jump_game.md)
    * [Gas Station](greedy/gas_station.md)
+   * [Candy](greedy/candy.md)
