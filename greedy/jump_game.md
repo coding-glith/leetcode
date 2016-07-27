@@ -15,3 +15,23 @@
 ```Python
 
 ```
+
+This DP solution is checking from end to start, but get 'time limit exceeded'. This is O(n^2) time complexity.
+
+```Python
+class Solution(object):
+    def canJump(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+        if len(nums) <= 1:
+            return True
+        result = [False for indx in xrange(len(nums))]
+        result[len(nums)-1] = True
+        for indx in xrange(len(nums)-2, -1, -1):
+            for inner in xrange(indx+1, len(nums)):
+                if nums[indx] >= (inner-indx) and result[inner] == True:
+                    result[indx] = True
+        return result[0]
+```
