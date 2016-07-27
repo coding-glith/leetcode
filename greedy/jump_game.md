@@ -69,6 +69,23 @@ class Solution(object):
 
 > You can assume that you can always reach the last index.
 
-```Python
+need to further think of this solution.
 
+```Python
+class Solution(object):
+    def jump(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        if len(nums) <= 1:
+            return 0
+        start, end, step, reach = 0, nums[0], 1, nums[0]
+        while end < len(nums) - 1:
+            for indx in xrange(start + 1, end + 1):
+                reach = max(reach, indx + nums[indx])
+            start = end
+            end = reach
+            step += 1
+        return step
 ```
