@@ -13,7 +13,22 @@
 > A = [3,2,1,0,4], return false.
 
 ```Python
-
+class Solution(object):
+    def canJump(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+        if len(nums) <= 1:
+            return True
+        index, maxReach = 0, 0
+        while index < len(nums) and index <= maxReach:
+            # index <= maxReach is a key to terminate the loop
+            maxReach = max(index + nums[index], maxReach)
+            index += 1
+            if maxReach == len(nums)-1:
+                return True
+        return index == len(nums)
 ```
 
 This DP solution is checking from end to start, but get 'time limit exceeded'. This is O(n^2) time complexity.
