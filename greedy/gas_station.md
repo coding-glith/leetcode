@@ -10,6 +10,29 @@
 
 > The solution is guaranteed to be unique.
 
-```Python
+"remain" and "total" represent the local and global optimum for this greedy algorithm.
 
+```Python
+class Solution(object):
+    def canCompleteCircuit(self, gas, cost):
+        """
+        :type gas: List[int]
+        :type cost: List[int]
+        :rtype: int
+        """
+        if len(gas) == 0:
+            return -1
+        result = 0
+        remain, total = 0, 0
+        for indx in range(len(gas)):
+            remain += gas[indx] - cost[indx]
+            if remain < 0:
+                result = indx + 1 # make sure the remaining at this point is larger than 0
+                remain = 0
+            total += gas[indx] - cost[indx]
+            # total is the total remaining for N stations
+        if total < 0:
+            return -1
+        else:
+            return result
 ```
