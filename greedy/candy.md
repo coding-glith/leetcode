@@ -10,6 +10,23 @@
 
 > What is the minimum candies you must give?
 
-```Python
+The idea is to go from left to right and right to left. But the second round should take care of any duplicate add on cases.
 
+```Python
+class Solution(object):
+    def candy(self, ratings):
+        """
+        :type ratings: List[int]
+        :rtype: int
+        """
+        if len(ratings) == 0:
+            return 0
+        result = [1 for indx in xrange(len(ratings))]
+        for indx in xrange(1, len(ratings)):
+            if ratings[indx] > ratings[indx - 1]:
+                result[indx] = result[indx-1] + 1
+        for indx in xrange(len(ratings)-2, -1, -1):
+            if ratings[indx] > ratings[indx+1] and result[indx] <= result[indx+1]:
+                result[indx] = result[indx+1] + 1
+        return sum(result)  
 ```
