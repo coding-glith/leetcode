@@ -53,3 +53,4 @@
    * [Word Break](greedy/word_break.md)
 * [Linked List](linked_list/README.md)
    * [Linked List Cycle](linked_list/linked_list_cycle.md)
+   * [Intersection of Two Linked Lists](linked_list/intersection_of_two_linked_lists.md)
