@@ -45,7 +45,7 @@ class Solution(object):
 
 > Given 1->1->1->2->3, return 2->3.
 
-The idea is to create a dummy node before the head, and use that pointer as the previous unique value representer to help detect duplication.
+The idea is to create a dummy node before the head, and use that pointer as the previous unique value representer to help detect duplicate node.
 
 ```Python
 # Definition for singly-linked list.
