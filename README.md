@@ -1,6 +1,6 @@
 # [leetcode-1stRound](https://leetcode.com/problemset/algorithms/)
 
-> #### [Array](array/README.md), [Tree](tree/README.md), [Dynamic Programming](dynamic_programming/README.md), [Backtracking](backtracking/README.md), [Greedy](greedy/README.md)
+> #### [Array](array/README.md), [Tree](tree/README.md), [Dynamic Programming](dynamic_programming/README.md), [Backtracking](backtracking/README.md), [Greedy](greedy/README.md), [Linked List](linked_list/README.md)
 
 * [Array](array/README.md)
   * [Remove Element](array/remove_element.md)
@@ -51,3 +51,5 @@
    * [Gas Station](greedy/gas_station.md)
    * [Candy](greedy/candy.md)
    * [Word Break](greedy/word_break.md)
+* [Linked List](linked_list/README.md)
+   * [Linked List Cycle](linked_list/linked_list_cycle.md)
