@@ -25,5 +25,45 @@ B:     b1 → b2 → b3
 > * Your code should preferably run in O(n) time and use only O(1) memory.
 
 ```Python
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
 
+class Solution(object):
+    def getIntersectionNode(self, headA, headB):
+        """
+        :type head1, head1: ListNode
+        :rtype: ListNode
+        """
+        if not headA or not headB:
+            return None
+        # traverse A
+        traverseA = headA
+        while traverseA.next:
+            traverseA = traverseA.next
+        # connect the tail of A with head of B
+        traverseA.next = headB
+        tailA = traverseA  # copy it for later recovery
+        traverseA = headA
+        # use fast/slow to check if there's cycle
+        headB = headA
+        while headB.next and headB.next.next:
+            headA = headA.next
+            headB = headB.next.next
+            if headA == headB:
+                break
+        # if no cycle, break connection and return None
+        if not headA.next or not headB.next or not headB.next.next:
+            tailA.next = None
+            return None
+        # if there's cycle, get the start point of the cycle
+        headA = traverseA
+        while headA != headB:
+            headA = headA.next
+            headB = headB.next
+        # break the connection
+        tailA.next = None
+        return headA
 ```
