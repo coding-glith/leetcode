@@ -44,6 +44,37 @@ class Solution(object):
 
 > A solution is ["cats and dog", "cat sand dog"].
 
-```Python
+dp + dfs solution.
 
+```Python
+class Solution(object):
+    def canBreak(self, s, wordDict):
+        flag = [False for i in xrange(len(s) + 1)]
+        flag[0] = True
+        for indx in xrange(1, len(s) + 1):
+            for inner in xrange(indx - 1, -1, -1):
+                if flag[inner] and s[inner:indx] in wordDict:
+                    flag[indx] = True
+                    break
+        return flag[len(s)]
+        
+    def getSentence(self, result, sentence, s, wordDict):
+        if self.canBreak(s, wordDict):
+            if len(s) == 0:
+                result.append(str(sentence[1:]))
+            for indx in xrange(1, len(s) + 1):
+                if s[:indx] in wordDict:
+                    self.getSentence(result, sentence+" "+s[:indx], s[indx:], wordDict)
+        
+    def wordBreak(self, s, wordDict):
+        """
+        :type s: str
+        :type wordDict: Set[str]
+        :rtype: List[str]
+        """
+        if s == "":
+            return [""]
+        result = []
+        self.getSentence(result, "", s, wordDict)
+        return result
 ```
