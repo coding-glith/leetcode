@@ -24,6 +24,32 @@ B:     b1 → b2 → b3
 
 > * Your code should preferably run in O(n) time and use only O(1) memory.
 
+This solution is based on running a+b and b+a to find the intersection.
+
+```Python
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution(object):
+    def getIntersectionNode(self, headA, headB):
+        """
+        :type head1, head1: ListNode
+        :rtype: ListNode
+        """
+        if not headA or not headB:
+            return None
+        a, b = headA, headB
+        while a != b:
+            a = a.next if a else headB
+            b = b.next if b else headA
+        return a
+```
+
+This solution is based on "Linked List Cycle" to find the start point of a cycle.
+
 ```Python
 # Definition for singly-linked list.
 # class ListNode(object):
