@@ -42,6 +42,46 @@ class Solution(object):
 
 > Can you solve it without using extra space?
 
-```Python
+> ```
+                  meet
+                  n5 -> n6
+                  |     |
+n1 -> n2 -> n3 -> n4 <- n7
+begin             start
+```
 
+Based on previous question, we first check if there has cycle. The idea is that at first, slow move one node while fast move two nodes. When they fisrt met, reset fast pointer to "begin" and move one node at a time. When they met for the second time, the point is the "start" of the cycle. 
+
+Reason: "begin"->"start" = a, "start"->"meet" = b, "meet"->"start" = c.
+
+for first meet: fast = a+b+c+b; slow = a+b
+
+fast = 2*slow: (a+b+c+b) = 2*(a+b); so a = c.
+
+```Python
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution(object):
+    def detectCycle(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        if head == None or head.next == None:
+            return None
+        fast, slow = head, head
+        while fast.next != None and fast.next.next != None:
+            fast = fast.next.next
+            slow = slow.next
+            if fast == slow:
+                fast = head
+                while slow != fast:
+                    slow = slow.next
+                    fast = fast.next
+                return slow
+        return None
 ```
