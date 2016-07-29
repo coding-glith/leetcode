@@ -56,3 +56,4 @@
    * [Intersection of Two Linked Lists](linked_list/intersection_of_two_linked_lists.md)
    * [Remove Duplicates from Sorted List](linked_list/remove_duplicates_from_sorted_list.md)
    * [Merge Two/k Sorted Lists](linked_list/merge_k_sorted_lists.md)
+   * [Reverse Linked List](linked_list/reverse_linked_list.md)
