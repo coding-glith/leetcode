@@ -70,5 +70,36 @@ class Solution(object):
 > 1 ≤ m ≤ n ≤ length of list.
 
 ```Python
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
 
+The idea is to find m then swap one by one from m to n.
+
+class Solution(object):
+    def reverseBetween(self, head, m, n):
+        """
+        :type head: ListNode
+        :type m: int
+        :type n: int
+        :rtype: ListNode
+        """
+        if not head:
+            return head
+
+        dummy = ListNode(0)
+        dummy.next = head
+        p = dummy
+        for indx in xrange(1, m):
+            p = p.next
+        # currently, p is the prevNode of m
+        mNode = p.next
+        for indx in xrange(m, n):
+            nNode = mNode.next
+            mNode.next = nNode.next
+            nNode.next = p.next
+            p.next = nNode
+        return dummy.next
 ```
