@@ -8,3 +8,4 @@
 * [Reverse Nodes in k-Group](reverse_nodes_in_k_group.md)
 * [Swap Nodes in Pairs](swap_nodes_in_pairs.md)
 * [(Insertion) Sort List](sort_list.md)
+* [Rotate List](rotate_list.md)
