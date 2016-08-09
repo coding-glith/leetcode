@@ -59,4 +59,4 @@
    * [Reverse Linked List](linked_list/reverse_linked_list.md)
    * [Reverse Nodes in k-Group](linked_list/reverse_nodes_in_k_group.md)
    * [Swap Nodes in Pairs](linked_list/swap_nodes_in_pairs.md)
-   * [Sort List](linked_list/sort_list.md)
+   * [(Insertion) Sort List](linked_list/sort_list.md)
