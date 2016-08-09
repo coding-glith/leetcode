@@ -60,6 +60,37 @@ class Solution(object):
 
 > Sort a linked list using insertion sort.
 
-```Python
+For insertion sort, we check the node one by one. For node i+1, we need to check node 0:i and insert i+1 at correct location.
 
+```Python
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution(object):
+    def insertionSortList(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        if not head or not head.next:
+            return head
+        dummy = ListNode(0)
+        dummy.next = head
+        cur = head
+        while cur.next:
+            if cur.next.val < cur.val:  # put smaller value ahead
+                prev = dummy
+                while prev.next.val < cur.next.val:
+                    prev = prev.next
+                # do insertion
+                tmp = cur.next
+                cur.next = tmp.next
+                tmp.next = prev.next
+                prev.next = tmp
+            else:
+                cur = cur.next
+        return dummy.next
 ```
