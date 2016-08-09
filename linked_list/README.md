@@ -9,3 +9,4 @@
 * [Swap Nodes in Pairs](swap_nodes_in_pairs.md)
 * [(Insertion) Sort List](sort_list.md)
 * [Rotate List](rotate_list.md)
+* [Reorder List](reorder_list.md)
