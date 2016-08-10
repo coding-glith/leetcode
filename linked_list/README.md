@@ -12,3 +12,4 @@
 * [Reorder List](reorder_list.md)
 * [Partition List](partition_list.md)
 * [Add Two Numbers](add_two_numbers.md)
+* [Copy List with Random Pointer](copy_list_with_random_pointer.md)
