@@ -68,4 +68,5 @@
 * [Math](math/README.md)
    * [Reverse Integer](math/reverse_integer.md)
 * [String](string/README.md)
+   * [Reverse String](string/reverse_string.md)
    * [Add Binary](string/add_binary.md)
