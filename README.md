@@ -1,6 +1,6 @@
 # [leetcode-1stRound](https://leetcode.com/problemset/algorithms/)
 
-> #### [Array](array/README.md), [Tree](tree/README.md), [Dynamic Programming](dynamic_programming/README.md), [Backtracking](backtracking/README.md), [Greedy](greedy/README.md), [Linked List](linked_list/README.md)
+> #### [Array](array/README.md), [Tree](tree/README.md), [Dynamic Programming](dynamic_programming/README.md), [Backtracking](backtracking/README.md), [Greedy](greedy/README.md), [Linked List](linked_list/README.md), [Math](math/README.md)
 
 * [Array](array/README.md)
   * [Remove Element](array/remove_element.md)
@@ -65,3 +65,5 @@
    * [Partition List](linked_list/partition_list.md)
    * [Add Two Numbers](linked_list/add_two_numbers.md)
    * [Copy List with Random Pointer](linked_list/copy_list_with_random_pointer.md)
+* [Math](math/README.md)
+   * [Reverse Integer](math/reverse_integer.md)
