@@ -10,3 +10,4 @@
 * [(Insertion) Sort List](sort_list.md)
 * [Rotate List](rotate_list.md)
 * [Reorder List](reorder_list.md)
+* [Partition List](partition_list.md)
