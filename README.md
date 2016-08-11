@@ -68,6 +68,7 @@
 * [Math](math/README.md)
    * [Reverse Integer](math/reverse_integer.md)
    * [Nim Game](math/nim_game.md)
+   * [Add Digits](math/add_digits.md)
 * [String](string/README.md)
    * [Reverse String](string/reverse_string.md)
    * [Add Binary](string/add_binary.md)
