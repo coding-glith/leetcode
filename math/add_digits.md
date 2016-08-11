@@ -10,7 +10,7 @@
 
 > Could you do it without any loop/recursion in O(1) runtime?
 
-Besides above step by step method, wikipedia has an explanation for ["digit root"](https://en.wikipedia.org/wiki/Digital_root).
+Besides the step by step method, wikipedia has an explanation for ["digit root"](https://en.wikipedia.org/wiki/Digital_root).
 
 ```Python
 class Solution(object):
