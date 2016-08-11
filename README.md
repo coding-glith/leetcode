@@ -17,7 +17,7 @@
   * [Search for a Range](array/search_for_a_range.md)
   * [Search Insert Position](array/search_insert_position.md)
   * [Find Peak Element ](array/find_peak_element.md)
-  * [Contains Duplicate](arraycontains_duplicate.md)
+  * [Contains Duplicate](array/contains_duplicate.md)
 * [Tree](tree/README.md)
   * [Depth of Binary Tree](tree/depth_of_binary_tree.md)
   * [Construct Binary Tree](tree/construct_binary_tree.md)
