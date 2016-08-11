@@ -12,4 +12,5 @@
  * [Search a 2D Matrix](search_a_2d_matrix.md)
  * [Search for a Range](search_for_a_range.md)
  * [Search Insert Position](search_insert_position.md)
- * [Find Peak Element ](find_peak_element.md)
+ * [Find Peak Element](find_peak_element.md)
+ * [Contains Duplicate](contains_duplicate.md)
