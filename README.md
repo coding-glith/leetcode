@@ -74,3 +74,4 @@
    * [Add Binary](string/add_binary.md)
    * [Ransom Note](string/ransom_note.md)
    * [Length of Last Word](string/length_of_last_word.md)
+   * [Valid Parentheses](string/valid_parentheses.md)
