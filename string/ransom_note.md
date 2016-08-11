@@ -15,6 +15,8 @@ canConstruct("aa", "ab") -> false
 canConstruct("aa", "aab") -> true
 ```
 
+This method is taking advantage of Python count() method. However, there are other ways to solve this problem: sort the string and compare one by one; maintain an array "visited", and check every character.
+
 ```Python
 class Solution(object):
     def canConstruct(self, ransomNote, magazine):
