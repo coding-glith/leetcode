@@ -67,6 +67,7 @@
    * [Copy List with Random Pointer](linked_list/copy_list_with_random_pointer.md)
 * [Math](math/README.md)
    * [Reverse Integer](math/reverse_integer.md)
+   * [Nim Game](math/nim_game.md)
 * [String](string/README.md)
    * [Reverse String](string/reverse_string.md)
    * [Add Binary](string/add_binary.md)
