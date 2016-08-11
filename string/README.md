@@ -3,3 +3,4 @@
  * [Add Binary](add_binary.md)
  * [Ransom Note](ransom_note.md)
  * [Length of Last Word](length_of_last_word.md)
+ * [Valid Parentheses](valid_parentheses.md)
