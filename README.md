@@ -75,3 +75,4 @@
    * [Ransom Note](string/ransom_note.md)
    * [Length of Last Word](string/length_of_last_word.md)
    * [Valid Parentheses](string/valid_parentheses.md)
+   * [ZigZag Conversion](string/zigzag_conversion.md)
