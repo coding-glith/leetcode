@@ -6,6 +6,14 @@
 
 > For example, if there are 4 stones in the heap, then you will never win the game: no matter 1, 2, or 3 stones you remove, the last stone will always be removed by your friend.
 
-```Python
+The winning numbers are: 1,2,3,5,6,7,9; The losing numbers are: 4,8. So we can deduct that by choosing 1 or 2 or 3 for a couple of times, if we are leaving 4 to others, then we will definitely win.
 
+```Python
+class Solution(object):
+    def canWinNim(self, n):
+        """
+        :type n: int
+        :rtype: bool
+        """
+        return n % 4 != 0
 ```
