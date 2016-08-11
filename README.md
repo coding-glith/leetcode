@@ -72,4 +72,4 @@
 * [String](string/README.md)
    * [Reverse String](string/reverse_string.md)
    * [Add Binary](string/add_binary.md)
-   * [Ransom Note](ransom_note.md)
+   * [Ransom Note](string/ransom_note.md)
