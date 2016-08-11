@@ -16,6 +16,30 @@ Y   I   R
 
 > convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR".
 
-```Python
+The idea is to maintain a string list to store every row of the zigzag.
 
+```Python
+class Solution(object):
+    def convert(self, s, numRows):
+        """
+        :type s: str
+        :type numRows: int
+        :rtype: str
+        """
+        if len(s) <= numRows:
+            return s
+        sList = ['' for i in xrange(numRows)]
+        row, index = 0, 0
+        while index < len(s):
+            while row < numRows and index < len(s):
+                sList[row] += s[index]
+                index += 1
+                row += 1
+            if row == numRows:
+                row -= 2
+                while row > 0 and index < len(s):
+                    sList[row] += s[index]
+                    index += 1
+                    row -= 1
+        return ''.join(sList)
 ```
