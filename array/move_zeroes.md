@@ -11,5 +11,20 @@
 > * Minimize the total number of operations.
 
 ```Python
-
+class Solution(object):
+    def moveZeroes(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: void Do not return anything, modify nums in-place instead.
+        """
+        if len(nums) == 0:
+            return
+        for i in xrange(len(nums)):
+            if nums[i] == 0:
+                for inner in xrange(i+1, len(nums)):
+                    if nums[inner] != 0:
+                        tmp = nums[i]
+                        nums[i] = nums[inner]
+                        nums[inner] = tmp
+                        break
 ```
