@@ -15,3 +15,4 @@
  * [Find Peak Element](find_peak_element.md)
  * [Contains Duplicate](contains_duplicate.md)
  * [Move Zeroes](move_zeroes.md)
+ * [Majority Element](majority_element.md)
