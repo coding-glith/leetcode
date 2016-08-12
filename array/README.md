@@ -14,3 +14,4 @@
  * [Search Insert Position](search_insert_position.md)
  * [Find Peak Element](find_peak_element.md)
  * [Contains Duplicate](contains_duplicate.md)
+ * [Move Zeroes](move_zeroes.md)
