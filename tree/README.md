@@ -13,3 +13,4 @@
 * [Flatten Binary Tree to Linked List](flatten_binary_tree_to_linked_list.md)
 * [Validate Binary Search Tree](validate_binary_search_tree.md)
 * [Recover Binary Search Tree](recover_binary_search_tree.md)
+* [Lowest Common Ancestor of a Binary Search Tree](lowest_common_ancestor_of_a_binary_search_tree.md)
