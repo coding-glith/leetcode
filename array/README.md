@@ -17,3 +17,4 @@
  * [Move Zeroes](move_zeroes.md)
  * [Majority Element](majority_element.md)
  * [Rotate Array](rotate_array.md)
+ * [Shortest Word Distance](shortest_word_distance.md)
