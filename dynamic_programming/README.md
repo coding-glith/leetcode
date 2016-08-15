@@ -8,3 +8,4 @@
  * [Unique Binary Search Trees](unique_binary_search_trees.md)
  * [House Robber](house_robber.md)
  * [Range Sum Query - Immutable](range_sum_query_immutable.md)
+ * [Paint Fence](paint_fence.md)
