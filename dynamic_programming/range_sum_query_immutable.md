@@ -17,6 +17,33 @@ sumRange(0, 5) -> -3
 
 > * There are many calls to sumRange function.
 
-```Python
+The idea of this question is to get the results efficiently. So if we store all the sums up to j, then we don't need to do addition every time.
 
+```Python
+class NumArray(object):
+    def __init__(self, nums):
+        """
+        initialize your data structure here.
+        :type nums: List[int]
+        """
+        self.nums = list(nums)
+        for i in xrange(1, len(nums)):
+            nums[i] += nums[i-1]
+        self.numsSum = nums
+
+    def sumRange(self, i, j):
+        """
+        sum of elements nums[i..j], inclusive.
+        :type i: int
+        :type j: int
+        :rtype: int
+        """
+        return self.numsSum[j]-self.numsSum[i]+self.nums[i]
+        
+
+
+# Your NumArray object will be instantiated and called as such:
+# numArray = NumArray(nums)
+# numArray.sumRange(0, 1)
+# numArray.sumRange(1, 2)
 ```
