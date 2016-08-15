@@ -14,4 +14,4 @@
 * [Validate Binary Search Tree](validate_binary_search_tree.md)
 * [Recover Binary Search Tree](recover_binary_search_tree.md)
 * [Lowest Common Ancestor of a Binary Search Tree](lowest_common_ancestor_of_a_binary_search_tree.md)
-* [Closest Binary Search Tree Value](closest_binary_search_tree_value)
+* [Closest Binary Search Tree Value](closest_binary_search_tree_value.md)
