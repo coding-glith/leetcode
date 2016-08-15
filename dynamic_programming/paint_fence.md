@@ -10,6 +10,25 @@
 
 > n and k are non-negative integers.
 
-```Python
+The idea is to calculate two cases separately: last two posts have same/different color.
 
+```Python
+class Solution(object):
+    def numWays(self, n, k):
+        """
+        :type n: int
+        :type k: int
+        :rtype: int
+        """
+        if n == 0:
+            return 0
+        if n == 1:
+            return k
+        diffColorCounts = k*(k-1) # last two have different color
+        sameColorCounts = k # last two have same color
+        for i in xrange(2,n):
+            tmp = diffColorCounts
+            diffColorCounts = (diffColorCounts + sameColorCounts) * (k-1)
+            sameColorCounts = tmp
+        return diffColorCounts + sameColorCounts
 ```
