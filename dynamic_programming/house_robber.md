@@ -5,5 +5,21 @@
 > Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount of money you can rob tonight without alerting the police.
 
 ```Python
-
+class Solution(object):
+    def rob(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        profit = 0
+        if len(nums) == 0:
+            return 0
+        if len(nums) == 1:
+            return nums[0]
+        result = [0 for i in xrange(len(nums))]
+        result[0], result[1] = nums[0], max(nums[0], nums[1])
+        # result represent profit with i selected
+        for i in xrange(2, len(nums)):
+            result[i] = max(result[i-2] + nums[i], result[i-1])
+        return result[len(nums)-1]
 ```
