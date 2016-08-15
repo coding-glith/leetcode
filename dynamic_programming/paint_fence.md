@@ -10,6 +10,6 @@
 
 > n and k are non-negative integers.
 
-> ```
+```Python
 
 ```
