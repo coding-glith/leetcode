@@ -1,4 +1,4 @@
-# [Delete Node in a Linked List](delete_node_in_a_linked_list.md)
+# Delete Node in a Linked List
 
 > Write a function to delete a node (except the tail) in a singly linked list, given only access to that node.
 
