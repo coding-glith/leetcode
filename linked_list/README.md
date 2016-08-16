@@ -13,3 +13,4 @@
 * [Partition List](partition_list.md)
 * [Add Two Numbers](add_two_numbers.md)
 * [Copy List with Random Pointer](copy_list_with_random_pointer.md)
+* [Delete Node in a Linked List](delete_node_in_a_linked_list.md)
