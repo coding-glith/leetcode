@@ -7,6 +7,6 @@
  * [Strobogrammatic Number](strobogrammatic_number.md)
  * [Happy Number](happy_number.md)
  * [Power of Two/Three](power_of_two.md)
- * [Excel Sheet Column Title](excel_sheet_column_title.md)
+ * [Excel Sheet Column Title/Number](excel_sheet_column_title.md)
  * [Count Primes](count_primes.md)
  * [Factorial Trailing Zeroes](factorial_trailing_zeroes.md)
