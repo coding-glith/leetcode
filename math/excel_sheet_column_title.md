@@ -37,3 +37,36 @@ class Solution(object):
         result.reverse()
         return ''.join(result)
 ```
+
+# Excel Sheet Column Number
+
+> Given a column title as appear in an Excel sheet, return its corresponding column number.
+
+> For example:
+
+> ```
+    A -> 1
+    B -> 2
+    C -> 3
+    ...
+    Z -> 26
+    AA -> 27
+    AB -> 28 
+```
+
+```Python
+class Solution(object):
+    def titleToNumber(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        if s == "":
+            return 0
+        capitals, res = {}, 0
+        for i in xrange(1, 27):
+            capitals[chr(ord('A')+i-1)] = i
+        for i in xrange(len(s)):
+            res += capitals[s[i]] * 26**(len(s)-i-1)
+        return res
+```
