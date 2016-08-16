@@ -5,7 +5,24 @@
 Check explanations from [leetcode](https://leetcode.com/problems/count-primes/).
 
 ```Python
-
+class Solution(object):
+    def countPrimes(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        isPrime = [0, 0] + [1] * (n-2)
+        index = 2
+        while index * index < n:
+            if isPrime[index] == 0:
+                index += 1
+                continue
+            jump = index * index
+            while jump < n:
+                isPrime[jump] = 0
+                jump += index
+            index += 1
+        return sum(isPrime)
 ```
 
 Straightforward solution, define isPrime() function and calculate. O(n**1.5)
