@@ -10,3 +10,4 @@
  * [Excel Sheet Column Title/Number](excel_sheet_column_title.md)
  * [Count Primes](count_primes.md)
  * [Factorial Trailing Zeroes](factorial_trailing_zeroes.md)
+ * [Rectangle Area](rectangle_area.md)
