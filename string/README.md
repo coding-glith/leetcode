@@ -10,3 +10,4 @@
  * [Longest Common Prefix](longest_common_prefix.md)
  * [Count and Say](count_and_say.md)
  * [Implement strStr()](implement_strstr.md)
+ * [Valid Palindrome](valid_palindrome.md)
