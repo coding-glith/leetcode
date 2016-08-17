@@ -14,3 +14,4 @@
  * [Rectangle Area](rectangle_area.md)
  * [Group Shifted Strings](group_shifted_strings.md)
  * [Nested List Weight Sum](nested_list_weight_sum.md)
+ * [Logger Rate Limiter](logger_rate_limiter.md)
