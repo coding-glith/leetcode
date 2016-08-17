@@ -1,4 +1,4 @@
-# Read N Characters Given Read4](read_n_characters_given_read4.md)
+# Read N Characters Given Read4
 
 > The API: int read4(char *buf) reads 4 characters at a time from a file.
 
