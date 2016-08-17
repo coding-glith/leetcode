@@ -12,3 +12,4 @@
  * [Count Primes](count_primes.md)
  * [Factorial Trailing Zeroes](factorial_trailing_zeroes.md)
  * [Rectangle Area](rectangle_area.md)
+ * [Group Shifted Strings](group_shifted_strings.md)
