@@ -9,3 +9,4 @@
  * [Read N Characters Given Read4](read_n_characters_given_read4.md)
  * [Longest Common Prefix](longest_common_prefix.md)
  * [Count and Say](count_and_say.md)
+ * [Implement strStr()](implement_strstr.md)
