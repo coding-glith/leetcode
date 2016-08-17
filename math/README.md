@@ -13,3 +13,4 @@
  * [Factorial Trailing Zeroes](factorial_trailing_zeroes.md)
  * [Rectangle Area](rectangle_area.md)
  * [Group Shifted Strings](group_shifted_strings.md)
+ * [Nested List Weight Sum](nested_list_weight_sum.md)
