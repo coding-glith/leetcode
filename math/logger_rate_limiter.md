@@ -24,6 +24,8 @@ logger.shouldPrintMessage(10,"foo"); returns false;
 logger.shouldPrintMessage(11,"foo"); returns true;
 ```
 
+The idea is to maintain a dictionary of messages. the value of message key is the timestamp upper limit for the message to be printed.
+
 ```Python
 class Logger(object):
 
