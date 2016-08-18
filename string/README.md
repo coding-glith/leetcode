@@ -16,3 +16,4 @@
  * [Palindrome Permutation](palindrome_permutation.md)
  * [Valid Anagram](valid_anagram.md)
  * [Bulls and Cows](bulls_and_cows.md)
+ * [Isomorphic Strings](isomorphic_strings.md)
