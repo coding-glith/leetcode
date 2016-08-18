@@ -1,4 +1,4 @@
-# Implement Queue using Stacks](implement_queue_using_stacks.md)
+# Implement Queue using Stacks
 
 > Implement the following operations of a queue using stacks.
 
