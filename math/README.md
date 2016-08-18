@@ -7,7 +7,7 @@
  * [Roman to Integer](roman_to_integer.md)
  * [Strobogrammatic Number](strobogrammatic_number.md)
  * [Happy Number](happy_number.md)
- * [Power of Two/Three](power_of_two.md)
+ * [Power of Two/Three/Four](power_of_two.md)
  * [Excel Sheet Column Title/Number](excel_sheet_column_title.md)
  * [Count Primes](count_primes.md)
  * [Factorial Trailing Zeroes](factorial_trailing_zeroes.md)
