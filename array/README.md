@@ -18,3 +18,4 @@
  * [Majority Element](majority_element.md)
  * [Rotate Array](rotate_array.md)
  * [Shortest Word Distance](shortest_word_distance.md)
+ * [Intersection of Two Arrays](intersection_of_two_arrays.md)
