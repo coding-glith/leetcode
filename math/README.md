@@ -14,3 +14,4 @@
  * [Rectangle Area](rectangle_area.md)
  * [Group Shifted Strings](group_shifted_strings.md)
  * [Nested List Weight Sum](nested_list_weight_sum.md)
+ * [Sum of Two Integers](sum_of_two_integers.md)
