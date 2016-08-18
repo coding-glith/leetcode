@@ -1,4 +1,4 @@
-# Intersection of Two Arrays](intersection_of_two_arrays.md)
+# Intersection of Two Arrays
 
 > Given two arrays, write a function to compute their intersection.
 
