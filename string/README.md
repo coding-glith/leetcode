@@ -14,3 +14,4 @@
  * [Compare Version Numbers](compare_version_numbers.md)
  * [Reverse Vowels of a String](reverse_vowels_of_a_string.md)
  * [Palindrome Permutation](palindrome_permutation.md)
+ * [Valid Anagram](valid_anagram.md)
