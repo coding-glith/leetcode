@@ -18,3 +18,4 @@
  * [Bulls and Cows](bulls_and_cows.md)
  * [Isomorphic Strings](isomorphic_strings.md)
  * [Word Pattern](word_pattern.md)
+ * [Unique Word Abbreviation](unique_word_abbreviation.md)
