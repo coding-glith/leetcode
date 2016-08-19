@@ -16,5 +16,6 @@
  * [Nested List Weight Sum](nested_list_weight_sum.md)
  * [Sum of Two Integers](sum_of_two_integers.md)
  * [Number of 1 Bits](number_of_1_bits.md)
+ * [Reverse Bits](reverse_bits.md)
  * [Valid Sudoku](valid_sudoku.md)
  * [Guess Number Higher or Lower](guess_number_higher_or_lower.md)
