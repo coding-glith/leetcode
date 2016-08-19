@@ -8,5 +8,5 @@
 * [Linked List](linked_list/README.md)
 * [Math](math/README.md)
 * [String](string/README.md)
-* [Class](class/README.md)
+* [Class Design](class/README.md)
 * [Bit Manipulation](bit/README.md)
