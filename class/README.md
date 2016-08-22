@@ -4,3 +4,4 @@
  * [Implement Queue using Stacks](implement_queue_using_stacks.md)
  * [Implement Stack using Queues](implement_stack_using_queues.md)
  * [Min Stack](min_stack.md)
+ * [Design Phone Directory](design_phone_directory.md)
