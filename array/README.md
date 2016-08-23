@@ -22,3 +22,4 @@
  * [Meeting Rooms](meeting_rooms.md)
  * [Single Number](single_number.md)
  * [Game of Life](game_of_life.md)
+ * [Word Search](word_search.md)
