@@ -24,3 +24,4 @@
  * [Game of Life](game_of_life.md)
  * [Word Search](word_search.md)
  * [Spiral Matrix](spiral_matrix.md)
+ * [Summary Ranges](summary_ranges.md)
