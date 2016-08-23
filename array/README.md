@@ -23,3 +23,4 @@
  * [Single Number](single_number.md)
  * [Game of Life](game_of_life.md)
  * [Word Search](word_search.md)
+ * [Spiral Matrix](spiral_matrix.md)
