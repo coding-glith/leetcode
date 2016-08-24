@@ -22,3 +22,25 @@ class Solution(object):
             if numDict[nums[i]] >= len(nums) / 2:
                 return nums[i]
 ```
+
+# Majority Element II
+
+> Given an integer array of size n, find all elements that appear more than ⌊ n/3 ⌋ times. The algorithm should run in linear time and in O(1) space.
+
+```Python
+class Solution(object):
+    def majorityElement(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        nums.sort()
+        nums.append(float('inf'))
+        res, start = [], 0
+        for i in xrange(len(nums)-1):
+            if nums[i] != nums[i+1]:
+                if (i+1-start) > (len(nums)-1)/3:
+                    res.append(nums[i])
+                start = i + 1
+        return res
+```
