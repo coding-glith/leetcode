@@ -1,0 +1,44 @@
+# Next Permutation
+
+> Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.
+
+> If such arrangement is not possible, it must rearrange it as the lowest possible order (ie, sorted in ascending order).
+
+> The replacement must be in-place, do not allocate extra memory.
+
+> Here are some examples. Inputs are in the left-hand column and its corresponding outputs are in the right-hand column.
+
+> ```
+1,2,3 → 1,3,2
+3,2,1 → 1,2,3
+1,1,5 → 1,5,1
+```
+
+Check explanation from [leetcode discussion](https://discuss.leetcode.com/topic/52275/easy-python-solution-based-on-lexicographical-permutation-algorithm/2).
+
+```Python
+class Solution(object):
+    def nextPermutation(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: void Do not return anything, modify nums in-place instead.
+        """
+        # from end to start, find longest increasing sequence
+        piv = -1
+        for i in xrange(len(nums)-1, 0, -1):
+            if nums[i] > nums[i-1]:
+                piv = i - 1
+                break
+        if piv == -1:
+            nums.reverse()
+            return
+        # find rightmost successor to pivot, then swap
+        for i in xrange(len(nums)-1, piv, -1):
+            if nums[i] > nums[piv]:
+                tmp = nums[i]
+                nums[i] = nums[piv]
+                nums[piv] = tmp
+                break
+        # reverse
+        nums[piv+1:] = nums[piv+1:][::-1]
+```
