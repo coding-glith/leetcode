@@ -41,3 +41,41 @@ class Solution(object):
                     res.append(row.pop(0))
         return res
 ```
+
+# Spiral Matrix II
+
+> Given an integer n, generate a square matrix filled with elements from 1 to n^2 in spiral order.
+
+> For example,
+
+> Given n = 3,
+
+> You should return the following matrix:
+
+> ```
+[
+ [ 1, 2, 3 ],
+ [ 8, 9, 4 ],
+ [ 7, 6, 5 ]
+]
+```
+
+This solution needs to understand matrix index extremely well. di, dj do the spiral job.
+
+```Python
+class Solution(object):
+    def generateMatrix(self, n):
+        """
+        :type n: int
+        :rtype: List[List[int]]
+        """
+        res = [[0] * n for _ in xrange(n)]
+        row, col, di, dj = 0, 0, 0, 1
+        for i in xrange(1, n*n+1):
+            res[row][col] = i
+            if res[(row+di)%n][(col+dj)%n]:
+                di, dj = dj, -di
+            row += di
+            col += dj
+        return res
+```
