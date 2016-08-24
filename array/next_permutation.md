@@ -14,7 +14,7 @@
 1,1,5 → 1,5,1
 ```
 
-Check explanation from [leetcode discussion](https://discuss.leetcode.com/topic/52275/easy-python-solution-based-on-lexicographical-permutation-algorithm/2).
+Check explanation from [here](https://www.nayuki.io/page/next-lexicographical-permutation-algorithm).
 
 ```Python
 class Solution(object):
