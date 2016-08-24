@@ -31,3 +31,4 @@
  * [Sort Colors](sort_colors.md)
  * [Next Permutation](next_permutation.md)
  * [Minimum Size Subarray Sum](minimum_size_subarray_sum.md)
+ * [Find the Celebrity](find_the_celebrity.md)
