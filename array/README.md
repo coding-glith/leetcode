@@ -34,3 +34,4 @@
  * [Find the Celebrity](find_the_celebrity.md)
  * [Missing Number](missing_number.md)
  * [Set Matrix Zeroes](set_matrix_zeroes.md)
+ * [Wiggle Sort](wiggle_sort.md)
