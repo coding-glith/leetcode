@@ -30,3 +30,4 @@
  * [Container With Most Water](container_with_most_water.md)
  * [Sort Colors](sort_colors.md)
  * [Next Permutation](next_permutation.md)
+ * [Minimum Size Subarray Sum](minimum_size_subarray_sum.md)
