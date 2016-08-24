@@ -35,3 +35,4 @@
  * [Missing Number](missing_number.md)
  * [Set Matrix Zeroes](set_matrix_zeroes.md)
  * [Wiggle Sort](wiggle_sort.md)
+ * [Search in Rotated Sorted Array I/II](search_in_rotated_sorted_array.md)
