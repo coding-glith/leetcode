@@ -29,3 +29,4 @@
  * [Rotate Image](rotate_image.md)
  * [Container With Most Water](container_with_most_water.md)
  * [Sort Colors](sort_colors.md)
+ * [Next Permutation](next_permutation.md)
