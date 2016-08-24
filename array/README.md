@@ -24,7 +24,7 @@
  * [Game of Life](game_of_life.md)
  * [Word Search](word_search.md)
  * [Spiral Matrix](spiral_matrix.md)
- * [Summary Ranges](summary_ranges.md)
+ * [Summary Ranges/Missing Ranges](summary_ranges.md)
  * [Product of Array Except Self](product_of_array_except_self.md)
  * [Rotate Image](rotate_image.md)
  * [Container With Most Water](container_with_most_water.md)
