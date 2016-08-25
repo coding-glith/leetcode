@@ -19,3 +19,4 @@
  * [Reverse Bits](reverse_bits.md)
  * [Valid Sudoku](valid_sudoku.md)
  * [Guess Number Higher or Lower](guess_number_higher_or_lower.md)
+ * [Fraction to Recurring Decimal](fraction_to_recurring_decimal.md)
