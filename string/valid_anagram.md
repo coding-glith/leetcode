@@ -36,3 +36,38 @@ class Solution(object):
                 return False
         return True
 ```
+
+
+# Group Anagrams
+
+> Given an array of strings, group anagrams together.
+
+> For example, given: ["eat", "tea", "tan", "ate", "nat", "bat"], 
+
+> Return:
+
+> ```
+[
+  ["ate", "eat","tea"],
+  ["nat","tan"],
+  ["bat"]
+]
+```
+
+> Note: All inputs will be in lower-case.
+
+```Python
+class Solution(object):
+    def groupAnagrams(self, strs):
+        """
+        :type strs: List[str]
+        :rtype: List[List[str]]
+        """
+        if len(strs) < 2:
+            return [strs]
+        res = {}
+        for s in strs:
+            key = ''.join(sorted(s))
+            res[key] = res.get(key, []) + [s]
+        return res.values()
+```
