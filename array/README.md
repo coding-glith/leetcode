@@ -17,7 +17,7 @@
  * [Move Zeroes](move_zeroes.md)
  * [Majority Element I/II](majority_element.md)
  * [Rotate Array](rotate_array.md)
- * [Shortest Word Distance](shortest_word_distance.md)
+ * [Shortest Word Distance I/II/III](shortest_word_distance.md)
  * [Intersection of Two Arrays I/II](intersection_of_two_arrays.md)
  * [Meeting Rooms](meeting_rooms.md)
  * [Single Number](single_number.md)
