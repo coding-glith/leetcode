@@ -21,3 +21,4 @@
  * [Unique Word Abbreviation](unique_word_abbreviation.md)
  * [Reverse Words in a String](reverse_words_in_a_string.md)
  * [Longest Substring Without Repeating Characters](longest_substring_without_repeating_characters.md)
+ * [Repeated DNA Sequences](repeated_dna_sequences.md)
