@@ -38,3 +38,4 @@
  * [Set Matrix Zeroes](set_matrix_zeroes.md)
  * [Wiggle Sort](wiggle_sort.md)
  * [Search in Rotated Sorted Array I/II](search_in_rotated_sorted_array.md)
+ * [H-Index](h_index.md)
