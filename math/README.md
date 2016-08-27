@@ -3,7 +3,7 @@
  * [Nim Game](nim_game.md)
  * [Flip Game](flip_game.md)
  * [Add Digits](add_digits.md)
- * [Ugly Number](ugly_number.md)
+ * [Ugly Number I/II](ugly_number.md)
  * [Roman to Integer/Integer to Roman](roman_to_integer.md)
  * [Strobogrammatic Number](strobogrammatic_number.md)
  * [Happy Number](happy_number.md)
