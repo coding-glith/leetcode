@@ -25,4 +25,4 @@
  * [Perfect Squares/Valid Perfect Square](perfect_squares.md)
  * [Pow(x,n)](pow_x_n.md)
  * [Bulb Switcher](bulb_switcher.md)
- * [Largest Divisible Subset](largers_divisible_subset.md)
+ * [Largest Divisible Subset](largest_divisible_subset.md)
