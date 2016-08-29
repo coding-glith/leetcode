@@ -23,4 +23,4 @@
  * [Line Reflection](line_reflection.md)
  * [Sort Transformed Array](sort_transformed_array.md)
  * [Perfect Squares](perfect_squares.md)
- * [Power(x,n)](power_x_n.md)
+ * [Pow(x,n)](pow_x_n.md)
