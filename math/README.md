@@ -5,7 +5,7 @@
  * [Add Digits](add_digits.md)
  * [Ugly Number I/II](ugly_number.md)
  * [Roman to Integer/Integer to Roman](roman_to_integer.md)
- * [Strobogrammatic Number](strobogrammatic_number.md)
+ * [Strobogrammatic Number I/II](strobogrammatic_number.md)
  * [Happy Number](happy_number.md)
  * [Power of Two/Three/Four](power_of_two.md)
  * [Excel Sheet Column Title/Number](excel_sheet_column_title.md)
