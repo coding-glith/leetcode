@@ -22,6 +22,6 @@
  * [Fraction to Recurring Decimal](fraction_to_recurring_decimal.md)
  * [Line Reflection](line_reflection.md)
  * [Sort Transformed Array](sort_transformed_array.md)
- * [Perfect Squares](perfect_squares.md)
+ * [Perfect Squares/Valid Perfect Square](perfect_squares.md)
  * [Pow(x,n)](pow_x_n.md)
  * [Bulb Switcher](bulb_switcher.md)
