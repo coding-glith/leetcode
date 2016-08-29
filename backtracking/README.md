@@ -5,3 +5,4 @@
  * [Factor Combinations](factor_combinations.md)
  * [Subsets](subsets.md)
  * [Permutations](permutations.md)
+ * [Permutation Sequence](permutation_sequence.md)
