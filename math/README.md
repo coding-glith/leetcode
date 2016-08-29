@@ -24,4 +24,4 @@
  * [Sort Transformed Array](sort_transformed_array.md)
  * [Perfect Squares](perfect_squares.md)
  * [Pow(x,n)](pow_x_n.md)
- * [Bulb Switcher](buld_switcher.md)
+ * [Bulb Switcher](bulb_switcher.md)
