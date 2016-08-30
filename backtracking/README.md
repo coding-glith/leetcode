@@ -6,3 +6,4 @@
  * [Subsets](subsets.md)
  * [Permutations](permutations.md)
  * [Permutation Sequence](permutation_sequence.md)
+ * [Generate Parentheses](generate_parentheses.md)
