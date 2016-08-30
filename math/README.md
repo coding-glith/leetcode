@@ -1,7 +1,7 @@
 # Math
  * [Reverse Integer](reverse_integer.md)
  * [Nim Game](nim_game.md)
- * [Flip Game](flip_game.md)
+ * [Flip Game I/II](flip_game.md)
  * [Add Digits](add_digits.md)
  * [Ugly Number I/II](ugly_number.md)
  * [Roman to Integer/Integer to Roman](roman_to_integer.md)
