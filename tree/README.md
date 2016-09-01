@@ -20,3 +20,4 @@
 * [Binary Tree Paths](binary_tree_paths.md)
 * [Binary Tree Upside Down](binary_tree_upside_down.md)
 * [Largest BST Subtree](largest_bst_subtree.md)
+* [Count Complete Tree Nodes](count_complete_tree_nodes.md)
