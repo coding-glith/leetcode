@@ -25,3 +25,4 @@
 * [Kth Smallest Element in a BST](kth_smallest_element_in_a_bst.md)
 * [Binary Tree Right Side View](binary_tree_right_side_view.md)
 * [Sum Root to Leaf Numbers](sum_root_to_leaf_numbers.md)
+* [Count Univalue Subtrees](count_univalue_subtrees.md)
