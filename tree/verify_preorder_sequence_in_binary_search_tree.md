@@ -1,4 +1,4 @@
-# Verify Preorder Sequence in Binary Search Tree](verify_preorder_sequence_in_binary_search_tree.md)
+# Verify Preorder Sequence in Binary Search Tree
 
 > Given an array of numbers, verify whether it is the correct preorder traversal sequence of a binary search tree.
 
