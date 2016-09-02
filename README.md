@@ -1,4 +1,4 @@
-# [leetcode-1stRound](https://leetcode.com/problemset/algorithms/)
+# [leetcode notebook](https://leetcode.com/problemset/algorithms/)
 
 * [Array](array/README.md)
 * [Tree](tree/README.md)
