@@ -15,7 +15,7 @@
 * [Validate Binary Search Tree](validate_binary_search_tree.md)
 * [Recover Binary Search Tree](recover_binary_search_tree.md)
 * [Lowest Common Ancestor of a Binary Search Tree/Binary Tree](lowest_common_ancestor_of_a_binary_search_tree.md)
-* [Closest Binary Search Tree Value](closest_binary_search_tree_value.md)
+* [Closest Binary Search Tree Value I/II](closest_binary_search_tree_value.md)
 * [Invert Binary Tree](invert_binary_tree.md)
 * [Binary Tree Paths](binary_tree_paths.md)
 * [Binary Tree Upside Down](binary_tree_upside_down.md)
