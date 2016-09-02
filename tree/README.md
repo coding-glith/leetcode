@@ -26,3 +26,4 @@
 * [Binary Tree Right Side View](binary_tree_right_side_view.md)
 * [Sum Root to Leaf Numbers](sum_root_to_leaf_numbers.md)
 * [Count Univalue Subtrees](count_univalue_subtrees.md)
+* [Binary Tree Longest Consecutive Sequence](binary_tree_longest_consecutive_sequence.md)
