@@ -28,3 +28,4 @@
 * [Count Univalue Subtrees](count_univalue_subtrees.md)
 * [Binary Tree Longest Consecutive Sequence](binary_tree_longest_consecutive_sequence.md)
 * [Find Leaves of Binary Tree](find_leaves_of_binary_tree.md)
+* [Inorder Successor in BST](inorder_successor_in_bst.md)
