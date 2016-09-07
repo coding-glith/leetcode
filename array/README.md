@@ -41,3 +41,4 @@
  * [H-Index](h_index.md)
  * [Top K Frequent Elements](top_k_frequent_elements.md)
  * [Sparse Matrix Multiplication](sparse_matrix_multiplication.md)
+ * [Median of Two Sorted Arrays](median_of_two_sorted_arrays.md)
