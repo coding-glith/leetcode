@@ -10,3 +10,4 @@
  * [Range Sum Query - Immutable](range_sum_query_immutable.md)
  * [Paint Fence](paint_fence.md)
  * [Integer Break](integer_break.md)
+ * [Counting Bits](counting_bits.md)
