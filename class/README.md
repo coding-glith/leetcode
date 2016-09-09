@@ -6,3 +6,4 @@
  * [Min Stack](min_stack.md)
  * [Design Phone Directory](design_phone_directory.md)
  * [Design Twitter](design_twitter.md)
+ * [Design Hit Counter](design_hit_counter.md)
