@@ -26,3 +26,4 @@
  * [Multiply Strings](multiply_strings.md)
  * [Find the Difference](find_the_difference.md)
  * [First Unique Character in a String](first_unique_character_in_a_string.md)
+ * [Valid Number](valid_number.md)
