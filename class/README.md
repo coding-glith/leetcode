@@ -7,3 +7,4 @@
  * [Design Phone Directory](design_phone_directory.md)
  * [Design Twitter](design_twitter.md)
  * [Design Hit Counter](design_hit_counter.md)
+ * [LRU Cache](lru_cache.md)
