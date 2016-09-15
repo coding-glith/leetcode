@@ -4,6 +4,26 @@
 
 > Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount of money you can rob tonight without alerting the police.
 
+The idea is current profit is the maximum of two previous + curNode and previous, no matter which node it chooses as long as it doesn't alarm the alert.
+
+```Python
+class Solution(object):
+    def rob(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        if not nums:
+            return 0
+        if len(nums) <= 2:
+            return max(nums)
+        twoPrev, prev = nums[0], max(nums[0], nums[1])
+        for i in xrange(2, len(nums)):
+            cur = max(twoPrev + nums[i], prev)
+            twoPrev, prev = prev, cur
+        return prev
+```
+
 ```Python
 class Solution(object):
     def rob(self, nums):
