@@ -10,7 +10,18 @@
 
 > n and k are non-negative integers.
 
-The idea is to calculate two cases separately: last two posts have same/different color.
+The idea is to calculate two cases separately: last two posts have same/different color. refer to leetcode [discussion](https://discuss.leetcode.com/topic/23426/o-n-time-java-solution-o-1-space)
+
+```
+1: k
+   same              diff
+2: k*1             + k*(k-1)
+   diff              same              diff
+3: k*1*(k-1)       + k*(k-1)*1       + k*(k-1)*(k-1)
+   same              diff              diff              same              diff
+4: k*1*(k-1)*1     + k*1*(k-1)*(k-1) + k*(k-1)*1*(k-1) + k*(k-1)*(k-1)*1 + k*(k-1)*(k-1)*(k-1)
+   this same is correct because 4th have same color with 1st and 2nd.
+```
 
 ```Python
 class Solution(object):
@@ -24,11 +35,8 @@ class Solution(object):
             return 0
         if n == 1:
             return k
-        diffColorCounts = k*(k-1) # last two have different color
-        sameColorCounts = k # last two have same color
-        for i in xrange(2,n):
-            tmp = diffColorCounts
-            diffColorCounts = (diffColorCounts + sameColorCounts) * (k-1)
-            sameColorCounts = tmp
-        return diffColorCounts + sameColorCounts
+        same, diff = k, k*(k-1)
+        for i in xrange(2, n):
+            diff, same = (same + diff) * (k-1), diff
+        return diff + same
 ```
