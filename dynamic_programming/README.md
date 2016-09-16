@@ -11,3 +11,4 @@
  * [Paint Fence](paint_fence.md)
  * [Integer Break](integer_break.md)
  * [Counting Bits](counting_bits.md)
+ * [Wiggle Subsequence](wiggle_subsequence.md)
