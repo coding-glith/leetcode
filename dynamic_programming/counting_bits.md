@@ -22,6 +22,19 @@
 
 > * Or does the odd/even status of the number help you in calculating the number of 1s?
 
+```
+0                 0
+1                 1  ---
+2                10    |
+3                11    |
+4               100    |
+5               101    +1
+6               110    |
+7               111    |
+8              1000    |
+9              1001  ---
+```
+
 ```Python
 class Solution(object):
     def countBits(self, num):
@@ -30,13 +43,13 @@ class Solution(object):
         :rtype: List[int]
         """
         res = [0]
-        i, window, count = 1, 1, 0
+        i, window, count = 1, 1, 1
         while i <= num:
-            if count == window - 1:
-                window *= 2
-                count = 0
             res.append(1 + res[i-window])
-            count += 1
+            if count == window:
+                window *= 2
+                count = 1
             i += 1
+            count += 1
         return res
 ```
