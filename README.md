@@ -1,5 +1,7 @@
 # [leetcode notebook](https://leetcode.com/problemset/algorithms/)
 
+* [Binary Search](binary_search/README.md)
+* 
 * [Array](array/README.md)
 * [Tree](tree/README.md)
 * [Dynamic Programming](dynamic_programming/README.md)
