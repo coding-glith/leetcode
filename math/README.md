@@ -26,3 +26,4 @@
  * [Pow(x,n)/Super Pow](pow_x_n.md)
  * [Bulb Switcher](bulb_switcher.md)
  * [Largest Divisible Subset](largest_divisible_subset.md)
+ * [Sqrt(x)](sqrt_x.md)
