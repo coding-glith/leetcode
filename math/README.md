@@ -23,6 +23,6 @@
  * [Line Reflection](line_reflection.md)
  * [Sort Transformed Array](sort_transformed_array.md)
  * [Perfect Squares/Valid Perfect Square](perfect_squares.md)
- * [Pow(x,n)](pow_x_n.md)
+ * [Pow(x,n)/Super Pow](pow_x_n.md)
  * [Bulb Switcher](bulb_switcher.md)
  * [Largest Divisible Subset](largest_divisible_subset.md)
