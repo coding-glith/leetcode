@@ -8,8 +8,18 @@ Binary search search a particular item by comparing the middle most item of the 
 
 ### Recursion / divide and conquer:
 
-> Pow(x, n) / Super Pow
+> * Pow(x, n)
+
+> * Super Pow
 
 ### Binary Search:
 
-> Sqrt(x) / Valid Perfect Square
+> * Sqrt(x)
+
+> * Valid Perfect Square
+
+### Binary Search for rotated array:
+
+> * Find Minimum in Rotated Sorted Array I/II
+
+> * Search in Rotated Sorted Array I/II
