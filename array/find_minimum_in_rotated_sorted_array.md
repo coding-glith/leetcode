@@ -59,6 +59,29 @@ class Solution(object):
 
 > The array may contain duplicates.
 
+If duplicates exists, need to deal with mid == some value separately.
+
+```Python
+class Solution(object):
+    def findMin(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        if not nums:
+            return None
+        left, right = 0, len(nums)-1
+        while left < right:
+            mid = left + (right - left) / 2
+            if nums[mid] > nums[right]:
+                left = mid + 1
+            elif nums[mid] < nums[right]:
+                right = mid
+            else:
+                right -= 1
+        return nums[left] 
+```
+
 ```Python
 class Solution(object):
     def findMin(self, nums):
