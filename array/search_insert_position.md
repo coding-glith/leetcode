@@ -22,6 +22,29 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
+        left, right = 0, len(nums) - 1
+        while left <= right:
+            mid = left + (right - left) / 2
+            if nums[mid] == target:
+                return mid
+            elif nums[mid] > target:
+                right = mid - 1
+                if right < left:
+                    return right + 1
+            else:
+                left = mid + 1
+                if left > right:
+                    return left
+```
+
+```Python
+class Solution(object):
+    def searchInsert(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: int
+        """
         for index in xrange(len(nums)):
             if nums[index] >= target:
                 result = index
