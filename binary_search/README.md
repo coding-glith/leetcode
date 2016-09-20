@@ -33,3 +33,7 @@ Binary search search a particular item by comparing the middle most item of the 
 > * Search Insert Position
 
 > * Guess Number Higher or Lower I/II
+
+> * Find Peak Element
+
+> * Search a 2D Matrix I/II
