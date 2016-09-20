@@ -96,3 +96,22 @@ class Solution(object):
         table = [[0] * (n+1) for _ in xrange(n+1)]
         return dp(table, 1, n)
 ```
+
+Not quite understand this one yet.
+
+```Python
+class Solution(object):
+    def getMoneyAmount(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        table = [[0] * (n+1) for _ in range(n+1)]
+        for j in xrange(2, n+1):
+            for i in xrange(j-1, 0, -1):
+                res = float('inf')
+                for k in xrange(i+1, j):
+                    local = k + max(table[i][k-1], table[k+1][j])
+                    res = min(res, local)
+                table[i][j] = i if i+1 == j else res
+```
