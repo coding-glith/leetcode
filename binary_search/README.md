@@ -23,3 +23,13 @@ Binary search search a particular item by comparing the middle most item of the 
 > * Find Minimum in Rotated Sorted Array I/II
 
 > * Search in Rotated Sorted Array I/II
+
+### Search for a range: (play with left/right pointer)
+
+> * First Bad Version
+
+> * Search for a Range
+
+> * Search Insert Position
+
+> * Guess Number Higher or Lower I/II
