@@ -122,6 +122,8 @@ class Solution(object):
 
 > Given target = 20, return false.
 
+The key of this solution is to start from the left-bottom.
+
 ```Python
 class Solution(object):
     def searchMatrix(self, matrix, target):
