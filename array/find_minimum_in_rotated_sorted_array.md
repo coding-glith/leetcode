@@ -15,6 +15,25 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+        if not nums:
+            return None
+        left, right = 0, len(nums)-1
+        while left < right:
+            mid = left + (right - left) / 2
+            if nums[mid] > nums[right]:
+                left = mid + 1
+            else:
+                right = mid   # should sete right = mid not mid - 1 here
+        return nums[left]
+```
+
+```Python
+class Solution(object):
+    def findMin(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
         result = 0
         for index in xrange(1, len(nums)):
             if nums[index] < nums[result]:
