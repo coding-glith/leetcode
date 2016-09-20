@@ -18,7 +18,7 @@
  * [Number of 1 Bits](number_of_1_bits.md)
  * [Reverse Bits](reverse_bits.md)
  * [Valid Sudoku](valid_sudoku.md)
- * [Guess Number Higher or Lower](guess_number_higher_or_lower.md)
+ * [Guess Number Higher or Lower I/II](guess_number_higher_or_lower.md)
  * [Fraction to Recurring Decimal](fraction_to_recurring_decimal.md)
  * [Line Reflection](line_reflection.md)
  * [Sort Transformed Array](sort_transformed_array.md)
