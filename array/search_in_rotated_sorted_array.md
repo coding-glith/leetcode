@@ -53,7 +53,7 @@ class Solution(object):
 
 > Write a function to determine if a given target is in the array.
 
-Duplicates won't affect the run-time complexity. For this solution using binary search, it's O(nlogn).
+Yes, it would affect the time complexity. Above has O(logn) to find out the pivot, but below only has O(n) solution.
 
 ```Python
 class Solution(object):
