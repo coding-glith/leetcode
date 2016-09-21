@@ -12,6 +12,8 @@
 
 > * The result can be in any order.
 
+The intersection here means values in both arrays.
+
 ```Python
 class Solution(object):
     def intersection(self, nums1, nums2):
