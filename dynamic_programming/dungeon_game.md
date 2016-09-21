@@ -24,6 +24,28 @@
 
 > * Any room can contain threats or power-ups, even the first room the knight enters and the bottom-right room where the princess is imprisoned.
 
-```Python
+The idea of this solution is to track back from the pricess position. Since we have to maintain 1 hp at each column, we need to get max(1, dp). Check further explanation from leetcode [discussion](https://discuss.leetcode.com/topic/7633/best-solution-i-have-found-with-explanations)
 
+```Python
+class Solution(object):
+    def calculateMinimumHP(self, dungeon):
+        """
+        :type dungeon: List[List[int]]
+        :rtype: int
+        """
+        if not dungeon or len(dungeon[0]) == 0:
+            return 0
+        row, col = len(dungeon), len(dungeon[0])
+        dp = [[0] * col for _ in xrange(row)]
+        for r in xrange(row-1, -1, -1):
+            for c in xrange(col-1, -1, -1):
+                if r == row - 1 and c == col - 1:
+                    dp[r][c] = max(1, 1 - dungeon[r][c])
+                elif r == row - 1:
+                    dp[r][c] = max(1, dp[r][c+1] - dungeon[r][c])
+                elif c == col - 1:
+                    dp[r][c] = max(1, dp[r+1][c] - dungeon[r][c])
+                else:
+                    dp[r][c] = max(1, min(dp[r+1][c], dp[r][c+1]) - dungeon[r][c])
+        return dp[0][0]
 ```
