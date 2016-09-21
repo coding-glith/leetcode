@@ -24,7 +24,7 @@
 
 > * Any room can contain threats or power-ups, even the first room the knight enters and the bottom-right room where the princess is imprisoned.
 
-The idea of this solution is to track back from the pricess position. Since we have to maintain 1 hp at each column, we need to get max(1, dp). Check further explanation from leetcode [discussion](https://discuss.leetcode.com/topic/7633/best-solution-i-have-found-with-explanations)
+The idea of this solution is to track back from the pricess position. Since we have to maintain 1 hp at each column, we need to get max(1, dp). Check further explanation from leetcode [discussion](https://discuss.leetcode.com/topic/7633/best-solution-i-have-found-with-explanations).
 
 ```Python
 class Solution(object):
