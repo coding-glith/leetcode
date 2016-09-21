@@ -85,3 +85,47 @@ class Solution(object):
                 return slow
         return None
 ```
+
+# Find the Duplicate Number
+
+> Given an array nums containing n + 1 integers where each integer is between 1 and n (inclusive), prove that at least one duplicate number must exist. Assume that there is only one duplicate number, find the duplicate one.
+
+> Note:
+
+> * You must not modify the array (assume the array is read only).
+
+> * You must use only constant, O(1) extra space.
+
+> * Your runtime complexity should be less than O(n2).
+
+> * There is only one duplicate number in the array, but it could be repeated more than once.
+
+The key idea is to play with the index and value to form a circle.
+
+say,
+
+```
+index: 0,1,2,3,4,5
+value: 2,5,4,1,3,3
+circle: 2->4->3->5-
+              ^   |
+              |<--|
+```
+
+```Python
+class Solution(object):
+    def findDuplicate(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        slow, fast = nums[0], nums[nums[0]]
+        while slow != fast:
+            slow = nums[slow]
+            fast = nums[nums[fast]]
+        fast = 0
+        while slow != fast:
+            slow = nums[slow]
+            fast = nums[fast]
+        return slow
+```
