@@ -11,7 +11,7 @@
  * [Palindrome Number](palindrome_number.md)
  * [Search a 2D Matrix](search_a_2d_matrix.md)
  * [Search for a Range](search_for_a_range.md)
- * [Search Insert Position / Longest Increasing Subsequence](search_insert_position.md)
+ * [Search Insert Position / Longest Increasing Subsequence / Russian Doll Envelopes](search_insert_position.md)
  * [Find Peak Element](find_peak_element.md)
  * [Contains Duplicate](contains_duplicate.md)
  * [Move Zeroes](move_zeroes.md)
