@@ -30,7 +30,7 @@ Binary search search a particular item by comparing the middle most item of the 
 
 > * Search for a Range
 
-> * Search Insert Position
+> * Search Insert Position / Longest Increasing Subsequence
 
 > * Guess Number Higher or Lower I/II
 
