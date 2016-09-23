@@ -30,10 +30,20 @@ Binary search search a particular item by comparing the middle most item of the 
 
 > * Search for a Range
 
-> * Search Insert Position / Longest Increasing Subsequence
+> * Search Insert Position
 
 > * Guess Number Higher or Lower I/II
 
 > * Find Peak Element
 
 > * Search a 2D Matrix I/II
+
+### Search Insert Position
+
+> * Search Insert Position
+
+> * Longest Increasing Subsequence
+
+> * Increasing Triplet Subsequence
+
+> * Russian Doll Envelopes
