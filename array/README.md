@@ -38,7 +38,7 @@
  * [Set Matrix Zeroes](set_matrix_zeroes.md)
  * [Wiggle Sort](wiggle_sort.md)
  * [Search in Rotated Sorted Array I/II](search_in_rotated_sorted_array.md)
- * [H-Index](h_index.md)
+ * [H-Index I/II](h_index.md)
  * [Top K Frequent Elements](top_k_frequent_elements.md)
  * [Sparse Matrix Multiplication](sparse_matrix_multiplication.md)
  * [Median of Two Sorted Arrays](median_of_two_sorted_arrays.md)
