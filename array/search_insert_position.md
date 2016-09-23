@@ -107,6 +107,61 @@ class Solution(object):
                 if right < left: return right + 1
 ```
 
+# Increasing Triplet Subsequence
+
+> Given an unsorted array return whether an increasing subsequence of length 3 exists or not in the array.
+
+> Formally the function should:
+
+> Return true if there exists i, j, k such that arr[i] < arr[j] < arr[k] given 0 ≤ i < j < k ≤ n-1 else return false.
+
+> Your algorithm should run in O(n) time complexity and O(1) space complexity.
+
+> Examples:
+
+>```
+Given [1, 2, 3, 4, 5],
+return true.
+Given [5, 4, 3, 2, 1],
+return false.
+```
+
+```Python
+class Solution(object):
+    def increasingTriplet(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+        if len(nums) < 3:
+            return False
+        dp = [0] * len(nums)
+        dp[0], idx = nums[0], 0
+        for i in xrange(1, len(nums)):
+            pos = self.binarySearch(dp, idx, nums[i])
+            if dp[pos] > nums[i]: dp[pos] = nums[i]
+            if pos > idx:
+                idx, dp[pos] = pos, nums[i]
+            if idx + 1 >= 3:
+                return True
+        return False
+    
+    def binarySearch(self, dp, idx, val):
+        left, right = 0, idx
+        while left <= right:
+            mid = left + (right - left) / 2
+            if dp[mid] == val:
+                return mid
+            elif dp[mid] < val:
+                left = mid + 1
+                if left > right:
+                    return left
+            else:
+                right = mid - 1
+                if right < left:
+                    return right + 1
+```
+
 # Russian Doll Envelopes
 
 > You have a number of envelopes with widths and heights given as a pair of integers (w, h). One envelope can fit into another if and only if both the width and height of one envelope is greater than the width and height of the other envelope.
