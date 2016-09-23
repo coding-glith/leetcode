@@ -47,3 +47,5 @@ Binary search search a particular item by comparing the middle most item of the 
 > * Increasing Triplet Subsequence
 
 > * Russian Doll Envelopes
+
+> * H-Index I/II
