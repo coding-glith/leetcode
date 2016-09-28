@@ -7,7 +7,7 @@
 
 ### Level order traversal
 
- * [Binary Tree Level Order Traversal](binary_tree_level_order_traversal.md)
+ * [Binary Tree (ZigZag) Level Order Traversal I/II](binary_tree_level_order_traversal.md)
 
 * [Construct Binary Tree](construct_binary_tree.md)
 * [Binary Tree Vertical Order Traversal](binary_tree_vertical_order_traversal.md)
