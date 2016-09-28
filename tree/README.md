@@ -15,6 +15,7 @@
 ### Recursive, after left/right subtree satisfy a condition, do something
  * [Invert Binary Tree](invert_binary_tree.md)
  * [Same Tree](same_tree.md)
+ * [Lowest Common Ancestor of a Binary Search Tree/Binary Tree](lowest_common_ancestor_of_a_binary_search_tree.md)
 
 * [Construct Binary Tree](construct_binary_tree.md)
 * [Symmetric Tree](symmetric_tree.md)
@@ -25,7 +26,6 @@
 * [Flatten Binary Tree to Linked List](flatten_binary_tree_to_linked_list.md)
 * [Validate Binary Search Tree](validate_binary_search_tree.md)
 * [Recover Binary Search Tree](recover_binary_search_tree.md)
-* [Lowest Common Ancestor of a Binary Search Tree/Binary Tree](lowest_common_ancestor_of_a_binary_search_tree.md)
 * [Closest Binary Search Tree Value I/II](closest_binary_search_tree_value.md)
 * [Binary Tree Paths](binary_tree_paths.md)
 * [Binary Tree Upside Down](binary_tree_upside_down.md)
