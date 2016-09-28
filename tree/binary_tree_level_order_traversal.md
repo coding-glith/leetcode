@@ -54,6 +54,39 @@ class Solution(object):
         self.dfs(root.right, result, level + 1)
 ```
 
+BFS.
+
+```Python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def levelOrder(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[List[int]]
+        """
+        if not root:
+            return []
+        res, level = [[root.val]], [root]
+        while level:
+            nextLevel, tmp = [], []
+            for node in level:
+                if node.left:
+                    nextLevel.append(node.left)
+                    tmp.append(node.left.val)
+                if node.right:
+                    nextLevel.append(node.right)
+                    tmp.append(node.right.val)
+            level = nextLevel
+            if tmp: res.append(tmp)
+        return res
+```
+
 # Binary Tree Level Order Traversal II
 
 > Given a binary tree, return the bottom-up level order traversal of its nodes' values. (ie, from left to right, level by level from leaf to root).
