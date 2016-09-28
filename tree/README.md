@@ -2,8 +2,8 @@
 
 ### Depth of a tree (DFS/BFS)
 
-* [Maximum/Minimum Depth of Binary Tree](depth_of_binary_tree.md)
-* [Balanced Binary Tree](balanced_binary_tree.md)
+ * [Maximum/Minimum Depth of Binary Tree](depth_of_binary_tree.md)
+ * [Balanced Binary Tree](balanced_binary_tree.md)
 
 
 * [Construct Binary Tree](construct_binary_tree.md)
