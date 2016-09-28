@@ -78,14 +78,67 @@ class Solution(object):
         :type root: TreeNode
         :rtype: int
         """
-        if root is None:
+        if not root:
             return 0
-        return self.getDepth(root)
+        if not root.left or not root.right:
+            return self.minDepth(root.left) + self.minDepth(root.right) + 1
+        return min(self.minDepth(root.left), self.minDepth(root.right)) + 1
+```
 
-    def getDepth(self, root):
-        if root is None:
+```Python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def minDepth(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        if not root:
+            return 0
+        return self.helper(root)
+        
+        
+    def helper(self, root):
+        if not root:   # in case root only have one child
             return sys.maxint
-        if root.left is None and root.right is None:
+        if not root.left and not root.right:   # for a leaf node
             return 1
-        return min(self.getDepth(root.left), self.getDepth(root.right)) + 1
+        return min(self.helper(root.left), self.helper(root.right)) + 1
+```
+
+Iterative solution. BFS.
+
+```Python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def minDepth(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        depth, level = 0, [root]
+        while root:
+            nextLevel = []
+            for node in level:
+                if not node.left and not node.right:   # meet the first leaf, return
+                    return depth + 1
+                if node.left:
+                    nextLevel.append(node.left)
+                if node.right:
+                    nextLevel.append(node.right)
+            level = nextLevel
+            depth += 1
+        return depth
 ```
