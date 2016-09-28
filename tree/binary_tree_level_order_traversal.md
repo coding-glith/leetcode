@@ -202,3 +202,38 @@ class Solution(object):
         self.dfs(root.left, result, level + 1)
         self.dfs(root.right, result, level + 1)
 ```
+
+BFS, set a flag to determine if level's value need to be reversed.
+
+```Python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def zigzagLevelOrder(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[List[int]]
+        """
+        if not root: return []
+        res, level, flag = [[root.val]], [root], 1
+        while level:
+            nextLevel, vals = [], []
+            for node in level:
+                if node.left:
+                    nextLevel.append(node.left)
+                    vals.append(node.left.val)
+                if node.right:
+                    nextLevel.append(node.right)
+                    vals.append(node.right.val)                      
+            level = nextLevel
+            if flag % 2 == 1:
+                vals.reverse()
+            if vals: res.append(vals)
+            flag += 1
+        return res
+```
