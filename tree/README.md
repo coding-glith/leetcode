@@ -9,8 +9,10 @@
 
  * [Binary Tree (ZigZag) Level Order Traversal I/II](binary_tree_level_order_traversal.md)
 
+### Vertical order traversal
+ * [Binary Tree Vertical Order Traversal](binary_tree_vertical_order_traversal.md)
+
 * [Construct Binary Tree](construct_binary_tree.md)
-* [Binary Tree Vertical Order Traversal](binary_tree_vertical_order_traversal.md)
 * [Symmetric Tree](symmetric_tree.md)
 * [Same Tree](same_tree.md)
 * [Path Sum](path_sum.md)
