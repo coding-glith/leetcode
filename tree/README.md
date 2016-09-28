@@ -2,20 +2,25 @@
 
 ### Depth of a tree (DFS/BFS)
 
- * [Maximum/Minimum Depth of Binary Tree](depth_of_binary_tree.md)
- * [Balanced Binary Tree](balanced_binary_tree.md)
+> * [Maximum/Minimum Depth of Binary Tree](depth_of_binary_tree.md)
+
+> * [Balanced Binary Tree](balanced_binary_tree.md)
 
 ### Level order traversal
 
- * [Binary Tree (ZigZag) Level Order Traversal I/II](binary_tree_level_order_traversal.md)
+> * [Binary Tree (ZigZag) Level Order Traversal I/II](binary_tree_level_order_traversal.md)
 
 ### Vertical order traversal (maintain vertical level based on level order traversal)
- * [Binary Tree Vertical Order Traversal](binary_tree_vertical_order_traversal.md)
+
+> * [Binary Tree Vertical Order Traversal](binary_tree_vertical_order_traversal.md)
 
 ### Recursive, after left/right subtree satisfy a condition, do something
- * [Invert Binary Tree](invert_binary_tree.md)
- * [Same Tree](same_tree.md)
- * [Lowest Common Ancestor of a Binary Search Tree/Binary Tree](lowest_common_ancestor_of_a_binary_search_tree.md)
+ 
+> * [Invert Binary Tree](invert_binary_tree.md)
+
+> * [Same Tree](same_tree.md)
+
+> * [Lowest Common Ancestor of a Binary Search Tree/Binary Tree](lowest_common_ancestor_of_a_binary_search_tree.md)
 
 * [Construct Binary Tree](construct_binary_tree.md)
 * [Symmetric Tree](symmetric_tree.md)
