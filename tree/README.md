@@ -5,9 +5,11 @@
  * [Maximum/Minimum Depth of Binary Tree](depth_of_binary_tree.md)
  * [Balanced Binary Tree](balanced_binary_tree.md)
 
+### Level order traversal
+
+ * [Binary Tree Level Order Traversal](binary_tree_level_order_traversal.md)
 
 * [Construct Binary Tree](construct_binary_tree.md)
-* [Binary Tree Level Order Traversal](binary_tree_level_order_traversal.md)
 * [Binary Tree Vertical Order Traversal](binary_tree_vertical_order_traversal.md)
 * [Symmetric Tree](symmetric_tree.md)
 * [Same Tree](same_tree.md)
