@@ -80,6 +80,8 @@
 ]
 ```
 
+Derived from level order traversal, the difference here is to maintain a level marker of which vertical level the current node is. Say root has level 0, it's left child is -1 and right child 1, and so on. Then sort the level and append to the result.
+
 ```Python
 # Definition for a binary tree node.
 # class TreeNode(object):
@@ -94,23 +96,16 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[List[int]]
         """
-        if not root:
-            return []
-        q, node, output = [], root, {}
-        q.append([node, 0])
-        while len(q) > 0:
-            node, level = q.pop(0)   # pop the first item
-            if level not in output:
-                output[level] = [node.val]
-            else:
-                output[level].append(node.val)
-
+        if not root: return []
+        res, queue, levelDict = [], [[root, 0]], {}
+        while queue:
+            node, vertLevel = queue.pop(0)
+            levelDict[vertLevel] = levelDict.get(vertLevel, []) + [node.val]
             if node.left:
-                q.append([node.left, level - 1])
+                queue.append([node.left, vertLevel - 1])
             if node.right:
-                q.append([node.right, level + 1])
-        res = []
-        for i in sorted(output.keys()):
-            res.append(output[i])
+                queue.append([node.right, vertLevel + 1])
+        for key in sorted(levelDict.keys()):
+            res.append(levelDict[key])
         return res
 ```
