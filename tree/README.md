@@ -32,6 +32,8 @@
 
 > * [Path Sum I/II](path_sum.md)
 
+> * [Binary Tree Maximum Path Sum](path_sum.md)
+
 * [Construct Binary Tree](construct_binary_tree.md)
 * [Binary Tree Depth Order Traversal](binary_tree_depth_order_traversal.md)
 * [Populating Next Right Pointers in Each Node](populating_next_right_pointers_in_each_node.md)
