@@ -6,17 +6,9 @@
 
 > * [Balanced Binary Tree](balanced_binary_tree.md)
 
-### Inorder traversal (both recusively and iteratively)
+### Preorder/Inorder/Postorder traversal (both recusively and iteratively)
 
-> * [Binary Tree Inorder Traversal](binary_tree_depth_order_traversal.md)
-
-### Preorder traversal
-
-> * [Binary Tree Preorder Traversal](binary_tree_depth_order_traversal.md)
-
-### Postorder traversal
-
-> * [Binary Tree Postorder Traversal](binary_tree_depth_order_traversal.md)
+> * [Binary Tree Preorder/Inorder/Postorder  Traversal](binary_tree_depth_order_traversal.md)
 
 ### Level order traversal
 
