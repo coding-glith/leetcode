@@ -67,6 +67,8 @@ class Solution(object):
 
 > Note: Recursive solution is trivial, could you do it iteratively?
 
+This iterative solution is based on a stack. The key is the order to push values into the stack and how to play with next node.
+
 ```Python
 # Definition for a binary tree node.
 # class TreeNode(object):
