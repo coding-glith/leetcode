@@ -28,11 +28,15 @@
 
 > * [Symmetric Tree](symmetric_tree.md)
 
-### Path sum, DFS
+### Path sum, DFS, root to leaf
 
 > * [Path Sum I/II](path_sum.md)
 
 > * [Binary Tree Maximum Path Sum](path_sum.md)
+
+> * [Sum Root to Leaf Numbers](sum_root_to_leaf_numbers.md)
+
+> * [Binary Tree Paths](binary_tree_paths.md)
 
 * [Construct Binary Tree](construct_binary_tree.md)
 * [Binary Tree Depth Order Traversal](binary_tree_depth_order_traversal.md)
@@ -42,14 +46,12 @@
 * [Validate Binary Search Tree](validate_binary_search_tree.md)
 * [Recover Binary Search Tree](recover_binary_search_tree.md)
 * [Closest Binary Search Tree Value I/II](closest_binary_search_tree_value.md)
-* [Binary Tree Paths](binary_tree_paths.md)
 * [Binary Tree Upside Down](binary_tree_upside_down.md)
 * [Largest BST Subtree](largest_bst_subtree.md)
 * [Count Complete Tree Nodes](count_complete_tree_nodes.md)
 * [Verify Preorder Sequence in Binary Search Tree](verify_preorder_sequence_in_binary_search_tree.md)
 * [Kth Smallest Element in a BST](kth_smallest_element_in_a_bst.md)
 * [Binary Tree Right Side View](binary_tree_right_side_view.md)
-* [Sum Root to Leaf Numbers](sum_root_to_leaf_numbers.md)
 * [Count Univalue Subtrees](count_univalue_subtrees.md)
 * [Binary Tree Longest Consecutive Sequence](binary_tree_longest_consecutive_sequence.md)
 * [Find Leaves of Binary Tree](find_leaves_of_binary_tree.md)
