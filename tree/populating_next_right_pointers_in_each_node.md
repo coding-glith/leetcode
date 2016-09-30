@@ -174,3 +174,42 @@ class Solution(object):
             root = root.next
         return None, None
 ```
+
+Donot understand why following code cannot pass oj.
+
+```Python
+# Definition for binary tree with next pointer.
+# class TreeLinkNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+#         self.next = None
+
+class Solution:
+    # @param root, a tree link node
+    # @return nothing
+    def connect(self, root):
+        if not root: return
+        root.next = None
+        self.popNext(root)
+    
+    def popNext(self, root):
+        if not root: return
+        if not root.left and not root.right: return
+        if root.left:
+            root.left.next = self.available(root, 0)
+        if root.right:
+            root.right.next = self.available(root, 1)
+        self.popNext(root.left)
+        self.popNext(root.right)
+    
+    def available(self, root, flag):
+        if not root: return None
+        if flag == 0 and root.right:
+            return root.right
+        if root.next:
+            if root.next.left: return root.next.left
+            else: return self.available(root.next, 0)
+        return None
+```
