@@ -38,9 +38,12 @@
 
 > * [Binary Tree Paths](binary_tree_paths.md)
 
+### Tree right view, next right, etc
+
+> * [Populating Next Right Pointers in Each Node I/II](populating_next_right_pointers_in_each_node.md)
+
 * [Construct Binary Tree](construct_binary_tree.md)
 * [Binary Tree Depth Order Traversal](binary_tree_depth_order_traversal.md)
-* [Populating Next Right Pointers in Each Node](populating_next_right_pointers_in_each_node.md)
 * [Convert Sorted List/Array to Binary Search Tree ](convert_sorted_listarray_to_binary_search_tree.md)
 * [Flatten Binary Tree to Linked List](flatten_binary_tree_to_linked_list.md)
 * [Validate Binary Search Tree](validate_binary_search_tree.md)
