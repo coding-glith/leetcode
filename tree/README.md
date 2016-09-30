@@ -6,6 +6,10 @@
 
 > * [Balanced Binary Tree](balanced_binary_tree.md)
 
+### Inorder traversal
+
+> * [Binary Tree Inorder Traversal](binary_tree_depth_order_traversal.md)
+
 ### Level order traversal
 
 > * [Binary Tree (ZigZag) Level Order Traversal I/II](binary_tree_level_order_traversal.md)
@@ -46,11 +50,14 @@
 
 > * [Binary Tree Right Side View](binary_tree_right_side_view.md)
 
+### Binary search tree (BST)
+
+> * [Validate Binary Search Tree](validate_binary_search_tree.md)
+
 * [Construct Binary Tree](construct_binary_tree.md)
 * [Binary Tree Depth Order Traversal](binary_tree_depth_order_traversal.md)
 * [Convert Sorted List/Array to Binary Search Tree ](convert_sorted_listarray_to_binary_search_tree.md)
 * [Flatten Binary Tree to Linked List](flatten_binary_tree_to_linked_list.md)
-* [Validate Binary Search Tree](validate_binary_search_tree.md)
 * [Recover Binary Search Tree](recover_binary_search_tree.md)
 * [Closest Binary Search Tree Value I/II](closest_binary_search_tree_value.md)
 * [Binary Tree Upside Down](binary_tree_upside_down.md)
