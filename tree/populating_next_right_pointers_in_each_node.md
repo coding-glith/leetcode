@@ -71,6 +71,32 @@ class Solution(object):
             currentNode = nextLevel
 ```
 
+```Python
+# Definition for binary tree with next pointer.
+# class TreeLinkNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+#         self.next = None
+
+class Solution:
+    # @param root, a tree link node
+    # @return nothing
+    def connect(self, root):
+        if not root: return root
+        root.next = None
+        self.popNext(root)
+
+    def popNext(self, root):
+        if not root: return
+        if not root.left and not root.right: return
+        root.left.next = root.right
+        root.right.next = root.next.left if root.next else None
+        self.popNext(root.left)
+        self.popNext(root.right)
+```
+
 # Populating Next Right Pointers in Each Node II
 
 > Follow up for problem "Populating Next Right Pointers in Each Node".
