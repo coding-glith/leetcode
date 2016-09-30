@@ -129,7 +129,7 @@ class Solution:
     4-> 5 -> 7 -> NULL
 ```
 
-The idea is to use a function called popNext() to help get the nextNode in the same level and itsChild. Moreover, when moving to the next level, popNext() helps to check if the node is a leaf, if yes, it will check its next neigbor otherwise return None and finish the loop.
+The idea is to use a function called popNext() to help get the nextNode in the same level and itsChild. Moreover, when moving to the next level, popNext() helps to check if the node is a leaf, if yes, it will check its next neighbor otherwise return None and finish the loop.
 
 ```Python
 # Definition for binary tree with next pointer.
