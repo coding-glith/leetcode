@@ -14,6 +14,8 @@
 
 > * [Binary Tree Vertical Order Traversal](binary_tree_vertical_order_traversal.md)
 
+> * [Binary Tree Paths](binary_tree_paths.md)
+
 ### Recursive, after left/right subtree satisfy a condition, do something
  
 > * [Invert Binary Tree](invert_binary_tree.md)
@@ -42,6 +44,8 @@
 
 > * [Populating Next Right Pointers in Each Node I/II](populating_next_right_pointers_in_each_node.md)
 
+> * [Binary Tree Right Side View](binary_tree_right_side_view.md)
+
 * [Construct Binary Tree](construct_binary_tree.md)
 * [Binary Tree Depth Order Traversal](binary_tree_depth_order_traversal.md)
 * [Convert Sorted List/Array to Binary Search Tree ](convert_sorted_listarray_to_binary_search_tree.md)
@@ -54,7 +58,6 @@
 * [Count Complete Tree Nodes](count_complete_tree_nodes.md)
 * [Verify Preorder Sequence in Binary Search Tree](verify_preorder_sequence_in_binary_search_tree.md)
 * [Kth Smallest Element in a BST](kth_smallest_element_in_a_bst.md)
-* [Binary Tree Right Side View](binary_tree_right_side_view.md)
 * [Count Univalue Subtrees](count_univalue_subtrees.md)
 * [Binary Tree Longest Consecutive Sequence](binary_tree_longest_consecutive_sequence.md)
 * [Find Leaves of Binary Tree](find_leaves_of_binary_tree.md)
