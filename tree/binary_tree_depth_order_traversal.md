@@ -47,6 +47,34 @@ class Solution(object):
         return result
 ```
 
+Recusive.
+
+```Python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def preorderTraversal(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[int]
+        """
+        if not root: return []
+        res = []
+        self.preTravs(res, root)
+        return res
+    
+    def preTravs(self, res, root):
+        if not root: return
+        res.append(root.val)
+        self.preTravs(res, root.left)
+        self.preTravs(res, root.right)
+```
+
 # Binary Tree Inorder Traversal
 
 > Given a binary tree, return the inorder traversal of its nodes' values.
@@ -177,4 +205,32 @@ class Solution(object):
             else:
                 tmpNode = currentNode.right
         return result
+```
+
+Recursive solution
+
+```Python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def postorderTraversal(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[int]
+        """
+        if not root: return []
+        res = []
+        self.postTravs(res, root)
+        return res
+    
+    def postTravs(self, res, root):
+        if not root: return
+        self.postTravs(res, root.left)
+        self.postTravs(res, root.right)
+        res.append(root.val)
 ```
