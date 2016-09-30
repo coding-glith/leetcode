@@ -16,6 +16,8 @@
 
 > You should return [1, 3, 4].
 
+The key in this solution is that we always check the right child first. if it exists, then append, so left child will not satisfy the condition of len(res) == vetLevel.
+
 ```Python
 # Definition for a binary tree node.
 # class TreeNode(object):
