@@ -45,3 +45,32 @@ class Solution(object):
             return 0
         return self.countNodes(root.left) + self.countNodes(root.right) + 1
 ```
+
+Intuitive solution is to get the inorder sequence and return the kth one.
+
+```Python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def kthSmallest(self, root, k):
+        """
+        :type root: TreeNode
+        :type k: int
+        :rtype: int
+        """
+        if not root: return None
+        inorder = []
+        self.getInorder(inorder, root)
+        return inorder[k-1]
+        
+    def getInorder(self, inorder, root):
+        if not root: return
+        self.getInorder(inorder, root.left)
+        inorder.append(root.val)
+        self.getInorder(inorder, root.right)
+```
