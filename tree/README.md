@@ -54,6 +54,8 @@
 
 > * [Validate Binary Search Tree](validate_binary_search_tree.md)
 
+> * [Inorder Successor in BST](inorder_successor_in_bst.md)
+
 * [Construct Binary Tree](construct_binary_tree.md)
 * [Binary Tree Depth Order Traversal](binary_tree_depth_order_traversal.md)
 * [Convert Sorted List/Array to Binary Search Tree ](convert_sorted_listarray_to_binary_search_tree.md)
@@ -68,5 +70,4 @@
 * [Count Univalue Subtrees](count_univalue_subtrees.md)
 * [Binary Tree Longest Consecutive Sequence](binary_tree_longest_consecutive_sequence.md)
 * [Find Leaves of Binary Tree](find_leaves_of_binary_tree.md)
-* [Inorder Successor in BST](inorder_successor_in_bst.md)
 * [Binary Search Tree Iterator](binary_search_tree_iterator.md)
