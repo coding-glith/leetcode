@@ -68,7 +68,9 @@
 
 > * [Flatten Binary Tree to Linked List](flatten_binary_tree_to_linked_list.md)
 
-* [Construct Binary Tree](construct_binary_tree.md)
+> * [Construct Binary Tree from Preorder&Inorder/Inorder&Postorder Traversal](construct_binary_tree.md)
+
+
 * [Binary Tree Depth Order Traversal](binary_tree_depth_order_traversal.md)
 * [Flatten Binary Tree to Linked List](flatten_binary_tree_to_linked_list.md)
 * [Recover Binary Search Tree](recover_binary_search_tree.md)
