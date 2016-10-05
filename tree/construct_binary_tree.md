@@ -19,7 +19,7 @@ in-order traversal  : [4, 2, 5, 1, 6, 3, 7]
 
 post-order traversal: [4, 5, 2, 6, 7, 3, 1]
 
-To solve the problem, the idea is that pre-order traversal start from the root, if we find the root position in in-order, the left part is the left sub-tree of that root, and right part is the right sub-tree. Then we do the same for the subtree recursively.
+The key idea is to keep the index instead of passing a new array to do iteration. Otherwise it will exceed memory limit. To solve the problem, the idea is that pre-order traversal start from the root, if we find the root position in in-order, the left part is the left sub-tree of that root, and right part is the right sub-tree. Then we do the same for the subtree recursively.
 
 ```Python
 # Definition for a binary tree node.
