@@ -58,12 +58,13 @@
 
 > * [Kth Smallest Element in a BST](kth_smallest_element_in_a_bst.md)
 
+> * [Closest Binary Search Tree Value I/II](closest_binary_search_tree_value.md)
+
 * [Construct Binary Tree](construct_binary_tree.md)
 * [Binary Tree Depth Order Traversal](binary_tree_depth_order_traversal.md)
 * [Convert Sorted List/Array to Binary Search Tree ](convert_sorted_listarray_to_binary_search_tree.md)
 * [Flatten Binary Tree to Linked List](flatten_binary_tree_to_linked_list.md)
 * [Recover Binary Search Tree](recover_binary_search_tree.md)
-* [Closest Binary Search Tree Value I/II](closest_binary_search_tree_value.md)
 * [Binary Tree Upside Down](binary_tree_upside_down.md)
 * [Largest BST Subtree](largest_bst_subtree.md)
 * [Count Complete Tree Nodes](count_complete_tree_nodes.md)
