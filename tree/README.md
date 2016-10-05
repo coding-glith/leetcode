@@ -52,7 +52,7 @@
 
 > * [Binary Tree Right Side View](binary_tree_right_side_view.md)
 
-### Binary search tree (BST)
+### Binary search tree (BST): search a value; convert from array to tree
 
 > * [Validate Binary Search Tree](validate_binary_search_tree.md)
 
