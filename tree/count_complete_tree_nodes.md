@@ -6,7 +6,7 @@
 
 > In a complete binary tree every level, except possibly the last, is completely filled, and all nodes in the last level are as far left as possible. It can have between 1 and 2h nodes inclusive at the last level h.
 
-Count one by one is slow.
+Count one by one is slow. The maximum number of nodes in a binary tree is 1+2+...+2^h = 2^(k+1)-1. Check the height of root's left and right subtree, if height is the same, then count 2^k-1+1 = 2^k and go right.
 
 Iterative solution.
 
