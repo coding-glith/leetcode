@@ -6,6 +6,8 @@
 
 > * [Balanced Binary Tree](balanced_binary_tree.md)
 
+> * [Count Complete Tree Nodes](count_complete_tree_nodes.md)
+
 ### Preorder/Inorder/Postorder traversal (both recusively and iteratively)
 
 > * [Binary Tree Preorder/Inorder/Postorder  Traversal](binary_tree_depth_order_traversal.md)
@@ -67,7 +69,6 @@
 * [Recover Binary Search Tree](recover_binary_search_tree.md)
 * [Binary Tree Upside Down](binary_tree_upside_down.md)
 * [Largest BST Subtree](largest_bst_subtree.md)
-* [Count Complete Tree Nodes](count_complete_tree_nodes.md)
 * [Verify Preorder Sequence in Binary Search Tree](verify_preorder_sequence_in_binary_search_tree.md)
 * [Count Univalue Subtrees](count_univalue_subtrees.md)
 * [Binary Tree Longest Consecutive Sequence](binary_tree_longest_consecutive_sequence.md)
