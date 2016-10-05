@@ -58,6 +58,8 @@
 
 > * [Inorder Successor in BST](inorder_successor_in_bst.md)
 
+> * [Recover Binary Search Tree](recover_binary_search_tree.md)
+
 > * [Kth Smallest Element in a BST](kth_smallest_element_in_a_bst.md)
 
 > * [Closest Binary Search Tree Value I/II](closest_binary_search_tree_value.md)
@@ -73,7 +75,6 @@
 
 * [Binary Tree Depth Order Traversal](binary_tree_depth_order_traversal.md)
 * [Flatten Binary Tree to Linked List](flatten_binary_tree_to_linked_list.md)
-* [Recover Binary Search Tree](recover_binary_search_tree.md)
 * [Binary Tree Upside Down](binary_tree_upside_down.md)
 * [Largest BST Subtree](largest_bst_subtree.md)
 * [Verify Preorder Sequence in Binary Search Tree](verify_preorder_sequence_in_binary_search_tree.md)
