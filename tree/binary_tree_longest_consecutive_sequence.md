@@ -56,3 +56,31 @@ class Solution(object):
                     stack.append([child, l])
         return res
 ```
+
+Recursive Solution.
+
+```Python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def longestConsecutive(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        if not root: return 0
+        return max(self.getSeq(1, root.left, root.val), self.getSeq(1, root.right, root.val))
+
+    def getSeq(self, count, root, val):
+        if not root: return count
+        if root.val - val == 1: count += 1
+        else: count = 1
+        left = self.getSeq(count, root.left, root.val)
+        right = self.getSeq(count, root.right, root.val)
+        return max(left, right, count)
+```
