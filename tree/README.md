@@ -82,12 +82,12 @@
 
 > * [Count Univalue Subtrees](count_univalue_subtrees.md)
 
+> * [Largest BST Subtree](largest_bst_subtree.md)
+
 ### Bottom up, get level from leaf to root
 
 > * [Find Leaves of Binary Tree](find_leaves_of_binary_tree.md)
 
-* [Binary Tree Depth Order Traversal](binary_tree_depth_order_traversal.md)
 * [Flatten Binary Tree to Linked List](flatten_binary_tree_to_linked_list.md)
-* [Largest BST Subtree](largest_bst_subtree.md)
 * [Verify Preorder Sequence in Binary Search Tree](verify_preorder_sequence_in_binary_search_tree.md)
 * [Binary Search Tree Iterator](binary_search_tree_iterator.md)
