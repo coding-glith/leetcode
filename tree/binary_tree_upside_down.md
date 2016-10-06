@@ -46,7 +46,7 @@ class Solution(object):
         return prev
 ```
 
-Recursive solution. Don't quite understand yet. :-(
+Recursive solution.
 
 ```Python
 # Definition for a binary tree node.
