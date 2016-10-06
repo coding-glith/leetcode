@@ -24,8 +24,6 @@
 
 > Can you figure out ways to solve it with O(n) time complexity?
 
-Not quite understand yet. :-(
-
 ```Python
 # Definition for a binary tree node.
 # class TreeNode(object):
@@ -40,12 +38,15 @@ class Solution(object):
         :type root: TreeNode
         :rtype: int
         """
-        def dfs(root):
-            if not root:
-                return 0, 0, float('inf'), float('-inf')
-            leftGlobal, leftLocal, min1, max1 = dfs(root.left)
-            rightGlobal, rightLocal, min2, max2 = dfs(root.right)
-            local = leftLocal + 1 + rightLocal if max1 < root.val < min2 else float('-inf')
-            return max(leftGlobal, rightGlobal, local), local, min(min1, root.val), max(max2, root.val)
-        return dfs(root)[0]
+        return self.getSub(root)[0]
+
+    def getSub(self, root):
+        if not root:
+            return 0, 0, sys.maxint, -sys.maxint-1
+        leftRes, leftCount, leftmin, leftmax = self.getSub(root.left)
+        rightRes, rightCount, rightmin, rightmax = self.getSub(root.right)
+        if root.val > leftmax and root.val < rightmin:
+            count = leftCount + rightCount + 1
+        else: count = -sys.maxint - 1   # for below[0] will not return this if don't satisfy above condition
+        return max(leftRes, rightRes, count), count, min(leftmin, root.val), max(rightmax, root.val)
 ```
