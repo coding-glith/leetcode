@@ -40,7 +40,7 @@
 
 > Returns [4, 5, 3], [2], [1].
 
-The idea is to use a dictionary to store the level and corresponding nodes' value.
+Bottom up solution, calculate level from leaf to parent.
 
 ```Python
 # Definition for a binary tree node.
@@ -56,18 +56,18 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[List[int]]
         """
-        def levelDict(root, d):
-            if not root:
-                return 0
-            left = levelDict(root.left, d)
-            right = levelDict(root.right, d)
-            level = max(left, right) + 1
-            d[level] += [root.val]
-            return level
-
-        dic, res = collections.defaultdict(list), []
-        levelDict(root, dic)
-        for i in dic:
-            res.append(dic[i])
+        if not root: return []
+        res = []
+        self.getLeaves(res, root)
         return res
+
+    def getLeaves(self, res, root):
+        if not root: return 0
+        leftLevel = self.getLeaves(res, root.left)
+        rightLevel = self.getLeaves(res, root.right)
+        level = max(leftLevel, rightLevel) + 1
+        if len(res) <= level - 1:
+            res.append([])
+        res[level-1].append(root.val)
+        return level
 ```
