@@ -32,6 +32,8 @@
 
 > * Unique Binary Search Trees I/II
 
+> * [Sum of Left Leaves](sum_of_left_leaves.md)
+
 ### Compare values, both DFS/BFS
 
 > * [Symmetric Tree](symmetric_tree.md)
@@ -89,4 +91,3 @@
 * [Largest BST Subtree](largest_bst_subtree.md)
 * [Verify Preorder Sequence in Binary Search Tree](verify_preorder_sequence_in_binary_search_tree.md)
 * [Binary Search Tree Iterator](binary_search_tree_iterator.md)
-* [Sum of Left Leaves](sum_of_left_leaves.md)
