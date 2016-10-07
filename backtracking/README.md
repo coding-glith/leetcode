@@ -7,11 +7,12 @@ In backtracking algorithms you try to build a solution one step at a time. If at
 
 >  * [Permutations](permutations.md)
 
+> * [Permutation Sequence](permutation_sequence.md)
+
  * [Combinations](combinations.md)
  * [Combination Sum](combination_sum.md)
  * [Letter Combinations of a Phone Number](letter_combinations_of_a_phone_number.md)
  * [Factor Combinations](factor_combinations.md)
  * [Subsets](subsets.md)
- * [Permutation Sequence](permutation_sequence.md)
  * [Generate Parentheses](generate_parentheses.md)
  * [Restore IP Addresses](restore_ip_addresses.md)
