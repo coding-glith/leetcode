@@ -17,7 +17,16 @@
 ]
 ```
 
-This idea takes advantage that result values is getting from 1 to n.
+This idea takes advantage that result values is getting from 1 to n. And the result pattern is:
+
+1,2
+1,3
+1,4
+2,3
+2,4
+3,4
+
+Do incrementation, when reach to the end of k restrictions, start over and increment by 1. Another key is to set the later to be the same as previous value then do iteration.
 
 ```Python
 class Solution(object):
