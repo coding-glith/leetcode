@@ -11,6 +11,8 @@ In backtracking algorithms you try to build a solution one step at a time. If at
 
 > * [Permutation Sequence](permutation_sequence.md)
 
+> * [Palindrome Permutation I/II](../string/palindrome_permutation.md)
+
  * [Combinations](combinations.md)
  * [Combination Sum](combination_sum.md)
  * [Letter Combinations of a Phone Number](letter_combinations_of_a_phone_number.md)
