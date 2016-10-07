@@ -23,22 +23,18 @@ class Solution(object):
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
         """
-        # from end to start, find longest increasing sequence
-        piv = -1
+        if len(nums) <= 1: return
+        piv = -1  # from end to start, piv is the first elem smaller than local peak
         for i in xrange(len(nums)-1, 0, -1):
             if nums[i] > nums[i-1]:
                 piv = i - 1
                 break
-        if piv == -1:
+        if piv == -1:   # maximum permutation sequence
             nums.reverse()
             return
-        # find rightmost successor to pivot, then swap
         for i in xrange(len(nums)-1, piv, -1):
             if nums[i] > nums[piv]:
-                tmp = nums[i]
-                nums[i] = nums[piv]
-                nums[piv] = tmp
+                nums[i], nums[piv] = nums[piv], nums[i]
                 break
-        # reverse
-        nums[piv+1:] = nums[piv+1:][::-1]
+        nums[piv+1:] = nums[piv+1:][::-1]   # the sequence after piv is in decreasing order, need to reverse to inceasing order
 ```
