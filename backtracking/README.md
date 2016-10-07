@@ -3,9 +3,11 @@
 In backtracking algorithms you try to build a solution one step at a time. If at some step it become clear that the current path that you are on cannot lead to a solution you go back to the previous step (backtrack) and choose a different path.
 
 
-### given array, return in a form [[]]
+### permutations
 
->  * [Permutations](permutations.md)
+> * [Permutations](permutations.md)
+
+> * [Next Permutation](../array/next_permutation.md)
 
 > * [Permutation Sequence](permutation_sequence.md)
 
