@@ -21,6 +21,8 @@
 ]
 ```
 
+Maintain a start to make sure that there's no duplicate in the results.
+
 ```Python
 class Solution(object):
     def combinationSum(self, candidates, target):
@@ -29,21 +31,20 @@ class Solution(object):
         :type target: int
         :rtype: List[List[int]]
         """
-        if len(candidates) == 0:
-            return [[]]
-        results = []
-        self.combineSum(results, [], 0, candidates, target)
-        return results
-
-    def combineSum(self, results, subList, start, candidates, target):
+        if not candidates: return [[]]
+        res = []
+        self.getCombine(res, [], 0, candidates, target)
+        return res
+    
+    def getCombine(self, res, sub, start, nums, target):
         if target == 0:
-            results.append(list(subList))
+            res.append(list(sub))
             return
-        for indx in range(start, len(candidates)):
-            if target > 0 and candidates[indx] <= target:
-                subList.append(candidates[indx])
-                self.combineSum(results, subList, indx, candidates, target-candidates[indx])
-                subList.pop()
+        for i in xrange(start, len(nums)):
+            if target - nums[i] >= 0:
+                sub.append(nums[i])
+                self.getCombine(res, sub, i, nums, target - nums[i])
+                sub.pop()
 ```
 
 # Combination Sum II
