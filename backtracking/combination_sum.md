@@ -123,19 +123,17 @@ class Solution(object):
         :type n: int
         :rtype: List[List[int]]
         """
-        if k <= 0 or n <= 0:
-            return [[]]
-        result = []
-        self.combineSum(result, [], 1, k, n)
-        return result
+        res = []
+        self.getCombine(res, [], 1, k, n)
+        return res
 
-    def combineSum(self, result, subList, start, k, n):
-        if n == 0 and len(subList) == k and subList not in result:
-            result.append(list(subList))
+    def getCombine(self, res, sub, idx, k, target):
+        if len(sub) == k and target == 0:
+            res.append(list(sub))
             return
-        for num in range(start, 10):
-            if num <= n:
-                subList.append(num)
-                self.combineSum(result, subList, num+1, k, n - num)
-                subList.pop()
+        for i in xrange(idx, 10):
+            if target - i >= 0:
+                sub.append(i)
+                self.getCombine(res, sub, i+1, k, target - i)
+                sub.pop()
 ```
