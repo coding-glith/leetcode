@@ -17,7 +17,7 @@ In backtracking algorithms you try to build a solution one step at a time. If at
 
 > * [Combinations](combinations.md)
 
-> * [Combination Sum](combination_sum.md)
+> * [Combination Sum I/II/III/IV](combination_sum.md)
 
 > * [Factor Combinations](factor_combinations.md)
 
