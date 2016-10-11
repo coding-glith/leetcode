@@ -167,6 +167,8 @@ Therefore the output is 7.
 
 > * What limitation we need to add to the question to allow negative numbers?
 
+If negative numbers are allowed, then need to limit the number of times a value can be used in the array, otherwise it will be infinite number of results.
+
 DP solution
 
 ```Python
