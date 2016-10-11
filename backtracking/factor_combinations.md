@@ -53,16 +53,17 @@ class Solution(object):
         :type n: int
         :rtype: List[List[int]]
         """
-        if n <= 1:
-            return []
-        def factor(n, elem, resList, result):
-            while elem * elem <= n:  # no need to consider value > n/2
-                if n % elem == 0:
-                    result.append(list(resList+[elem, n/elem]))
-                    factor(n/elem, elem, resList+[elem], result)
-                elem += 1
-            return result
-        return factor(n, 2, [], [])
+        if n <= 1: return []
+        return self.getFact(n, 2, [], [])
+
+    def getFact(self, target, val, sub, res):
+        while val * val <= target:   # only check the firsrt half part
+            if target % val == 0:  # if can divide
+                res.append(list(sub + [val, target / val]))   # to accompany val * val <= target
+                # currently sub didn't change
+                self.getFact(target / val, val, sub + [val], res)   # already checked variable "val"
+            val += 1
+        return res
 ```
 
 The following code is "Memory Limit Exceeded" for input = 23848713. :-(
