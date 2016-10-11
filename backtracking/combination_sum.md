@@ -167,6 +167,49 @@ Therefore the output is 7.
 
 > * What limitation we need to add to the question to allow negative numbers?
 
-```Python
+DP solution
 
+```Python
+class Solution(object):
+    def combinationSum4(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: int
+        """
+        if not nums: return 0
+        nums.sort()
+        res = [0] * (target + 1)
+        for goal in xrange(1, len(res)):
+            for val in nums:
+                if val > goal: break
+                elif val == goal: res[goal] += 1
+                else: res[goal] += res[goal - val]
+        return res[target]
+```
+
+Use backtracking to get all possible combinations and return the length of the results. But this requires extra steps, we don't need all the combinations.
+
+```Python
+class Solution(object):
+    def combinationSum4(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: int
+        """
+        if not nums: return 0
+        res = []
+        self.getCombine(res, [], nums, target)
+        return len(res)
+
+    def getCombine(self, res, sub, nums, target):
+        if target == 0:
+            res.append(list(sub))
+            return
+        for val in nums:
+            if target - val >= 0:
+                sub.append(val)
+                self.getCombine(res, sub, nums, target - val)
+                sub.pop()
 ```
