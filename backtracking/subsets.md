@@ -64,6 +64,34 @@ class Solution(object):
 ]
 ```
 
+use extra space to mark for duplicates.
+
+```Python
+class Solution(object):
+    def subsetsWithDup(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        if not nums: return [[]]
+        nums.sort()
+        res, visited = [], [0] * len(nums)
+        self.getSub(res, [], visited, 0, nums)
+        return res
+
+    def getSub(self, res, sub, visited, idx, nums):
+        res.append(list(sub))
+        for i in xrange(idx, len(nums)):
+            if visited[i] == 1 or (i != 0 and nums[i] == nums[i-1] and visited[i-1] == 0): continue
+            sub.append(nums[i])
+            visited[i] = 1
+            self.getSub(res, sub, visited, i + 1, nums)
+            sub.pop()
+            visited[i] = 0
+```
+
+Below method need to go through res every time, which is time consuming.
+
 ```Python
 class Solution(object):
     def subsetsWithDup(self, nums):
