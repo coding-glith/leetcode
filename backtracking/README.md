@@ -25,7 +25,9 @@ In backtracking algorithms you try to build a solution one step at a time. If at
 
 > * [Subsets](subsets.md)
  
- 
+### construct sub-problem
+
+> * [Generalized Abbreviation](generalized_abbreviation.md)
  
  * [Generate Parentheses](generate_parentheses.md)
  * [Restore IP Addresses](restore_ip_addresses.md)
