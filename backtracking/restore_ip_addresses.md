@@ -23,9 +23,10 @@ class Solution(object):
     def helper(self, s, n, sub, res, stdlen):
         if len(s) < n or len(s) > 3 * n: return
         if n == 0 and len(sub[1:]) - 3 == stdlen:   # need to subtract 3 '.'s
-            res.append(sub[1:])
+            res.append(sub[1:])   # sub[0] = "."
             return
         for i in xrange(min(3, len(s))):
             if int(s[:(i+1)]) < 256:
-                self.helper(s[(i+1):], n-1, sub+"."+str(int(s[:(i+1)])), res, stdlen)   # the str(int()) is necessary
+                self.helper(s[(i+1):], n-1, sub+"."+str(int(s[:(i+1)])), res, stdlen)
+                # the str(int()) is necessary, for case: "010010", don't allow 010.0.1.0
 ```
