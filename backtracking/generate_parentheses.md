@@ -16,13 +16,22 @@
 
 ```Python
 class Solution(object):
-    def generateParenthesis(self, n, o=0):
+    def generateParenthesis(self, n):
         """
         :type n: int
         :rtype: List[str]
         """
-        if n > 0 and o >= 0:
-            return ['(' + p for p in self.generateParenthesis(n-1, o+1)] + \
-                   [')' + p for p in self.generateParenthesis(n, o-1)]
-        return [')' * o] if n == 0 else []
+        if n < 1: return []
+        res = []
+        self.getParen(res, "", n, 0)
+        return res
+
+    def getParen(self, res, sub, left, right):
+        if left == 0 and right == 0:
+            res.append(sub)
+            return
+        if left > 0:
+            self.getParen(res, sub+"(", left-1, right+1)
+        if right > 0:
+            self.getParen(res, sub+")", left, right-1)
 ```
