@@ -22,7 +22,6 @@
  * [Meeting Rooms](meeting_rooms.md)
  * [Single Number](single_number.md)
  * [Game of Life](game_of_life.md)
- * [Word Search](word_search.md)
  * [Spiral Matrix I/II](spiral_matrix.md)
  * [Summary Ranges/Missing Ranges](summary_ranges.md)
  * [Range Addition](range_addition.md)
