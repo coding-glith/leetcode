@@ -71,7 +71,7 @@ class Solution(object):
 
 > You may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).
 
-The idea is to check for each index inside list of the maximum profit in the left and right, then the maximum sum would be the maximum profit for two transactions limit.
+The idea is to maintain two array left and right, left keeps the max profit from left to the index, right keeps the max profit from index to right. Then go through the two array to find out the max two transactions.
 
 ```Python
 class Solution(object):
