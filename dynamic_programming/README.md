@@ -1,11 +1,14 @@
 # Dynamic Programming
 
-### one dimensional, current state depends on previous states
+### One dimensional, current state depends on previous states
 
 > * [Climbing Stairs](climbing_stairs.md)
 
+### Maintain global max/min
 
- * [Best Time To Buy And Sell Stock I/II/III/IV/with cooldown](best_time_to_buy_and_sell_stock.md)
+> * [Best Time To Buy And Sell Stock I/II/III/IV/with cooldown](best_time_to_buy_and_sell_stock.md)
+
+
  * [Unique Paths](unique_paths.md)
  * [Minimum Path Sum](minimum_path_sum.md)
  * [Maximum (Product) Subarray](maximum_subarray.md)
