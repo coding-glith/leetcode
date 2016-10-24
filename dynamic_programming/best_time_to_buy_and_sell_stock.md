@@ -117,7 +117,17 @@ class Solution(object):
 
 > You may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).
 
-Didn't fully understand yet :-(
+From leetcode [discussion](https://discuss.leetcode.com/topic/26169/clean-java-dp-solution-with-comment):
+
+```
+/**
+ * dp[i, j] represents the max profit up until prices[j] using at most i transactions. 
+ * dp[i, j] = max(dp[i, j-1], prices[j] - prices[jj] + dp[i-1, jj]) { jj in range of [0, j-1] }
+ *          = max(dp[i, j-1], prices[j] + max(dp[i-1, jj] - prices[jj]))
+ * dp[0, j] = 0; 0 transactions makes 0 profit
+ * dp[i, 0] = 0; if there is only one price data point you can't make any transaction.
+ */
+ ```
 
 ```Python
 class Solution(object):
@@ -127,23 +137,23 @@ class Solution(object):
         :type prices: List[int]
         :rtype: int
         """
-        if len(prices) <= 1:
-            return 0
-        if k >= len(prices) / 2:  # becomes unlimited number of transaction
-            return self.maxProfitNoLimit(prices)
+        if len(prices) <= 1: return 0
 
-        dp = [None] * (2 * k + 1)
-        dp[0] = 0
-        for day in xrange(len(prices)):
-            for transac in xrange(1, min(2*k, day+1)+1):
-                dp[transac] = max(dp[transac], dp[transac-1]+prices[day]*[1,-1][transac%2])
-        return dp[2*k]
+        def maxTrans(prices):
+            res = 0
+            for i in xrange(1, len(prices)):
+                res = max(res, res + prices[i] - prices[i-1])
+            return res
+        if k >= len(prices) / 2:
+            return maxTrans(prices)
 
-    def maxProfitNoLimit(self, prices):
-        maxProfit = 0
-        for indx in xrange(1, len(prices)):
-            maxProfit = max(maxProfit, maxProfit + prices[indx] - prices[indx - 1])
-        return maxProfit
+        dp = [[0 for j in xrange(len(prices))] for i in xrange(k+1)]
+        for num in xrange(1, k+1):
+            localMax = dp[num-1][0] - prices[0]
+            for day in xrange(1, len(prices)):
+                dp[num][day] = max(dp[num][day-1], prices[day] + localMax)
+                localMax = max(localMax, dp[num-1][day] - prices[day])
+        return dp[k][-1]
 ```
 
 # Best Time to Buy and Sell Stock with Cooldown
