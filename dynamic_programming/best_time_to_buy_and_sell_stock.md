@@ -174,7 +174,7 @@ maxProfit = 3
 transactions = [buy, sell, cooldown, buy, sell]
 ```
 
-Didn't fully understand yet :-(
+State transition method from leetcode [discussion](https://discuss.leetcode.com/topic/30680/share-my-dp-solution-by-state-machine-thinking)
 
 ```Python
 class Solution(object):
@@ -183,13 +183,12 @@ class Solution(object):
         :type prices: List[int]
         :rtype: int
         """
-        if len(prices) <= 1:
-            return 0
-        sell, buy, prev_sell, prev_buy = 0, -prices[0], 0, 0
+        if len(prices) <= 1: return 0
+        rest, buy, sell = 0, -prices[0], 0   # for sell in index 0
         for price in prices:
-            prev_buy = buy
-            buy = max(prev_sell - price, prev_buy)
             prev_sell = sell
-            sell = max(prev_buy + price, prev_sell)
-        return sell
+            sell = buy + price   # transit from buy
+            buy = max(buy, rest - price)   # stay at buy or transit from rest
+            rest = max(rest, prev_sell)    # stay at rest or transit from buy
+        return max(rest, sell)
 ```
