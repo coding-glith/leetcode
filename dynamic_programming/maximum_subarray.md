@@ -10,7 +10,7 @@
 
 > If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.
 
-The idea here is that maxSub[indx] is the maximum sum from 0 to indx, and the value of indx should always be considered.
+The idea here is that maxSub[indx] is the maximum sum from 0 to indx, and the value of indx should always be included. global max is updated with local value.
 
 ```Python
 class Solution(object):
@@ -19,18 +19,13 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        if len(nums) == 0:
-            return
-        maxSub = [0 for indx in range(len(nums))]
+        if not nums: return 0
+        maxSub, res = [0] * len(nums), nums[0]
         maxSub[0] = nums[0]
-        maxSum = nums[0]
-        for indx in range(1, len(nums)):
-            if maxSub[indx-1] > 0:
-                maxSub[indx] = nums[indx] + maxSub[indx-1]
-            else:
-                maxSub[indx] = nums[indx]
-            maxSum = max(maxSum, maxSub[indx])
-        return maxSum
+        for i in xrange(1, len(nums)):
+            maxSub[i] = max(maxSub[i-1], 0) + nums[i]
+            res = max(res, maxSub[i])
+        return res
 ```
 
 # Maximum Product Subarray
