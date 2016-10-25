@@ -4,6 +4,8 @@
 
 > * [Climbing Stairs](climbing_stairs.md)
 
+> * [House Robber I/II/III](house_robber.md)
+
 ### Two dimensional
 
 > * [Regular Expression Matching](regular_expression_matching.md)
@@ -21,7 +23,6 @@
  * [Minimum Path Sum](minimum_path_sum.md)
  * [Triangle](triangle.md)
  * [Unique Binary Search Trees](unique_binary_search_trees.md)
- * [House Robber I/II/III](house_robber.md)
  * [Range Sum Query - Immutable](range_sum_query_immutable.md)
  * [Paint Fence](paint_fence.md)
  * [Integer Break](integer_break.md)
