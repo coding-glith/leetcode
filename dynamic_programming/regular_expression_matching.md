@@ -18,6 +18,32 @@ isMatch("ab", ".*") → true
 isMatch("aab", "c*a*b") → true
 ```
 
+dp solution
+
+```Python
+class Solution(object):
+    def isMatch(self, s, p):
+        """
+        :type s: str
+        :type p: str
+        :rtype: bool
+        """
+        # dp[row][col]: if s[0..row-1] matches p[0..col-1]
+        dp = [[False for col in xrange(len(p)+1)] for row in xrange(len(s)+1)]
+        dp[0][0] = True   # s == '' and p == ''
+        # dp[row][0] = False because s != '' and p == ''
+        for col in xrange(2, len(p)+1):
+            dp[0][col] = dp[0][col-2] and p[col-1] == '*'
+        
+        for row in xrange(1, len(s)+1):
+            for col in xrange(1, len(p)+1):
+                if p[col-1] != '*':  # check previous string match and current case match
+                    dp[row][col] = dp[row-1][col-1] and (p[col-1] == s[row-1] or p[col-1] == '.')
+                else:              # match zero       match one or more ...                    and check for latter
+                    dp[row][col] = dp[row][col-2] or (p[col-2] == s[row-1] or p[col-2] == '.') and dp[row-1][col]
+        return dp[len(s)][len(p)]
+```
+
 Recursive solution.
 
 ```Python
