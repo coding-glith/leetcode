@@ -18,6 +18,38 @@ isMatch("ab", "?*") → true
 isMatch("aab", "c*a*b") → false
 ```
 
+This idea is to use two pointers to track the location to be checked for both string. If meet * in p, check the latter string, once meet unsatisfied condition, trace back to previous match location, and let it match one character and check again.
+
+```Python
+class Solution(object):
+    def isMatch(self, s, p):
+        """
+        :type s: str
+        :type p: str
+        :rtype: bool
+        """
+        sIdx, pIdx, pStarIdx, sMatchTill = 0, 0, -1, 0
+        while sIdx < len(s):
+            if pIdx < len(p) and (p[pIdx] == s[sIdx] or p[pIdx] == "?"):
+                pIdx += 1
+                sIdx += 1
+                continue
+            if pIdx < len(p) and p[pIdx] == "*":
+                pStarIdx, sMatchTill = pIdx, sIdx
+                pIdx += 1   # let this "*" matches zero and check for later value
+                continue
+            # if reaches here, cannot find match any more
+            # bring back to previous match location
+            if pStarIdx != -1:
+                pIdx, sIdx = pStarIdx + 1, sMatchTill + 1
+                sMatchTill += 1
+                continue
+            # no match and didn't find star
+            return False
+        while pIdx < len(p) and p[pIdx] == "*": pIdx += 1
+        return pIdx == len(p)
+```
+
 dp. directly get from similar approach in Regular Express Matching. get TLE.
 
 ```Python
