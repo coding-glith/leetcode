@@ -18,6 +18,31 @@ isMatch("ab", "?*") → true
 isMatch("aab", "c*a*b") → false
 ```
 
+dp. directly get from similar approach in Regular Express Matching. get TLE.
+
+```Python
+class Solution(object):
+    def isMatch(self, s, p):
+        """
+        :type s: str
+        :type p: str
+        :rtype: bool
+        """
+        dp = [[False for col in xrange(len(p)+1)] for row in xrange(len(s)+1)]
+        dp[0][0] = True
+        for col in xrange(1, len(p)+1):
+            dp[0][col] = p[col-1] == '*' and dp[0][col-1]
+
+        for row in xrange(1, len(s)+1):
+            for col in xrange(1, len(p)+1):
+                if p[col-1] == '*':
+                    dp[row][col] = dp[row][col-1] or dp[row-1][col]
+                else:
+                    dp[row][col] = dp[row-1][col-1] and (p[col-1] == s[row-1] or p[col-1] == '?')
+
+        return dp[len(s)][len(p)]
+```
+
 Recursive way. below solution failed for some cases, need to deal with time limit exceeded error.
 
 example:
