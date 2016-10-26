@@ -97,6 +97,8 @@ class Solution(object):
 
 Good step by step explanation from [leetcode discussion](https://discuss.leetcode.com/topic/39834/step-by-step-tackling-of-the-problem).
 
+dfs, res[0] contains the max of next level without root, res[1] contains the max with root.
+
 ```Python
 class Solution(object):
     def rob(self, root):
