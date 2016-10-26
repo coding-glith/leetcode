@@ -40,7 +40,7 @@ class Solution(object):
 
 > Could you solve it in O(nk) runtime?
 
-Below is a better idea, but don't understand the settings for min1, and min2.
+This solution uses two variables min1, min2 to track the color options's index. if current option is the same color as the previous first option, then go with the second previous option.
 
 ```Python
 class Solution(object):
@@ -55,7 +55,7 @@ class Solution(object):
         min1, min2 = -1, -1
         for i in xrange(n):
             last1, last2 = min1, min2
-            min1, min2 = -1, -1   # don't understand this part
+            min1, min2 = -1, -1   # reset the values for a new house check
             for j in xrange(k):
                 # costs[i][j] means house i with color j
                 if j == last1:   # if color is the same as last one
