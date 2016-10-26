@@ -6,6 +6,10 @@
 
 > * [House Robber I/II/III](house_robber.md)
 
+> * [Paint Fence](paint_fence.md)
+
+> * [Paint House I/II](paint_house.md)
+
 ### Two dimensional
 
 > * [Regular Expression Matching](regular_expression_matching.md)
@@ -24,9 +28,7 @@
  * [Triangle](triangle.md)
  * [Unique Binary Search Trees](unique_binary_search_trees.md)
  * [Range Sum Query - Immutable](range_sum_query_immutable.md)
- * [Paint Fence](paint_fence.md)
  * [Integer Break](integer_break.md)
  * [Counting Bits](counting_bits.md)
  * [Wiggle Subsequence](wiggle_subsequence.md)
- * [Paint House I/II](paint_house.md)
  * [Dungeon Game](dungeon_game.md)
