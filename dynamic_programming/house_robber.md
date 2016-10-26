@@ -13,12 +13,10 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        if not nums: return 0
-        dpPrev2, dpPrev1, res = 0, nums[0], nums[0]
-        for i in xrange(1, len(nums)):
-            res = max(dpPrev2+nums[i], dpPrev1)
-            dpPrev2, dpPrev1 = dpPrev1, res
-        return res
+        prev, cur = 0, 0
+        for i in xrange(len(nums)):
+            prev, cur = cur, max(cur, prev + nums[i])
+        return cur
 ```
 
 ```Python
