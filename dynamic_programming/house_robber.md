@@ -134,9 +134,7 @@ class Solution(object):
         """
         if not root: return 0
         val = 0
-        if not root.left:
-            val += rob(root.left.left) + rob(root.left.right)
-        if not root.right:
-            val += rob(root.right.left) + rob(root.right.right)
-        return max(val + root.val, rob(root.left)+rob(root.right))
+        val += self.rob(root.left.left) + self.rob(root.left.right) if root.left else 0
+        val += self.rob(root.right.left) + self.rob(root.right.right) if root.right else 0
+        return max(val + root.val, self.rob(root.left) + self.rob(root.right))
 ```
