@@ -12,6 +12,32 @@
 
 > A solution is ["cats and dog", "cat sand dog"].
 
+Below solution is from leetcode [discussion](https://discuss.leetcode.com/topic/27855/my-concise-java-solution-based-on-memorized-dfs). The standard backtracking method will get time limit exceeded error because of two many trace back to same sub-problem. The idea in this solution is to use a dictionary to memorize the sub problem and its corresponding results.
+
+```Python
+class Solution(object):
+    def wordBreak(self, s, wordDict):
+        """
+        :type s: str
+        :type wordDict: Set[str]
+        :rtype: List[str]
+        """
+        return self.dfs(s, wordDict, {})
+
+    def dfs(self, s, wordDict, resMap):
+        if s in resMap: return resMap[s]
+        if not s: return [""]
+        res = []
+        for word in wordDict:
+            if s[:len(word)] == word:
+                sublist = self.dfs(s[len(word):], wordDict, resMap)
+                for sub in sublist:
+                    tmp = word + " " + sub if sub else word
+                    res.append(tmp)
+        resMap[s] = res
+        return res
+```
+
 Backtracking solution. Get time limit exceeded.
 
 ```Python
