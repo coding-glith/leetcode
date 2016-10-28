@@ -71,6 +71,21 @@ class Solution(object):
 
 The idea is to find m then swap one by one from m to n.
 
+Example:
+
+```
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10        5, 9
+         p  m
+1, 2, 3, 4, 6, 5, 7, 8, 9, 10
+         p     m
+1, 2, 3, 4, 7, 6, 5, 8, 9, 10
+         p        m
+1, 2, 3, 4, 8, 7, 6, 5, 9, 10
+         p           m
+1, 2, 3, 4, 9, 8, 7, 6, 5, 10
+         p              m
+```
+
 ```Python
 # Definition for singly-linked list.
 # class ListNode(object):
