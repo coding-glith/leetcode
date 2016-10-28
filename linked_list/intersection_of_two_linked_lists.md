@@ -93,3 +93,36 @@ class Solution(object):
         tailA.next = None
         return headA
 ```
+
+This solution is find the length of both lists and after go through the more nodes in the longer list, search it one by one until find an intersection. Didn't understand why all these three solution gets memory limit exceeded error. The previous two solution passed the first time I submit it.
+
+```Python
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution(object):
+    def getIntersectionNode(self, headA, headB):
+        """
+        :type head1, head1: ListNode
+        :rtype: ListNode
+        """
+        def listLength(head):
+            res = 0
+            while head:
+                res += 1
+                head = head.next
+            return res
+        a, alen, b, blen = headA, listLength(headA), headB, listLength(headB)
+        if alen > blen:
+            for i in xrange(alen-blen):
+                a = a.next
+        if blen > alen:
+            for i in xrange(blen-alen):
+                b = b.next
+        while a != b:
+            a, b = a.next, b.next
+        return a
+```
