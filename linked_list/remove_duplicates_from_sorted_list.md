@@ -21,17 +21,13 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        if not head or not head.next:
-            return head
-        traverse = head
-        while traverse and traverse.next:
-            if traverse.val == traverse.next.val:
-                if traverse.next.next:
-                    traverse.next = traverse.next.next
-                else:
-                    traverse.next = None
+        if not head: return None
+        p = head
+        while p.next:
+            if p.val == p.next.val:
+                p.next = p.next.next
             else:
-                traverse = traverse.next
+                p = p.next
         return head
 ```
 
