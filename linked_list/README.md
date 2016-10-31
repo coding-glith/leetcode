@@ -6,6 +6,8 @@
 
 > * [Merge Two/k Sorted Lists](merge_k_sorted_lists.md)
 
+> * [Remove Duplicates from Sorted List](remove_duplicates_from_sorted_list.md)
+
 ### Linked list modification
 
 > * [Delete Node in a Linked List](delete_node_in_a_linked_list.md)
@@ -25,7 +27,6 @@
 
 
 
-* [Remove Duplicates from Sorted List](remove_duplicates_from_sorted_list.md)
 * [Reverse Nodes in k-Group](reverse_nodes_in_k_group.md)
 * [Swap Nodes in Pairs](swap_nodes_in_pairs.md)
 * [(Insertion) Sort List](sort_list.md)
