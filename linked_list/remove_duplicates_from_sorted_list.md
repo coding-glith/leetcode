@@ -41,6 +41,34 @@ class Solution(object):
 
 > Given 1->1->1->2->3, return 2->3.
 
+```Python
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution(object):
+    def deleteDuplicates(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        if not head or not head.next: return head
+        dummy = ListNode(0)
+        p = dummy
+        while head and head.next:
+            if head.val != head.next.val:
+                p.next = ListNode(head.val)
+                p = p.next
+            else:
+                while head.next and head.val == head.next.val:
+                    head = head.next
+            head = head.next
+        if head: p.next = head
+        return dummy.next
+```
+
 The idea is to create a dummy node before the head, and use that pointer as the previous unique value representer to help detect duplicate node.
 
 ```Python
