@@ -4,6 +4,10 @@
 
 > * [Move Zeroes](move_zeroes.md)
 
+### Two-dimensional array operation
+
+> * [Sparse Matrix Multiplication](sparse_matrix_multiplication.md)
+
  * [Remove Element](remove_element.md)
  * [Remove Duplicates from Sorted Array](remove_duplicates_from_sorted_array.md)
  * [Plus One](plus_one.md)
@@ -43,5 +47,4 @@
  * [Search in Rotated Sorted Array I/II](search_in_rotated_sorted_array.md)
  * [H-Index I/II](h_index.md)
  * [Top K Frequent Elements](top_k_frequent_elements.md)
- * [Sparse Matrix Multiplication](sparse_matrix_multiplication.md)
  * [Median of Two Sorted Arrays](median_of_two_sorted_arrays.md)
