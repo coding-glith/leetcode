@@ -8,6 +8,45 @@
 
 > return 4->5->1->2->3->NULL.
 
+The idea of this solution is to find the kth node from end the list, then link this sublist with the previous part.
+
+1 -> 2 -> 3 -> 4 -> 5 -> 6, k = 2
+                 |
+                 |
+5 -> 6 -> 1 -> 2 -> 3 -> 4
+
+```Python
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution(object):
+    def rotateRight(self, head, k):
+        """
+        :type head: ListNode
+        :type k: int
+        :rtype: ListNode
+        """
+        if not head: return head
+        listLen, p = 0, head
+        while p:
+            listLen += 1
+            p = p.next
+        if k % listLen == 0: return head
+        p = head
+        for i in xrange(1, listLen - k % listLen):
+            p = p.next
+        newHead, p.next = p.next, None
+        p = newHead
+        while p and p.next:
+            p = p.next
+        p.next = head
+        printhead = newHead
+        return newHead
+```
+
 ```Python
 # Definition for singly-linked list.
 # class ListNode(object):
