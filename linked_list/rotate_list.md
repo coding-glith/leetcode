@@ -10,10 +10,12 @@
 
 The idea of this solution is to find the kth node from end the list, then link this sublist with the previous part.
 
+```
 1 -> 2 -> 3 -> 4 -> 5 -> 6, k = 2
                  |
                  |
 5 -> 6 -> 1 -> 2 -> 3 -> 4
+```
 
 ```Python
 # Definition for singly-linked list.
