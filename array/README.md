@@ -1,4 +1,9 @@
 # Array
+
+### Array operations, find some value, move values
+
+> * [Move Zeroes](move_zeroes.md)
+
  * [Remove Element](remove_element.md)
  * [Remove Duplicates from Sorted Array](remove_duplicates_from_sorted_array.md)
  * [Plus One](plus_one.md)
@@ -14,7 +19,6 @@
  * [Search Insert Position / Longest Increasing Subsequence / Increasing Triplet Subsequence / Russian Doll Envelopes](search_insert_position.md)
  * [Find Peak Element](find_peak_element.md)
  * [Contains Duplicate](contains_duplicate.md)
- * [Move Zeroes](move_zeroes.md)
  * [Majority Element I/II](majority_element.md)
  * [Rotate Array](rotate_array.md)
  * [Shortest Word Distance I/II/III](shortest_word_distance.md)
