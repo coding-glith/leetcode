@@ -23,8 +23,6 @@ class Solution(object):
             if nums[i] == 0:
                 for inner in xrange(i+1, len(nums)):
                     if nums[inner] != 0:
-                        tmp = nums[i]
-                        nums[i] = nums[inner]
-                        nums[inner] = tmp
+                        nums[i], nums[inner] = nums[inner], nums[i]
                         break
 ```
