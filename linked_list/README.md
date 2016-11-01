@@ -16,6 +16,8 @@
 
 > * [Reverse Linked List](reverse_linked_list.md)
 
+> * [Rotate List](rotate_list.md)
+
 ### Slow fast pointer
 
 > * [Palindrome Linked List](palindrome_linked_list.md)
@@ -30,7 +32,6 @@
 * [Reverse Nodes in k-Group](reverse_nodes_in_k_group.md)
 * [Swap Nodes in Pairs](swap_nodes_in_pairs.md)
 * [(Insertion) Sort List](sort_list.md)
-* [Rotate List](rotate_list.md)
 * [Reorder List](reorder_list.md)
 * [Partition List](partition_list.md)
 * [Copy List with Random Pointer](copy_list_with_random_pointer.md)
