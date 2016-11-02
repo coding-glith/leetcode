@@ -8,4 +8,4 @@
  * [Design Twitter](design_twitter.md)
  * [Design Hit Counter](design_hit_counter.md)
  * [LRU Cache](lru_cache.md)
- * [Range Sum Query (2D) - Mutable/Immutable]()
+ * [Range Sum Query (2D) - Mutable/Immutable](range_sum_query_immutable.md)
