@@ -4,6 +4,8 @@
 
 > * [Longest Absolute File Path](longest_absolute_file_path.md)
 
+> * [Longest Substring Without Repeating Characters](longest_substring_without_repeating_characters.md)
+
  * [Reverse String](reverse_string.md)
  * [Add Binary](add_binary.md)
  * [Ransom Note](ransom_note.md)
@@ -26,7 +28,6 @@
  * [Word Pattern](word_pattern.md)
  * [Unique Word Abbreviation](unique_word_abbreviation.md)
  * [Reverse Words in a String](reverse_words_in_a_string.md)
- * [Longest Substring Without Repeating Characters](longest_substring_without_repeating_characters.md)
  * [Repeated DNA Sequences](repeated_dna_sequences.md)
  * [Multiply Strings](multiply_strings.md)
  * [Find the Difference](find_the_difference.md)
