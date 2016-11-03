@@ -6,6 +6,8 @@
 
 > * [Longest Substring Without Repeating Characters](longest_substring_without_repeating_characters.md)
 
+> * [Longest Substring with At Most Two/k Distinct Characters](longest_substring_with_at_most_two_distinct_Characters.md)
+
  * [Reverse String](reverse_string.md)
  * [Add Binary](add_binary.md)
  * [Ransom Note](ransom_note.md)
