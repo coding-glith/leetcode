@@ -58,7 +58,30 @@ had--
 The character '-' signifies an empty space on the screen.
 ```
 
-Direct solution, time limit exceeded.
+Solution from leetcode [discussion](https://discuss.leetcode.com/topic/62455/21ms-18-lines-java-solution).
+
+The idea is to form a long string of sentence and then calculate the index of each row in the long string.
+
+```Python
+class Solution(object):
+    def wordsTyping(self, sentence, rows, cols):
+        """
+        :type sentence: List[str]
+        :type rows: int
+        :type cols: int
+        :rtype: int
+        """
+        s = " ".join(sentence) + " "
+        start = 0
+        for row in xrange(rows):
+            start += cols
+            if s[start % len(s)] == " ": start += 1    # deal with start with " "
+            else:
+                while start > 0 and s[(start-1) % len(s)] != " ": start -= 1   # deal with one word cannot fit in one line
+        return start / len(s)
+```
+
+Straightforward solution, time limit exceeded.
 
 ```Python
 class Solution(object):
