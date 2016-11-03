@@ -10,6 +10,8 @@
 
 > * [Longest Repeating Character Replacement](longest_repeating_character_replacement.md)
 
+> * [Sentence Screen Fitting](sentence_screen_fitting.md)
+
  * [Reverse String](reverse_string.md)
  * [Add Binary](add_binary.md)
  * [Ransom Note](ransom_note.md)
