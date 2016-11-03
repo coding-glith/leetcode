@@ -8,6 +8,8 @@
 
 > * [Longest Substring with At Most Two/k Distinct Characters](longest_substring_with_at_most_two_distinct_Characters.md)
 
+> * [Longest Repeating Character Replacement](longest_repeating_character_replacement.md)
+
  * [Reverse String](reverse_string.md)
  * [Add Binary](add_binary.md)
  * [Ransom Note](ransom_note.md)
