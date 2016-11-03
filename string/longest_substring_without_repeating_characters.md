@@ -30,3 +30,26 @@ class Solution(object):
                 unique.append(s[i])
         return max(res, len(unique))
 ```
+
+Using two pointers.
+
+```Python
+class Solution(object):
+    def lengthOfLongestSubstring(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        if not s: return 0
+        start, end, res = 0, 0, 1
+        for i in xrange(1, len(s)):
+            if s[i] not in s[start:end+1]:
+                end = i
+            else:
+                while s[start] != s[i]:
+                    start += 1
+                start += 1
+                end = i
+            res = max(res, end+1-start)
+        return res
+```
