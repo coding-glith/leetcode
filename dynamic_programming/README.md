@@ -18,6 +18,8 @@
 
 > * [Edit Distance](edit_distance.md)
 
+> * [Bomb Enemy](bomb_enemy.md)
+
 ### Maintain global max/min
 
 > * [Best Time To Buy And Sell Stock I/II/III/IV/with cooldown](best_time_to_buy_and_sell_stock.md)
