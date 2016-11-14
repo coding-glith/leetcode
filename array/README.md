@@ -8,6 +8,8 @@
 
 > * [Sparse Matrix Multiplication](sparse_matrix_multiplication.md)
 
+> * [Valid Word Square/Word Squares](word_squares.md)
+
 ### Array value ranges, add dummy node at the end for corner cases
 
 > * [Summary Ranges/Missing Ranges](summary_ranges.md)
