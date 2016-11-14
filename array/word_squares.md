@@ -96,3 +96,115 @@ class Solution(object):
                 col -= 1
         return True
 ```
+
+# Word Squares
+
+> Given a set of words (without duplicates), find all word squares you can build from them.
+
+> A sequence of words forms a valid word square if the kth row and column read the exact same string, where 0 ≤ k < max(numRows, numColumns).
+
+> For example, the word sequence ["ball","area","lead","lady"] forms a word square because each word reads the same both horizontally and vertically.
+
+> ```
+b a l l
+a r e a
+l e a d
+l a d y
+```
+
+> Note:
+
+> * There are at least 1 and at most 1000 words.
+
+> * All words will have the exact same length.
+
+> * Word length is at least 1 and at most 5.
+
+> * Each word contains only lowercase English alphabet a-z.
+
+> Example 1:
+
+> ```
+Input:
+["area","lead","wall","lady","ball"]
+Output:
+[
+  [ "wall",
+    "area",
+    "lead",
+    "lady"
+  ],
+  [ "ball",
+    "area",
+    "lead",
+    "lady"
+  ]
+]
+Explanation:
+The output consists of two word squares. The order of output does not matter (just the order of words in each word square matters).
+```
+
+> Example 2:
+
+> ```
+Input:
+["abat","baba","atan","atal"]
+Output:
+[
+  [ "baba",
+    "abat",
+    "baba",
+    "atan"
+  ],
+  [ "baba",
+    "abat",
+    "baba",
+    "atal"
+  ]
+]
+Explanation:
+The output consists of two word squares. The order of output does not matter (just the order of words in each word square matters).
+```
+
+```Python
+class Solution(object):
+    def wordSquares(self, words):
+        """
+        :type words: List[str]
+        :rtype: List[List[str]]
+        """
+        if not words: return []
+        res = []
+        trie = self.buildTrie(words)
+        self.dfs()
+        return res
+
+    def dfs(self, res, sub, words, trie):
+        if len(sub) == len(words[0]):
+            res.append(sub)
+            return
+        for word in words:
+            if not sub: sub.append(word)   # take one word and put in first row
+            localTrie = trie
+            for i in xrange(len(sub)):
+                if sub[i][i+1] in localTrie:
+                    localTrie = localTrie[sub[i][i+1]]
+                    
+                nextPrefix += sub[i][i+1]
+                self.searchTrie(sub[i][i+1])
+                if nextWord: sub.append(nextWord)
+            
+            
+        
+
+    def buildTrie(self, words):
+        root = {}
+        for word in words:
+            tmp = root
+            for char in word:
+                if char not in tmp:
+                    tmp[char] = {}
+                tmp = tmp[char]
+            tmp["_end_"] = word
+        return root
+```
