@@ -8,6 +8,10 @@
 
 > * [Sparse Matrix Multiplication](sparse_matrix_multiplication.md)
 
+### Array value ranges
+
+> * [Summary Ranges/Missing Ranges](summary_ranges.md)
+
  * [Remove Element](remove_element.md)
  * [Remove Duplicates from Sorted Array](remove_duplicates_from_sorted_array.md)
  * [Plus One](plus_one.md)
@@ -31,7 +35,6 @@
  * [Single Number](single_number.md)
  * [Game of Life](game_of_life.md)
  * [Spiral Matrix I/II](spiral_matrix.md)
- * [Summary Ranges/Missing Ranges](summary_ranges.md)
  * [Range Addition](range_addition.md)
  * [Product of Array Except Self](product_of_array_except_self.md)
  * [Rotate Image](rotate_image.md)
