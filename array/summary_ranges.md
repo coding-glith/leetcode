@@ -11,23 +11,19 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[str]
         """
-        if not nums:
-            return []
-        nums.append(float('inf'))  # to count the last element in
-        res, s, count = [], str(nums[0]), 1
+        if not nums: return []
+        res, start, end = [], nums[0], nums[0]
+        nums.append(sys.maxint)
         for i in xrange(1, len(nums)):
-            if nums[i] <= nums[i-1] + 1:
-                count += 1
-            else:
-                if count > 1:
-                    s += "->" + str(nums[i-1])
-                    res.append(str(s))
+            if nums[i] != nums[i-1] + 1:
+                if end > start:
+                    res.append(str(start) + "->" + str(end))
                 else:
-                    res.append(str(s))
-                s = str(nums[i])
-                count = 1
+                    res.append(str(start))
+                start = nums[i]
+            end = nums[i]
         nums.pop()
-        return res if res else [str(nums[i-1])]
+        return res
 ```
 
 # Missing Ranges
