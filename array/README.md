@@ -10,6 +10,8 @@
 
 > * [Valid Word Square/Word Squares](word_squares.md)
 
+> * [Shortest Distance from All Buildings](shortest_distance_from_all_buildings.md)
+
 ### Array value ranges, add dummy node at the end for corner cases
 
 > * [Summary Ranges/Missing Ranges](summary_ranges.md)
