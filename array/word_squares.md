@@ -168,6 +168,8 @@ The output consists of two word squares.
 The order of output does not matter (just the order of words in each word square matters).
 ```
 
+The idea is to try every word at the first row, then search for the rest based on square requirement. Here we are using trie for fast search for words.
+
 ```Python
 class Solution(object):
     def wordSquares(self, words):
@@ -175,38 +177,47 @@ class Solution(object):
         :type words: List[str]
         :rtype: List[List[str]]
         """
-        if not words: return []
-        res = []
+        if not words: return [[]]
         trie = self.buildTrie(words)
-        self.dfs()
+        res = []
+        self.dfs(res, [], trie, len(words[0]), '')
+        return res        
+
+    def traverseTrie(self, res, trie):
+        for key in trie:
+            if key == "_end_":
+                res.append(trie[key])
+                return
+            else:
+                self.traverseTrie(res, trie[key])
+        
+    def getWords(self, trie, prefix):
+        for char in prefix:
+            if char not in trie: return []
+            trie = trie[char]   # traverse the trie with prefix
+        res = []
+        self.traverseTrie(res, trie)   # get all words under current position
         return res
 
-    def dfs(self, res, sub, words, trie):
-        if len(sub) == len(words[0]):
-            res.append(sub)
-            return
-        for word in words:
-            if not sub: sub.append(word)   # take one word and put in first row
-            localTrie = trie
-            for i in xrange(len(sub)):
-                if sub[i][i+1] in localTrie:
-                    localTrie = localTrie[sub[i][i+1]]
-                    
-                nextPrefix += sub[i][i+1]
-                self.searchTrie(sub[i][i+1])
-                if nextWord: sub.append(nextWord)
-            
-            
-        
+    def dfs(self, res, sub, trie, wordLen, prefix):
+        candidates = self.getWords(trie, prefix)   # a pool with words satisfy prefix
+        for word in candidates:
+            if len(sub) == wordLen - 1:
+                res.append(list(sub+[word]))
+                continue   # continue with other candidates
+            newPrefix = ''
+            for w in sub+[word]:
+                newPrefix += w[len(sub)+1]
+            self.dfs(res, sub+[word], trie, wordLen, newPrefix)
 
     def buildTrie(self, words):
-        root = {}
+        trie = {}
         for word in words:
-            tmp = root
+            tmp = trie
             for char in word:
                 if char not in tmp:
                     tmp[char] = {}
                 tmp = tmp[char]
             tmp["_end_"] = word
-        return root
+        return trie
 ```
