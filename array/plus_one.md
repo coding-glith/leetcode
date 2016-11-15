@@ -13,12 +13,10 @@ class Solution(object):
         :type digits: List[int]
         :rtype: List[int]
         """
-        for index in xrange(-1, -len(digits)-1, -1):
-            flag = (digits[index] + 1) / 10
-            digits[index] = (digits[index] + 1) % 10
-            if flag == 0:
-                break
-            if index == -len(digits) and flag != 0:
-                digits.insert(0,1)
+        carry = 1
+        for i in xrange(len(digits)-1, -1, -1):
+            digits[i], carry = (digits[i] + carry) % 10, (digits[i] + carry) / 10
+        if carry == 1:
+            digits.insert(0, carry)
         return digits
 ```
