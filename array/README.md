@@ -4,6 +4,8 @@
 
 > * [Move Zeroes](move_zeroes.md)
 
+> * [Wiggle Sort I/II](wiggle_sort.md)
+
 ### Two-dimensional array operation
 
 > * [Sparse Matrix Multiplication](sparse_matrix_multiplication.md)
@@ -53,7 +55,6 @@
  * [Find the Celebrity](find_the_celebrity.md)
  * [Missing Number](missing_number.md)
  * [Set Matrix Zeroes](set_matrix_zeroes.md)
- * [Wiggle Sort](wiggle_sort.md)
  * [Search in Rotated Sorted Array I/II](search_in_rotated_sorted_array.md)
  * [H-Index I/II](h_index.md)
  * [Top K Frequent Elements](top_k_frequent_elements.md)
