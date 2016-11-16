@@ -36,7 +36,7 @@ class Solution(object):
 
 From leetcode [discussion](https://discuss.leetcode.com/topic/32861/3-lines-python-with-explanation-proof).
 
-knowing the use of python list: array[start:end:step]
+knowing the use of python list: array[from:to:step]
 
 ```Python
 class Solution(object):
