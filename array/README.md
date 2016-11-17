@@ -18,6 +18,8 @@
 
 > * [Number of Islands I/II](number_of_islands.md)
 
+> * [Surrounded Regions](surrounded_regions.md)
+
 ### Array value ranges, add dummy node at the end for corner cases
 
 > * [Summary Ranges/Missing Ranges](summary_ranges.md)
