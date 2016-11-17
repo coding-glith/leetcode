@@ -136,6 +136,8 @@ class Solution(object):
 
 > * Can you do it in time complexity O(k log mn), where k is the length of the positions?
 
+Time limit exceeded error. This solution is O(k*m*n), cause every time calling the bfs, need to scan all possible surroundings.
+
 ```Python
 class Solution(object):
     def numIslands2(self, m, n, positions):
