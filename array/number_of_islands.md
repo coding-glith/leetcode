@@ -136,6 +136,63 @@ class Solution(object):
 
 > * Can you do it in time complexity O(k log mn), where k is the length of the positions?
 
+Weighted quick-union with path compression. Refer to leetcode [discussion](https://discuss.leetcode.com/topic/29518/java-python-clear-solution-with-unionfind-class-weighting-and-path-compression). The running time for this solution is O(klogk).
+
+```Python
+class Solution(object):
+    def numIslands2(self, m, n, positions):
+        """
+        :type m: int
+        :type n: int
+        :type positions: List[List[int]]
+        :rtype: List[int]
+        """
+        res = []
+        islands = Union()
+        for node in map(tuple, positions):
+            islands.add(node)
+            for idx in (0, 1), (0, -1), (1, 0), (-1, 0):
+                neighborNode = (node[0]+idx[0], node[1]+idx[1])
+                if neighborNode in islands.id:
+                    islands.unite(node, neighborNode)
+            res += [islands.count]
+        return res
+
+class Union(object):
+    def __init__(self):
+        # self.id[node] keeps the parent of node
+        self.id = {}
+        # to avoid tall trees
+        # keep track of size of each component
+        # balance by linking small tree below larger one
+        self.sz = {}
+        self.count = 0
+
+    def add(self, node):
+        self.id[node] = node
+        self.sz[node] = 1
+        self.count += 1
+
+    def root(self, node):
+        # path compression to keep a really flat trees
+        while self.id[node] != node:
+            # from node go all the way up to the root
+            self.id[node] = self.id[self.id[node]]
+            node = self.id[node]
+        return node
+
+    def unite(self, node, neighborNode):
+        x, y = self.root(node), self.root(neighborNode)
+        if x == y: return
+        # weighted quick-union
+        if self.sz[x] > self.sz[y]:
+            x, y = y, x
+        # link smaller tree below larger tree
+        self.id[x] = y
+        self.sz[y] += self.sz[x]
+        self.count -= 1
+```
+
 Time limit exceeded error. This solution is O(k*m*n), cause every time calling the bfs, need to scan all possible surroundings.
 
 ```Python
