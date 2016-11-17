@@ -14,7 +14,7 @@
 
 > * [Shortest Distance from All Buildings](shortest_distance_from_all_buildings.md)
 
-> * [Number of Islands](number_of_islands.md)
+> * [Number of Islands I/II](number_of_islands.md)
 
 ### Array value ranges, add dummy node at the end for corner cases
 
