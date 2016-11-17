@@ -21,6 +21,8 @@ X X X X
 X O X X
 ```
 
+The idea is to go through the boarder of the board, if meet an 'O', mark all connected 'O' with 'S', then mark all left 'O' with 'X'. And finally revert 'S' back to 'O'.
+
 ```Python
 class Solution(object):
     def solve(self, board):
@@ -36,16 +38,16 @@ class Solution(object):
         for i in xrange(len(board)):
             for j in xrange(len(board[i])):
                 if board[i][j] == 'O':
-                    board[i] = board[i][:j] + 'X' + board[i][j+1:]
+                    board[i][j] = 'X'
         for i in xrange(len(board)):
             for j in xrange(len(board[i])):
                 if board[i][j] == 'S':
-                    board[i] = board[i][:j] + 'O' + board[i][j+1:]
+                    board[i][j] = 'O'
 
     def bfs(self, board, i, j):
         visited = [[False] * len(board[0]) for _ in xrange(len(board))]
         visited[i][j] = True
-        board[i] = board[i][:j] + 'S' + board[i][j+1:]
+        board[i][j] = 'S'
         queue = collections.deque([(i, j)])
 
         while queue:
@@ -54,6 +56,6 @@ class Solution(object):
                 if 0 <= row < len(board) and 0 <= col < len(board[0]) and \
                    board[row][col] == 'O' and not visited[row][col]:
                     visited[row][col] = True
-                    board[row] = board[row][:col] + 'S' + board[row][col+1:]
+                    board[row][col] = 'S'
                     queue.append((row, col))
 ```
