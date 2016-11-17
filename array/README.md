@@ -12,9 +12,11 @@
 
 > * [Valid Word Square/Word Squares](word_squares.md)
 
+### Two-dimensional array, BFS, DFS, Union Find
+
 > * [Shortest Distance from All Buildings](shortest_distance_from_all_buildings.md)
 
-> * [Number of Islands I/II - BFS/DFS/UNION FIND](number_of_islands.md)
+> * [Number of Islands I/II](number_of_islands.md)
 
 ### Array value ranges, add dummy node at the end for corner cases
 
