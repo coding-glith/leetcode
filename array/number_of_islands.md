@@ -50,3 +50,34 @@ class Solution(object):
         self.dfs(grid, visited, row, col-1)
         self.dfs(grid, visited, row, col+1)
 ```
+
+BFS.
+
+```Python
+class Solution(object):
+    def numIslands(self, grid):
+        """
+        :type grid: List[List[str]]
+        :rtype: int
+        """
+        if not grid or not grid[0]: return 0
+        res, visited = 0, [[False] * len(grid[0]) for _ in xrange(len(grid))]
+
+        for row in xrange(len(grid)):
+            for col in xrange(len(grid[row])):
+                if grid[row][col] == "1" and not visited[row][col]:
+                    self.bfs(grid, visited, row, col)
+                    res += 1
+        print grid, visited
+        return res
+
+    def bfs(self, grid, visited, row, col):
+        queue = collections.deque([(row, col)])
+        while queue:
+            x, y = queue.popleft()
+            for i, j in [(x-1, y), (x+1, y), (x, y-1), (x, y+1)]:
+                if 0 <= i < len(grid) and 0 <= j < len(grid[0]) and not visited[i][j]:
+                    if grid[i][j] == '1':
+                        visited[i][j] = True
+                        queue.append((i, j))
+```
