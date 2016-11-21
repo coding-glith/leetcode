@@ -20,6 +20,8 @@
 
 > * [Surrounded Regions](surrounded_regions.md)
 
+> * [Walls and Gates](walls_and_gates.md)
+
 ### Array value ranges, add dummy node at the end for corner cases
 
 > * [Summary Ranges/Missing Ranges](summary_ranges.md)
