@@ -28,7 +28,28 @@ INF  -1 INF  -1
   0  -1   3   4
 ```
 
-Straightforward solution get time limit exceed.
+```Python
+class Solution(object):
+    def wallsAndGates(self, rooms):
+        """
+        :type rooms: List[List[int]]
+        :rtype: void Do not return anything, modify rooms in-place instead.
+        """
+        if not rooms or not rooms[0]: return
+        for row in xrange(len(rooms)):
+            for col in xrange(len(rooms[row])):
+                if rooms[row][col] == 0:
+                    queue = collections.deque([(row, col, 0)])
+                    
+                    while queue:
+                        x, y, distance = queue.popleft()
+                        for i, j in (x-1,y), (x+1,y), (x,y-1), (x,y+1):
+                            if 0 <= i < len(rooms) and 0 <= j < len(rooms[0]) and rooms[i][j] not in (0, -1) and rooms[i][j] > distance+1:
+                                rooms[i][j] = distance+1
+                                queue.append((i, j, rooms[i][j]))
+```
+
+Original solution get time limit exceed. Don't understand, the above is the same.
 
 ```Python
 class Solution(object):
