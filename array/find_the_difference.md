@@ -27,6 +27,22 @@ class Solution(object):
         :rtype: str
         """
         if not s: return t
+        s = sorted(s)
+        t = sorted(t)
+        for i, val in enumerate(s):
+            if val != t[i]: return t[i]
+        return t[-1]
+```
+
+```Python
+class Solution(object):
+    def findTheDifference(self, s, t):
+        """
+        :type s: str
+        :type t: str
+        :rtype: str
+        """
+        if not s: return t
         sDict = {}
         for i, val in enumerate(s):
             if val not in sDict:
