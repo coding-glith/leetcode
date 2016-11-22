@@ -6,6 +6,8 @@
 
 > * [Wiggle Sort I/II](wiggle_sort.md)
 
+> * [Find the Difference](find_the_difference.md)
+
 ### Two-dimensional array operation
 
 > * [Sparse Matrix Multiplication](sparse_matrix_multiplication.md)
