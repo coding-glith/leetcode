@@ -8,6 +8,8 @@
 
 > * [Find the Difference](find_the_difference.md)
 
+> * [Single Number I/II/II](single_number.md)
+
 ### Two-dimensional array operation
 
 > * [Sparse Matrix Multiplication](sparse_matrix_multiplication.md)
@@ -51,7 +53,6 @@
  * [Shortest Word Distance I/II/III](shortest_word_distance.md)
  * [Intersection of Two Arrays I/II](intersection_of_two_arrays.md)
  * [Meeting Rooms](meeting_rooms.md)
- * [Single Number](single_number.md)
  * [Game of Life](game_of_life.md)
  * [Spiral Matrix I/II](spiral_matrix.md)
  * [Range Addition](range_addition.md)
