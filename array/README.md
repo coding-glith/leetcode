@@ -12,6 +12,8 @@
 
 > * [Missing Number](missing_number.md)
 
+> * [First Missing Positive](first_missing_positive.md)
+
 ### Two-dimensional array operation
 
 > * [Sparse Matrix Multiplication](sparse_matrix_multiplication.md)
