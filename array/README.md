@@ -8,7 +8,9 @@
 
 > * [Find the Difference](find_the_difference.md)
 
-> * [Single Number I/II/II](single_number.md)
+> * [Single Number I/II/II](single_number.md) - deal with corner case
+
+> * [Missing Number](missing_number.md)
 
 ### Two-dimensional array operation
 
@@ -64,7 +66,6 @@
  * [Minimum Size Subarray Sum](minimum_size_subarray_sum.md)
  * [Maximum Size Subarray Sum Equals k](maximum_size_subarray_sum_equals_k.md)
  * [Find the Celebrity](find_the_celebrity.md)
- * [Missing Number](missing_number.md)
  * [Set Matrix Zeroes](set_matrix_zeroes.md)
  * [Search in Rotated Sorted Array I/II](search_in_rotated_sorted_array.md)
  * [H-Index I/II](h_index.md)
