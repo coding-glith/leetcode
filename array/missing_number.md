@@ -19,3 +19,16 @@ class Solution(object):
         """
         return (len(nums)+1)*len(nums)/2 - sum(nums)
 ```
+
+```Python
+class Solution(object):
+    def missingNumber(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        nums.sort()
+        for i in xrange(len(nums)-1):
+            if nums[i] + 1 != nums[i+1]: return nums[i] + 1
+        return nums[-1] + 1 if nums[-1] < len(nums) else nums[0] - 1
+```
