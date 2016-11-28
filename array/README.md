@@ -14,6 +14,8 @@
 
 > * [First Missing Positive](first_missing_positive.md)
 
+> * [Rotate Array](rotate_array.md)
+
 ### Two-dimensional array operation
 
 > * [Sparse Matrix Multiplication](sparse_matrix_multiplication.md)
@@ -53,7 +55,6 @@
  * [Find Peak Element](find_peak_element.md)
  * [Contains Duplicate](contains_duplicate.md)
  * [Majority Element I/II](majority_element.md)
- * [Rotate Array](rotate_array.md)
  * [Shortest Word Distance I/II/III](shortest_word_distance.md)
  * [Intersection of Two Arrays I/II](intersection_of_two_arrays.md)
  * [Meeting Rooms](meeting_rooms.md)
