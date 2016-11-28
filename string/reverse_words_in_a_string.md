@@ -24,6 +24,24 @@
 
 Test cases: "", " ", "    ", "  1   ", "hello   world".
 
+This solution take advantage of the split() function.
+
+```Python
+class Solution(object):
+    def reverseWords(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
+        sSplit, res = s.split(" "), ""
+        for i in xrange(len(sSplit)-1, -1, -1):
+            if sSplit[i]:
+                res = sSplit[i] if not res else res + " " + sSplit[i]
+        return res
+```
+
+The key for this solution is how to deal with empty spaces.
+
 ```Python
 class Solution(object):
     def reverseWords(self, s):
