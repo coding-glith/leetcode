@@ -16,6 +16,10 @@
 
 > * [Unique Word Abbreviation](unique_word_abbreviation.md)
 
+### String space check, string manipulation
+
+> * [Reverse Words in a String](reverse_words_in_a_string.md)
+
  * [Reverse String](reverse_string.md)
  * [Add Binary](add_binary.md)
  * [Ransom Note](ransom_note.md)
@@ -36,7 +40,6 @@
  * [Bulls and Cows](bulls_and_cows.md)
  * [Isomorphic Strings](isomorphic_strings.md)
  * [Word Pattern](word_pattern.md)
- * [Reverse Words in a String](reverse_words_in_a_string.md)
  * [Repeated DNA Sequences](repeated_dna_sequences.md)
  * [Multiply Strings](multiply_strings.md)
  * [Find the Difference](find_the_difference.md)
