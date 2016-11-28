@@ -1,7 +1,5 @@
 # [leetcode notebook](https://leetcode.com/problemset/algorithms/)
 
->    *>> marked on November 26th 2016.<<*
-
 * [Binary Search](binary_search/README.md)
 * [Tree](tree/README.md)
 * [Backtracking](backtracking/README.md)
