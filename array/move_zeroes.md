@@ -10,6 +10,25 @@
 
 > * Minimize the total number of operations.
 
+O(N) time complexity and O(N) operations.
+
+```Python
+class Solution(object):
+    def moveZeroes(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: void Do not return anything, modify nums in-place instead.
+        """
+        nonZero = -1
+        for i, val in enumerate(nums):
+            if val == 0: nonZero = i; break
+        if nonZero == -1: return
+        for i in xrange(len(nums)):
+            if nums[i] != 0 and i > nonZero:
+                nums[nonZero], nums[i] = nums[i], 0
+                nonZero += 1
+```
+
 ```Python
 class Solution(object):
     def moveZeroes(self, nums):
