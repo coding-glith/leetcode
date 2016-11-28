@@ -1,4 +1,11 @@
 # Math
+
+### Division
+
+> * [Divide Two Integers](divide_two_integers.md)
+
+> * [Fraction to Recurring Decimal](fraction_to_recurring_decimal.md) 
+
  * [Reverse Integer](reverse_integer.md)
  * [Nim Game](nim_game.md)
  * [Flip Game I/II](flip_game.md)
@@ -19,7 +26,6 @@
  * [Reverse Bits](reverse_bits.md)
  * [Valid Sudoku](valid_sudoku.md)
  * [Guess Number Higher or Lower I/II](guess_number_higher_or_lower.md)
- * [Fraction to Recurring Decimal](fraction_to_recurring_decimal.md)
  * [Line Reflection](line_reflection.md)
  * [Sort Transformed Array](sort_transformed_array.md)
  * [Perfect Squares/Valid Perfect Square](perfect_squares.md)
@@ -27,4 +33,3 @@
  * [Bulb Switcher](bulb_switcher.md)
  * [Largest Divisible Subset](largest_divisible_subset.md)
  * [Sqrt(x)/Valid Perfect Square](sqrt_x.md)
- * [Divide Two Integers](divide_two_integers.md)
