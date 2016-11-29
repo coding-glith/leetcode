@@ -32,6 +32,10 @@
 
 > * [Walls and Gates](walls_and_gates.md)
 
+### Subarray
+
+> * [Maximum Size Subarray Sum Equals k](maximum_size_subarray_sum_equals_k.md)
+
 ### Array value ranges, add dummy node at the end for corner cases
 
 > * [Summary Ranges/Missing Ranges](summary_ranges.md)
@@ -67,7 +71,6 @@
  * [Sort Colors](sort_colors.md)
  * [Next Permutation](next_permutation.md)
  * [Minimum Size Subarray Sum](minimum_size_subarray_sum.md)
- * [Maximum Size Subarray Sum Equals k](maximum_size_subarray_sum_equals_k.md)
  * [Find the Celebrity](find_the_celebrity.md)
  * [Set Matrix Zeroes](set_matrix_zeroes.md)
  * [Search in Rotated Sorted Array I/II](search_in_rotated_sorted_array.md)
