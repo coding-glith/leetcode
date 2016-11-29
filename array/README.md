@@ -36,6 +36,8 @@
 
 > * [Maximum Size Subarray Sum Equals k](maximum_size_subarray_sum_equals_k.md)
 
+> * [Minimum Size Subarray Sum](minimum_size_subarray_sum.md)
+
 ### Array value ranges, add dummy node at the end for corner cases
 
 > * [Summary Ranges/Missing Ranges](summary_ranges.md)
@@ -70,7 +72,6 @@
  * [Container With Most Water](container_with_most_water.md)
  * [Sort Colors](sort_colors.md)
  * [Next Permutation](next_permutation.md)
- * [Minimum Size Subarray Sum](minimum_size_subarray_sum.md)
  * [Find the Celebrity](find_the_celebrity.md)
  * [Set Matrix Zeroes](set_matrix_zeroes.md)
  * [Search in Rotated Sorted Array I/II](search_in_rotated_sorted_array.md)
