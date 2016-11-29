@@ -10,7 +10,7 @@
 
 > If you have figured out the O(n) solution, try coding another solution of which the time complexity is O(n log n).
 
-O(N) solution.
+O(N) solution. Even though there's two loops, the two pointer start and i are like two runners, i runs faster and start runs slower, but they only go through the array once.
 
 ```Python
 class Solution(object):
