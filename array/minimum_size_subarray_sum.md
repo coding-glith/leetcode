@@ -20,17 +20,14 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        start, end, sumVal, minVal = 0, 0, 0, float('inf')
-        while end < len(nums):
-            # expand window until sumVal >= s
-            while (sumVal < s and end < len(nums)):
-                sumVal += nums[end]
-                end += 1
+        res, sumVal, flag, start = sys.maxint, 0, False, -1
+        for i, val in enumerate(nums):
+            sumVal += val
             if sumVal >= s:
-                # based on above method, shrink window must from left side
-                while sumVal >= s and start < end:
-                    sumVal -= nums[start]
+                flag = True
+                while sumVal >= s:
+                    res = min(res, i - start)
                     start += 1
-                    minVal = min(minVal, end + 1 - start)
-        return minVal if minVal != float('inf') else 0
+                    sumVal -= nums[start]
+        return res if flag else 0
 ```
