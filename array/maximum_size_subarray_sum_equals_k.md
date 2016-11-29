@@ -18,7 +18,13 @@
 
 > Can you do it in O(n) time?
 
-This solution is really tricky, need to construct the sumDict. :-(
+nums:             [1, -1, 5, -2, 3]
+
+accumulate sum:   [1,  0, 5,  3, 6]
+
+sumDict: {0:-1, 1:0, 5:2, 3:3, 6:4}
+
+The idea of this solution is to maintain a dictionary to keep track of the smallest index with the accumulate sum. And we only need to subtract the accumulate sum to get the target every time.
 
 ```Python
 class Solution(object):
@@ -28,15 +34,12 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        sumDict, res, sumVal = {0:0}, 0, 0
-        for i in xrange(len(nums)):
-            sumVal += nums[i]
-            wanted = sumVal - k
-            if wanted in sumDict:
-                length = i + 1 - sumDict[wanted]
-                if res == 0 or length > res:
-                    res = length
-            if sumVal not in sumDict:
-                sumDict[sumVal] = i + 1
-        return res or 0
+        sumDict, res, sumVal = {0:-1}, 0, 0
+        for i, val in enumerate(nums):
+            sumVal += val   # sumVal is the accumulate sum from index 0
+            if sumVal not in sumDict:  # only consider this case for longest subarray
+                sumDict[sumVal] = i
+            if sumVal - k in sumDict:
+                res = max(res, i - sumDict[sumVal - k])
+        return res
 ```
