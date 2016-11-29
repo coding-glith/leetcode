@@ -16,23 +16,18 @@ Minimum window is "BANC".
 
 > * If there are multiple such windows, you are guaranteed that there will always be only one unique minimum window in S.
 
-The solution is to maintain a dictionary and flag to mark if all the target character are found.
+The solution is to maintain a dictionary and flag to mark if all the target character are found. For example:
 
+```
 ADOBECODEBANC
-
 ADOBEC  -> put in result
-
  DOBEC
- 
  DOBECODEBA  -> put in result again and again until
- 
      CODEBA
-     
       ODEBA
-      
       ODEBANC   -> put in result again and again until
-      
          BANC
+```
 
 ```Python
 class Solution(object):
