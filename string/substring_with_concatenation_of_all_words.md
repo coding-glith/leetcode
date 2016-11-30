@@ -11,7 +11,13 @@ You should return the indices: [0,9].
 (order does not matter).
 ```
 
-My original solution. But this solution gets time limit exceeded error.
+The good part of this solution is it's idea of the index. The run time complexity is O(len(s)len(words[0])/len(wors)). So it will pass the case when words = ['a', 'a', 'a', 'a', and more].
+
+```Python
+
+```
+
+My original solution. But this solution gets time limit exceeded error. The run time complexity is O(len(s)len(words)).
 
 ```
 "barfoothefoobarman", ["bar", "foo"], check:
