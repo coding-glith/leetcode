@@ -11,19 +11,13 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        if len(s) == 0:
-            return True
-        sList = []
-        for indx in xrange(len(s)):
-            if s[indx] in ["(", "{", "["]:
-                sList.append(s[indx])
-            elif s[indx] == ")" and sList != [] and sList[-1] == "(":
-                sList.pop()
-            elif s[indx] == "]" and sList != [] and sList[-1] == "[":
-                sList.pop()
-            elif s[indx] == "}" and sList != [] and sList[-1] == "{":
-                sList.pop()
-            else:
-                return False
-        return True if sList == [] else False
+        stack = []
+        for i in xrange(len(s)):
+            if s[i] in (")", "]", "}"):
+                top = stack.pop() if stack else ""
+                if not top or (top == "(" and s[i] != ")") or \
+                   (top == "[" and s[i] != "]") or \
+                   (top == "{" and s[i] != "}"): return False
+            else: stack.append(s[i])
+        return True if not stack else False
 ```
