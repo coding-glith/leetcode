@@ -23,6 +23,8 @@ minStack.top();      --> Returns 0.
 minStack.getMin();   --> Returns -2.
 ```
 
+The idea of the solution is to maintain a list minL that it maintains the minimum value for each corresponding index. So when pop out some value, it can just do pop without affecting other results.
+
 ```Python
 class MinStack(object):
 
