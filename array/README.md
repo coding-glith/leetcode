@@ -38,6 +38,8 @@
 
 > * [Minimum Size Subarray Sum](minimum_size_subarray_sum.md)
 
+> * [Sliding Window Maximum](sliding_window_maximum.md)
+
 ### Array value ranges, add dummy node at the end for corner cases
 
 > * [Summary Ranges/Missing Ranges](summary_ranges.md)
