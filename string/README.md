@@ -28,7 +28,7 @@
 
 ### Parenthesis, stack and pattern matching
 
-* [Valid Parentheses](valid_parentheses.md)
+> * [Valid Parentheses](valid_parentheses.md)
 
  * [Reverse String](reverse_string.md)
  * [Add Binary](add_binary.md)
