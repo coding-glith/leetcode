@@ -29,6 +29,27 @@ Replace the one 'A' in the middle with 'B' and form "AABBBBA".
 The substring "BBBB" has the longest repeating letters, which is 4.
 ```
 
+The key part of the solution is: i + 1 - start - max(counts.values()) > thres, which means size of window - most frequent value = number of different character needs to be replaced > threshold, then shrink the window until it satisfy the condition, and then update results.
+
+```Python
+class Solution(object):
+    def characterReplacement(self, s, k):
+        """
+        :type s: str
+        :type k: int
+        :rtype: int
+        """
+        res, start, counts = 0, 0, {}
+        for i in xrange(len(s)):
+            counts[s[i]] = counts.get(s[i], 0) + 1
+            thres = k if k >= 0 else 0
+            while i + 1 - start - max(counts.values()) > thres:
+                counts[s[start]] -= 1
+                start += 1
+            res = max(res, i + 1 - start)
+        return res
+```
+
 ```Python
 class Solution(object):
     def characterReplacement(self, s, k):
