@@ -36,6 +36,8 @@ class Solution(object):
 
 > T is "ece" which its length is 3.
 
+Same as above, just add a check for k <= 0.
+
 ```Python
 class Solution(object):
     def lengthOfLongestSubstringKDistinct(self, s, k):
@@ -44,19 +46,18 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        if not s or k <= 0: return 0
-        start, end, res, charDict = 0, 0, 1, {s[0]: 1}
-        for i in xrange(1, len(s)):
-            if s[i] not in charDict.keys():
-                while len(charDict.keys()) >= k and s[start] in charDict:
-                    charDict[s[start]] -= 1
-                    if charDict[s[start]] == 0:
-                        charDict.pop(s[start])
+        if k <= 0: return 0
+        res, sDict, start = 0, {}, 0
+        for i in xrange(len(s)):
+            if s[i] not in sDict:
+                while len(sDict.keys()) >= k:
+                    sDict[s[start]] -= 1
+                    if sDict[s[start]] == 0:
+                        sDict.pop(s[start], None)
                     start += 1
-                charDict[s[i]] = 1
+                sDict[s[i]] = 1
             else:
-                charDict[s[i]] += 1
-            end = i
-            res = max(res, end+1-start)
-        return res
+                sDict[s[i]] += 1
+            res = max(res, i+1-start)
+        return res   
 ```
