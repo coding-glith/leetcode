@@ -40,16 +40,14 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        if not s: return 0
-        start, end, res = 0, 0, 1
+        if len(s) <= 1: return len(s)
+        res, start, end = 1, 0, 0
         for i in xrange(1, len(s)):
-            if s[i] not in s[start:end+1]:
-                end = i
-            else:
-                while s[start] != s[i]:
+            if s[i] in s[start : end + 1]:
+                while start <= end and s[start] != s[i]:
                     start += 1
                 start += 1
-                end = i
-            res = max(res, end+1-start)
-        return res
+            end = i
+            res = max(res, end + 1 - start) 
+        return res  
 ```
