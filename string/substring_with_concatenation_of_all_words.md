@@ -14,7 +14,31 @@ You should return the indices: [0,9].
 The good part of this solution is it's idea of the index. The run time complexity is O(len(s)len(words[0])/len(wors)). So it will pass the case when words = ['a', 'a', 'a', 'a', and more].
 
 ```Python
-
+class Solution(object):
+    def findSubstring(self, s, words):
+        """
+        :type s: str
+        :type words: List[str]
+        :rtype: List[int]
+        """
+        res, wordLen, wordNum = [], len(words[0]) if words else 0, len(words)
+        wordDict = collections.Counter(words)
+        for i in xrange(wordLen):
+            localDict = collections.defaultdict(int)
+            window = collections.deque()
+            for checkIdx in xrange(i, len(s), wordLen):
+                checkWord = s[checkIdx : checkIdx + wordLen]
+                if checkWord in wordDict:
+                    localDict[checkWord] += 1
+                    window.append(checkWord)
+                    while localDict[checkWord] > wordDict[checkWord]:
+                        localDict[window.popleft()] -= 1
+                    if len(window) == wordNum:
+                        res.append(checkIdx - (wordNum - 1) * wordLen)
+                else:
+                    localDict.clear()
+                    window.clear()
+        return res
 ```
 
 My original solution. But this solution gets time limit exceeded error. The run time complexity is O(len(s)len(words)).
