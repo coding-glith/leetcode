@@ -29,7 +29,7 @@ In backtracking algorithms you try to build a solution one step at a time. If at
 
 > * [Generalized Abbreviation](generalized_abbreviation.md)
 
-> * [Generate Parentheses](string/generate_parentheses.md)
+> * [Generate Parentheses](../string/generate_parentheses.md)
 
 > * [Restore IP Addresses](restore_ip_addresses.md)
 
