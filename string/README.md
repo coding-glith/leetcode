@@ -4,10 +4,6 @@
 
 > * [Longest Absolute File Path](longest_absolute_file_path.md)
 
-> * [Longest Substring Without Repeating Characters](longest_substring_without_repeating_characters.md)
-
-> * [Longest Substring with At Most Two/k Distinct Characters](longest_substring_with_at_most_two_distinct_Characters.md)
-
 > * [Longest Repeating Character Replacement](longest_repeating_character_replacement.md)
 
 > * [Sentence Screen Fitting](sentence_screen_fitting.md)
@@ -25,6 +21,10 @@
 > * [Minimum Window Substring](minimum_window_substring.md)
 
 > * [Substring with Concatenation of All Words](substring_with_concatenation_of_all_words.md)
+
+> * [Longest Substring Without Repeating Characters](longest_substring_without_repeating_characters.md)
+
+> * [Longest Substring with At Most Two/k Distinct Characters](longest_substring_with_at_most_two_distinct_Characters.md)
 
  * [Reverse String](reverse_string.md)
  * [Add Binary](add_binary.md)
