@@ -30,6 +30,8 @@
 
 > * [Valid Parentheses](valid_parentheses.md)
 
+> * [Generate Parentheses](generate_parentheses.md)
+
  * [Reverse String](reverse_string.md)
  * [Add Binary](add_binary.md)
  * [Ransom Note](ransom_note.md)
