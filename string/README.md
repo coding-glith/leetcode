@@ -34,6 +34,8 @@
 
 > * [Longest Valid Parentheses](longest_valid_parentheses.md)
 
+> * [Remove Invalid Parentheses](remove_invalid_parentheses.md)
+
  * [Reverse String](reverse_string.md)
  * [Add Binary](add_binary.md)
  * [Ransom Note](ransom_note.md)
