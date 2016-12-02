@@ -12,7 +12,9 @@
 ")(" -> [""]
 ```
 
-See leetcode [discussion](https://discuss.leetcode.com/topic/34875/easy-short-concise-and-fast-java-dfs-3-ms-solution).
+DFS solution. See leetcode [discussion](https://discuss.leetcode.com/topic/34875/easy-short-concise-and-fast-java-dfs-3-ms-solution).
+
+This problem can also be solve using BFS solution but much slower. The idea is remove one "(" or ")" to see if has valid results, otherwise move to the next level of removing two characters.
 
 ```Python
 class Solution(object):
