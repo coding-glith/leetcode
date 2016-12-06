@@ -8,7 +8,7 @@
 
 > Assume that the total area is never beyond the maximum possible value of int.
 
-Need to be really careful with different cases to determine if overlap or not.
+Need to be really careful with different cases to determine if overlap or not. The basic idea is check the second rectangle at left or right, then check if it's above, below or far away in the x-axis.
 
 ```Python
 class Solution(object):
