@@ -4,7 +4,11 @@
 
 > * [Divide Two Integers](divide_two_integers.md)
 
-> * [Fraction to Recurring Decimal](fraction_to_recurring_decimal.md) 
+> * [Fraction to Recurring Decimal](fraction_to_recurring_decimal.md)
+
+### Others
+
+> * [Rectangle Area](rectangle_area.md)
 
  * [Reverse Integer](reverse_integer.md)
  * [Nim Game](nim_game.md)
@@ -18,7 +22,6 @@
  * [Excel Sheet Column Title/Number](excel_sheet_column_title.md)
  * [Count Primes](count_primes.md)
  * [Factorial Trailing Zeroes](factorial_trailing_zeroes.md)
- * [Rectangle Area](rectangle_area.md)
  * [Group Shifted Strings](group_shifted_strings.md)
  * [Nested List Weight Sum I/II](nested_list_weight_sum.md)
  * [Sum of Two Integers](sum_of_two_integers.md)
