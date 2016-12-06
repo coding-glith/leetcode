@@ -9,3 +9,7 @@
 > * [Blog3](http://hongzheng.me/amazon-logical-ability/)
 
 > * [OA2](http://www.jianshu.com/p/a7c89bc64728)
+
+> * [OA2](http://www.jianshu.com/p/013e35d551ba)
+
+> * [OA2](http://www.jianshu.com/p/807fc0ec0bc3)
