@@ -26,6 +26,8 @@
 
 > * [Longest Repeating Character Replacement](longest_repeating_character_replacement.md)
 
+> * [Find All Anagrams in a String](find_all_anagrams_in_a_string.md)
+
 ### Parenthesis, stack and pattern matching
 
 > * [Valid Parentheses](valid_parentheses.md)
