@@ -36,6 +36,10 @@
 
 > * [Remove Invalid Parentheses](remove_invalid_parentheses.md)
 
+### Palindrome
+
+> * [Longest Palindromic Substring](longest_palindromic_substring.md)
+
  * [Reverse String](reverse_string.md)
  * [Add Binary](add_binary.md)
  * [Ransom Note](ransom_note.md)
