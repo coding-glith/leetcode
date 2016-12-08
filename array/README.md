@@ -28,6 +28,8 @@
 
 > * [Number of Islands I/II](number_of_islands.md)
 
+> * [Island Perimeter](island_perimeter.md)
+
 > * [Surrounded Regions](surrounded_regions.md)
 
 > * [Walls and Gates](walls_and_gates.md)
