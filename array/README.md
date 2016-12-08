@@ -32,6 +32,8 @@
 
 > * [Walls and Gates](walls_and_gates.md)
 
+> * [Shortest Path to Escape Maze](shortest_path_to_escape_maze.md)
+
 ### Subarray
 
 > * [Maximum Size Subarray Sum Equals k](maximum_size_subarray_sum_equals_k.md)
