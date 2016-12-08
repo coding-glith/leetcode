@@ -6,6 +6,10 @@
 
 > * [Fraction to Recurring Decimal](fraction_to_recurring_decimal.md)
 
+### Array points form a line
+
+> * [Number of Boomerangs](number_of_boomerangs.md)
+
 ### Others
 
 > * [Rectangle Area](rectangle_area.md)
