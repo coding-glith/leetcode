@@ -28,6 +28,8 @@
 
 > * [Find All Anagrams in a String](find_all_anagrams_in_a_string.md)
 
+> * [Repeated Substring Pattern](repeated_substring-pattern.md)
+
 ### Parenthesis, stack and pattern matching
 
 > * [Valid Parentheses](valid_parentheses.md)
