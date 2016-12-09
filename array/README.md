@@ -38,7 +38,7 @@
 
 ### Topological sort, BFS, DFS
 
-> [Course Schedule I/II](course_schedule.md)
+> * [Course Schedule I/II](course_schedule.md)
 
 ### Subarray
 
