@@ -27,6 +27,8 @@ There are a total of 2 courses to take. To take course 1 you should have finishe
 
 > * Topological sort could also be done via BFS.
 
+BFS.
+
 ```Python
 class Solution(object):
     def canFinish(self, numCourses, prerequisites):
@@ -51,6 +53,35 @@ class Solution(object):
                 prerNum[i] -= 1
                 if prerNum[i] == 0: noPrerList.append(i)
         return count == numCourses
+```
+
+DFS.
+
+```Python
+class Solution(object):
+    def canFinish(self, numCourses, prerequisites):
+        """
+        :type numCourses: int
+        :type prerequisites: List[List[int]]
+        :rtype: bool
+        """
+        courseList = [[] for _ in xrange(numCourses)] # list of prereq courses for i
+        visit = [0] * numCourses
+        for pair in prerequisites:
+            courseList[pair[0]].append(pair[1])
+
+        def dfs(i):
+            if visit[i] == -1: return False
+            if visit[i] == 1: return True
+            visit[i] = -1  # means cycle
+            for pre in courseList[i]:
+                if not dfs(pre): return False
+            visit[i] = 1   # means no cycle
+            return True
+        
+        for i in xrange(numCourses):
+            if not dfs(i): return False
+        return True
 ```
 
 # Course Schedule II
