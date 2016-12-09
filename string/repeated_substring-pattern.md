@@ -37,9 +37,10 @@ class Solution(object):
         for i in xrange(1, len(str)):
             if str[i] in str[:idx+1]:
                 if len(str) % len(str[:idx+1]) == 0:
-                    for j in xrange(i, len(str)-len(str[:idx+1]), len(str[:idx+1])):
+                    for j in xrange(i, len(str), len(str[:idx+1])):
                         if str[j:j+len(str[:idx+1])] != str[:idx+1]: break
-                    return True
+                        else:
+                            if j == len(str) - len(str[:idx+1]): return True
             idx = i
         return False
 ```
