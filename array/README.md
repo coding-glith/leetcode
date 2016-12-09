@@ -36,6 +36,10 @@
 
 > * [Shortest Path to Escape Maze](shortest_path_to_escape_maze.md)
 
+### Topological sort, BFS, DFS
+
+> [Course Schedule I/II](course_schedule.md)
+
 ### Subarray
 
 > * [Maximum Size Subarray Sum Equals k](maximum_size_subarray_sum_equals_k.md)
