@@ -12,6 +12,8 @@
 
 > Your function should return length = 2, with the first two elements of nums being 2.
 
+Since the order doesn't matter, so we can use two pointers to achieve O(logN) complexity, otherwise check one by one like move zeros, then it's O(N) complexity.
+
 ```Python
 class Solution(object):
     def removeElement(self, nums, val):
