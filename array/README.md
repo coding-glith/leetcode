@@ -9,6 +9,8 @@ If need to find unique solution, need to use sort() and set() some time.
 ```
 > * [K Sum](k_sum.md)
 
+> * [Median of Two Sorted Arrays](median_of_two_sorted_arrays.md)
+
 ### Array operations, find some value, move values
 
 > * [Move Zeroes](move_zeroes.md)
@@ -95,4 +97,3 @@ If need to find unique solution, need to use sort() and set() some time.
  * [Search in Rotated Sorted Array I/II](search_in_rotated_sorted_array.md)
  * [H-Index I/II](h_index.md)
  * [Top K Frequent Elements](top_k_frequent_elements.md)
- * [Median of Two Sorted Arrays](median_of_two_sorted_arrays.md)
