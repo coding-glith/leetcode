@@ -17,6 +17,8 @@ If need to find unique solution, need to use sort() and set() some time.
 
 > * [Move Zeroes](move_zeroes.md)
 
+> * [Remove Element](remove_element.md)
+
 > * [Wiggle Sort I/II](wiggle_sort.md)
 
 > * [Find the Difference](find_the_difference.md)
@@ -69,7 +71,6 @@ If need to find unique solution, need to use sort() and set() some time.
 
 > * [Plus One](plus_one.md)
 
- * [Remove Element](remove_element.md)
  * [Remove Duplicates from Sorted Array](remove_duplicates_from_sorted_array.md)
  * [Pascal's Triangle](pascal's_triangle.md)
  * [Merge Sorted Array](merge_sorted_array.md)
