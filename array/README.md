@@ -67,6 +67,10 @@ If need to find unique solution, need to use sort() and set() some time.
 
 > * [Sliding Window Maximum](sliding_window_maximum.md)
 
+### Go through array from left to right and right to left
+
+> * [Product of Array Except Self](product_of_array_except_self.md)
+
 ### Array value ranges, add dummy node at the end for corner cases
 
 > * [Summary Ranges/Missing Ranges](summary_ranges.md)
@@ -92,7 +96,6 @@ If need to find unique solution, need to use sort() and set() some time.
  * [Game of Life](game_of_life.md)
  * [Spiral Matrix I/II](spiral_matrix.md)
  * [Range Addition](range_addition.md)
- * [Product of Array Except Self](product_of_array_except_self.md)
  * [Rotate Image](rotate_image.md)
  * [Sort Colors](sort_colors.md)
  * [Next Permutation](next_permutation.md)
