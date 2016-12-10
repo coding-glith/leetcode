@@ -189,6 +189,6 @@ class Solution(object):
             prev_sell = sell
             sell = buy + price   # transit from buy
             buy = max(buy, rest - price)   # stay at buy or transit from rest
-            rest = max(rest, prev_sell)    # stay at rest or transit from buy
+            rest = max(rest, prev_sell)    # stay at rest or transit from sell
         return max(rest, sell)
 ```
