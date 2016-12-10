@@ -13,6 +13,8 @@ If need to find unique solution, need to use sort() and set() some time.
 
 > * [Majority Element I/II](majority_element.md)
 
+> * [Container With Most Water](container_with_most_water.md)
+
 ### Array operations, find some value, move values
 
 > * [Move Zeroes](move_zeroes.md)
@@ -92,7 +94,6 @@ If need to find unique solution, need to use sort() and set() some time.
  * [Range Addition](range_addition.md)
  * [Product of Array Except Self](product_of_array_except_self.md)
  * [Rotate Image](rotate_image.md)
- * [Container With Most Water](container_with_most_water.md)
  * [Sort Colors](sort_colors.md)
  * [Next Permutation](next_permutation.md)
  * [Find the Celebrity](find_the_celebrity.md)
