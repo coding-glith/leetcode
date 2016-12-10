@@ -11,6 +11,8 @@ If need to find unique solution, need to use sort() and set() some time.
 
 > * [Median of Two Sorted Arrays](median_of_two_sorted_arrays.md)
 
+> * [Majority Element I/II](majority_element.md)
+
 ### Array operations, find some value, move values
 
 > * [Move Zeroes](move_zeroes.md)
@@ -80,7 +82,6 @@ If need to find unique solution, need to use sort() and set() some time.
  * [Search Insert Position / Longest Increasing Subsequence / Increasing Triplet Subsequence / Russian Doll Envelopes](search_insert_position.md)
  * [Find Peak Element](find_peak_element.md)
  * [Contains Duplicate](contains_duplicate.md)
- * [Majority Element I/II](majority_element.md)
  * [Shortest Word Distance I/II/III](shortest_word_distance.md)
  * [Intersection of Two Arrays I/II](intersection_of_two_arrays.md)
  * [Meeting Rooms](meeting_rooms.md)
