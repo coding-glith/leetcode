@@ -1,5 +1,9 @@
 # Array
 
+### Search through array
+
+> * [K Sum](k_sum.md)
+
 ### Array operations, find some value, move values
 
 > * [Move Zeroes](move_zeroes.md)
@@ -60,7 +64,6 @@
  * [Remove Duplicates from Sorted Array](remove_duplicates_from_sorted_array.md)
  * [Pascal's Triangle](pascal's_triangle.md)
  * [Merge Sorted Array](merge_sorted_array.md)
- * [K Sum](k_sum.md)
  * [Find Minimum in Rotated Sorted Array ](find_minimum_in_rotated_sorted_array.md)
  * [Largest Rectangle in Histogram ](largest_rectangle_in_histogram.md)
  * [Maximal Rectangle](maximal_rectangle.md)
