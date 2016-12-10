@@ -10,6 +10,25 @@
 
 > Could you solve it with constant space complexity? (Note: The output array does not count as extra space for the purpose of space complexity analysis.)
 
+Without O(1) extra space.
+
+```Python
+class Solution(object):
+    def productExceptSelf(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        res = [1] * len(nums)
+        for i in xrange(1, len(nums)):
+            res[i] = nums[i-1] * res[i-1]
+        prev = 1
+        for i in xrange(len(nums)-2, -1, -1):
+            res[i] *= nums[i+1] * prev
+            prev *= nums[i+1]
+        return res
+```
+
 ```Python
 class Solution(object):
     def productExceptSelf(self, nums):
