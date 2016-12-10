@@ -12,6 +12,10 @@ Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1].
 ```
 
+The intuitive way to solve this problem is to use two pointers. The time complexity O(NN).
+
+But if we use extra space, the time complexity is O(N). Because python dictionary is HashTable, so the look up time is O(1).
+
 ```Python
 class Solution(object):
     def twoSum(self, nums, target):
@@ -43,7 +47,7 @@ class Solution(object):
 
 > Output: index1=1, index2=2
 
-Using dictionary, same as above.
+Using dictionary, same as above. Or use two pointers.
 
 ```Python
 class Solution(object):
@@ -59,6 +63,25 @@ class Solution(object):
                 return [dict[target - numbers[indx]]+1, indx+1]
             else:
                 dict[numbers[indx]] = indx
+        return []
+```
+
+```Python
+class Solution(object):
+    def twoSum(self, numbers, target):
+        """
+        :type numbers: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        first, second = 1, len(numbers)
+        while first <= second:
+            if numbers[first-1] + numbers[second-1] > target:
+                second -= 1
+            elif numbers[first-1] + numbers[second-1] < target:
+                first += 1
+            else:
+                return [first, second]
         return []
 ```
 
@@ -78,7 +101,7 @@ find(4) -> true
 find(7) -> false
 ```
 
-Needs to consider unique key cases and duplicate keys cases.
+Needs to consider unique key cases and duplicate keys cases. Ensure same value cannot be used twice.
 
 ```Python
 class TwoSum(object):
@@ -162,6 +185,16 @@ class Solution(object):
 
 Solution 2: fix one value, use dictionary to better find the other two combinations.
 
+```
+For python x = set():
+x.add((1,2))  -> x = set([(1, 2)])
+x.add((2,1))  -> x = set([(1, 2), (2, 1)])
+x.remove((1,2))
+x.pop()
+x.clear()
+map(list, x): set([(1, 2), (2, 1)]) -> [[1, 2], [2, 1]]
+```
+
 ```Python
 class Solution(object):
     def threeSum(self, nums):
@@ -176,10 +209,10 @@ class Solution(object):
         for indx, val in enumerate(nums[:-2]):   # leave the last two elems
             dic = {}  # dic contains the waiting value to find a pair
             for innerVal in nums[indx+1:]:  # now the goal is to find combination of -val
-                if innerVal in dic:   # means innerVal == -val - innerVal  -> reach the goal to find -val
-                    result.add((val, innerVal, -val - innerVal))
+                if -val - innerVal in dic:   # means innerVal == -val - innerVal  -> reach the goal to find -val
+                    result.add((val, innerVal, -val - innerVal))  # if value in set, won't do add
                 else:
-                    dic[-val - innerVal] = 1
+                    dic[innerVal] = 1
         return map(list, result)
 ```
 
@@ -288,9 +321,47 @@ class Solution(object):
             for secIndx in xrange(indx + 1, len(nums) - 2):  # at this point, becomes 2sum problem
                 dic = {}  # need to find 2sum goal = target -val - nums[secIndx]
                 for innerIndx in xrange(secIndx+1, len(nums)):
-                    if nums[innerIndx] not in dic:
-                        dic[target -val - nums[secIndx] - nums[innerIndx]] = 1
+                    if target - val - nums[secIndx] - nums[innerIndx] not in dic:
+                        dic[nums[innerIndx]] = 1
                     else:
-                        result.add((target -val - nums[secIndx] - nums[innerIndx], val, nums[secIndx], nums[innerIndx]))
+                        result.add((target - val - nums[secIndx] - nums[innerIndx], val, nums[secIndx], nums[innerIndx]))
         return map(list, result)
+```
+
+# 4Sum II
+
+> Given four lists A, B, C, D of integer values, compute how many tuples (i, j, k, l) there are such that A[i] + B[j] + C[k] + D[l] is zero.
+
+> To make problem a bit easier, all A, B, C, D have same length of N where 0 ≤ N ≤ 500. All integers are in the range of -228 to 228 - 1 and the result is guaranteed to be at most 231 - 1.
+
+> Example:
+
+> ```
+Input:
+A = [ 1, 2]
+B = [-2,-1]
+C = [-1, 2]
+D = [ 0, 2]
+Output:
+2
+Explanation:
+The two tuples are:
+1. (0, 0, 0, 1) -> A[0] + B[0] + C[0] + D[1] = 1 + (-2) + (-1) + 2 = 0
+2. (1, 1, 0, 0) -> A[1] + B[1] + C[0] + D[0] = 2 + (-1) + (-1) + 0 = 0
+```
+
+O(NN) solution. Find the sum dictionary for A, B, and C, D.
+
+```Python
+class Solution(object):
+    def fourSumCount(self, A, B, C, D):
+        """
+        :type A: List[int]
+        :type B: List[int]
+        :type C: List[int]
+        :type D: List[int]
+        :rtype: int
+        """
+        AB = collections.Counter(a+b for a in A for b in B)
+        return sum(AB[-c-d] for c in C for d in D)
 ```
