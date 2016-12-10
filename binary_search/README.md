@@ -18,6 +18,8 @@ Binary search search a particular item by comparing the middle most item of the 
 
 > * Valid Perfect Square
 
+> * [Median of Two Sorted Arrays](../Array/median_of_two_sorted_arrays.md)
+
 ### Binary Search for rotated array:
 
 > * Find Minimum in Rotated Sorted Array I/II
