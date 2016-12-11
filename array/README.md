@@ -77,11 +77,12 @@ If need to find unique solution, need to use sort() and set() some time.
 
 > * [Summary Ranges/Missing Ranges](summary_ranges.md)
 
-### Addition, deal with carry
+### Addition, deal with carry and array index
 
 > * [Plus One](plus_one.md)
 
- * [Pascal's Triangle](pascal's_triangle.md)
+> * [Pascal's Triangle](pascal's_triangle.md)
+
  * [Merge Sorted Array](merge_sorted_array.md)
  * [Largest Rectangle in Histogram ](largest_rectangle_in_histogram.md)
  * [Maximal Rectangle](maximal_rectangle.md)
