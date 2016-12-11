@@ -17,6 +17,8 @@ If need to find unique solution, need to use sort() and set() some time.
 
 > * [Find Minimum in Rotated Sorted Array ](find_minimum_in_rotated_sorted_array.md)
 
+> * [Search in Rotated Sorted Array I/II](search_in_rotated_sorted_array.md)
+
 > * [Merge Sorted Array](merge_sorted_array.md)
 
 ### Array and area with axis
@@ -112,6 +114,5 @@ If need to find unique solution, need to use sort() and set() some time.
  * [Next Permutation](next_permutation.md)
  * [Find the Celebrity](find_the_celebrity.md)
  * [Set Matrix Zeroes](set_matrix_zeroes.md)
- * [Search in Rotated Sorted Array I/II](search_in_rotated_sorted_array.md)
  * [H-Index I/II](h_index.md)
  * [Top K Frequent Elements](top_k_frequent_elements.md)
