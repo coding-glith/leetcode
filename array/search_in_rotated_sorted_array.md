@@ -8,6 +8,8 @@
 
 > You may assume no duplicate exists in the array.
 
+First find out the pivot, then check which range the target lies, and finally do binary search.
+
 ```Python
 class Solution(object):
     def search(self, nums, target):
