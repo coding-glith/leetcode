@@ -41,6 +41,8 @@ If need to find unique solution, need to use sort() and set() some time.
 
 > * [Wiggle Sort I/II](wiggle_sort.md)
 
+> * [Sort Colors](sort_colors.md)
+
 > * [Find the Difference](find_the_difference.md)
 
 > * [Single Number I/II/II](single_number.md) - deal with corner case
@@ -116,7 +118,6 @@ If need to find unique solution, need to use sort() and set() some time.
  * [Intersection of Two Arrays I/II](intersection_of_two_arrays.md)
  * [Meeting Rooms](meeting_rooms.md)
  * [Range Addition](range_addition.md)
- * [Sort Colors](sort_colors.md)
  * [Next Permutation](next_permutation.md)
  * [Find the Celebrity](find_the_celebrity.md)
  * [H-Index I/II](h_index.md)
