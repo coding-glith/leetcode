@@ -23,6 +23,8 @@ If need to find unique solution, need to use sort() and set() some time.
 
 > * [Longest Consecutive Sequence](longest_consecutive_sequence.md)
 
+> * [Find Peak Element](find_peak_element.md)
+
 ### Array and area with axis
 
 > * [Largest Rectangle in Histogram ](largest_rectangle_in_histogram.md)
@@ -109,7 +111,6 @@ If need to find unique solution, need to use sort() and set() some time.
  * [Search a 2D Matrix](search_a_2d_matrix.md)
  * [Search for a Range](search_for_a_range.md)
  * [Search Insert Position / Longest Increasing Subsequence / Increasing Triplet Subsequence / Russian Doll Envelopes](search_insert_position.md)
- * [Find Peak Element](find_peak_element.md)
  * [Contains Duplicate](contains_duplicate.md)
  * [Shortest Word Distance I/II/III](shortest_word_distance.md)
  * [Intersection of Two Arrays I/II](intersection_of_two_arrays.md)
