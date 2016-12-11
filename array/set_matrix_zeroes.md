@@ -12,7 +12,7 @@
 
 > Could you devise a constant space solution?
 
-The trick of this in-place solution is to set to be other distinguished characters then set back to zeros.
+The trick of this in-place solution is to set to be other distinguished characters then set back to zeros. Can also be done by bit manipulation, like [Game of Life](game_of_life.md).
 
 ```Python
 class Solution(object):
