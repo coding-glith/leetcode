@@ -20,6 +20,15 @@
 
 > * In this question, we represent the board using a 2D array. In principle, the board is infinite, which would cause problems when the active area encroaches the border of the array. How would you address these problems?
 
+In python,
+
+```
+>> means shift to the right
+<< means shift wo the left, like multiply by 2^k
+&  bitwise and
+|  bitwise or
+```
+
 ```Python
 class Solution(object):
     def gameOfLife(self, board):
