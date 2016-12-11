@@ -10,6 +10,8 @@
 
 > * [Paint House I/II](paint_house.md)
 
+> * [Triangle](triangle.md)
+
 ### Two dimensional
 
 > * [Regular Expression Matching](regular_expression_matching.md)
@@ -22,6 +24,8 @@
 
 > * [Unique Paths](unique_paths.md)
 
+> * [Minimum Path Sum](minimum_path_sum.md)
+
 ### Maintain global max/min
 
 > * [Best Time To Buy And Sell Stock I/II/III/IV/with cooldown](best_time_to_buy_and_sell_stock.md)
@@ -29,8 +33,6 @@
 > * [Maximum (Product) Subarray](maximum_subarray.md)
 
 
- * [Minimum Path Sum](minimum_path_sum.md)
- * [Triangle](triangle.md)
  * [Unique Binary Search Trees](unique_binary_search_trees.md)
  * [Range Sum Query - Immutable](range_sum_query_immutable.md)
  * [Integer Break](integer_break.md)
