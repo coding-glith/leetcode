@@ -73,6 +73,8 @@ If need to find unique solution, need to use sort() and set() some time.
 
 > * [Shortest Path to Escape Maze](shortest_path_to_escape_maze.md)
 
+> * [Game of Life](game_of_life.md)
+
 ### Topological sort, BFS, DFS
 
 > * [Course Schedule I/II](course_schedule.md)
@@ -110,7 +112,6 @@ If need to find unique solution, need to use sort() and set() some time.
  * [Shortest Word Distance I/II/III](shortest_word_distance.md)
  * [Intersection of Two Arrays I/II](intersection_of_two_arrays.md)
  * [Meeting Rooms](meeting_rooms.md)
- * [Game of Life](game_of_life.md)
  * [Range Addition](range_addition.md)
  * [Sort Colors](sort_colors.md)
  * [Next Permutation](next_permutation.md)
