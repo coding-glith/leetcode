@@ -21,6 +21,8 @@ If need to find unique solution, need to use sort() and set() some time.
 
 > * [Merge Sorted Array](merge_sorted_array.md)
 
+> * [Longest Consecutive Sequence](longest_consecutive_sequence.md)
+
 ### Array and area with axis
 
 > * [Largest Rectangle in Histogram ](largest_rectangle_in_histogram.md)
