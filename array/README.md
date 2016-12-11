@@ -19,6 +19,12 @@ If need to find unique solution, need to use sort() and set() some time.
 
 > * [Merge Sorted Array](merge_sorted_array.md)
 
+### Array and area with axis
+
+> * [Largest Rectangle in Histogram ](largest_rectangle_in_histogram.md)
+
+> * [Maximal Rectangle](maximal_rectangle.md)
+
 ### Array operations, find some value, move values
 
 > * [Move Zeroes](move_zeroes.md)
@@ -88,8 +94,7 @@ If need to find unique solution, need to use sort() and set() some time.
 > * [Pascal's Triangle](pascal's_triangle.md)
 
  
- * [Largest Rectangle in Histogram ](largest_rectangle_in_histogram.md)
- * [Maximal Rectangle](maximal_rectangle.md)
+
  * [Palindrome Number](palindrome_number.md)
  * [Search a 2D Matrix](search_a_2d_matrix.md)
  * [Search for a Range](search_for_a_range.md)
