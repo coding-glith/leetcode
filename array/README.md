@@ -75,6 +75,8 @@ If need to find unique solution, need to use sort() and set() some time.
 
 > * [Game of Life](game_of_life.md)
 
+> * [Set Matrix Zeroes](set_matrix_zeroes.md)
+
 ### Topological sort, BFS, DFS
 
 > * [Course Schedule I/II](course_schedule.md)
@@ -116,6 +118,5 @@ If need to find unique solution, need to use sort() and set() some time.
  * [Sort Colors](sort_colors.md)
  * [Next Permutation](next_permutation.md)
  * [Find the Celebrity](find_the_celebrity.md)
- * [Set Matrix Zeroes](set_matrix_zeroes.md)
  * [H-Index I/II](h_index.md)
  * [Top K Frequent Elements](top_k_frequent_elements.md)
