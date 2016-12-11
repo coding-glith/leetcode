@@ -17,6 +17,8 @@ If need to find unique solution, need to use sort() and set() some time.
 
 > * [Find Minimum in Rotated Sorted Array ](find_minimum_in_rotated_sorted_array.md)
 
+> * [Merge Sorted Array](merge_sorted_array.md)
+
 ### Array operations, find some value, move values
 
 > * [Move Zeroes](move_zeroes.md)
@@ -83,7 +85,7 @@ If need to find unique solution, need to use sort() and set() some time.
 
 > * [Pascal's Triangle](pascal's_triangle.md)
 
- * [Merge Sorted Array](merge_sorted_array.md)
+ 
  * [Largest Rectangle in Histogram ](largest_rectangle_in_histogram.md)
  * [Maximal Rectangle](maximal_rectangle.md)
  * [Palindrome Number](palindrome_number.md)
