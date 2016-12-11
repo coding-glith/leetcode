@@ -49,8 +49,8 @@ class Solution(object):
         # maintain minSub to deal with negative value
         for indx in range(1, len(nums)):
             maxTmp = maxSub
-            maxSub = max(max(maxSub * nums[indx], nums[indx]), minSub * nums[indx])
-            minSub = min(min(maxTmp * nums[indx], nums[indx]), minSub * nums[indx])
+            maxSub = max(maxSub * nums[indx], nums[indx], minSub * nums[indx])
+            minSub = min(maxTmp * nums[indx], nums[indx], minSub * nums[indx])
             maxProd = max(maxProd, maxSub)
         return maxProd
 ```
