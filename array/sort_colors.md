@@ -16,6 +16,13 @@
 
 > Could you come up with an one-pass algorithm using only constant space?
 
+```
+0 1 1 1 1 2 2 0 0 1
+  zero    one two
+0 0 1 1 1 1 2 2 0 1
+    zero    one two
+```
+
 ```Python
 class Solution(object):
     def sortColors(self, nums):
