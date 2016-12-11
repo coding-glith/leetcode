@@ -53,6 +53,8 @@ If need to find unique solution, need to use sort() and set() some time.
 
 > * [Rotate Image](rotate_image.md)
 
+> * [Spiral Matrix I/II](spiral_matrix.md)
+
 ### Two-dimensional array, BFS, DFS, Union Find
 
 > * [Shortest Distance from All Buildings](shortest_distance_from_all_buildings.md)
@@ -105,7 +107,6 @@ If need to find unique solution, need to use sort() and set() some time.
  * [Intersection of Two Arrays I/II](intersection_of_two_arrays.md)
  * [Meeting Rooms](meeting_rooms.md)
  * [Game of Life](game_of_life.md)
- * [Spiral Matrix I/II](spiral_matrix.md)
  * [Range Addition](range_addition.md)
  * [Sort Colors](sort_colors.md)
  * [Next Permutation](next_permutation.md)
