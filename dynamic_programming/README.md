@@ -12,7 +12,7 @@
 
 > * [Triangle](triangle.md)
 
-### Two dimensional
+### Maintain two dimensional array to track the status
 
 > * [Regular Expression Matching](regular_expression_matching.md)
 
@@ -26,6 +26,8 @@
 
 > * [Minimum Path Sum](minimum_path_sum.md)
 
+> * [Dungeon Game](dungeon_game.md)
+
 ### Maintain global max/min
 
 > * [Best Time To Buy And Sell Stock I/II/III/IV/with cooldown](best_time_to_buy_and_sell_stock.md)
@@ -38,4 +40,3 @@
  * [Integer Break](integer_break.md)
  * [Counting Bits](counting_bits.md)
  * [Wiggle Subsequence](wiggle_subsequence.md)
- * [Dungeon Game](dungeon_game.md)
