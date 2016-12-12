@@ -72,6 +72,8 @@ class Solution(object):
 ]
 ```
 
+Sort the array and check if sub in list.
+
 ```Python
 class Solution(object):
     def combinationSum2(self, candidates, target):
