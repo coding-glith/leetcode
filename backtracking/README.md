@@ -23,7 +23,7 @@ In backtracking algorithms you try to build a solution one step at a time. If at
 
 > * [Letter Combinations of a Phone Number](letter_combinations_of_a_phone_number.md)
 
-> * [Subsets](subsets.md)
+> * [Subsets I/II](subsets.md)
  
 ### construct sub-problem
 
