@@ -110,8 +110,6 @@ If need to find unique solution, need to use sort() and set() some time.
  
 
  * [Palindrome Number](palindrome_number.md)
- * [Search a 2D Matrix](search_a_2d_matrix.md)
- * [Search for a Range](search_for_a_range.md)
  * [Search Insert Position / Longest Increasing Subsequence / Increasing Triplet Subsequence / Russian Doll Envelopes](search_insert_position.md)
  * [Contains Duplicate](contains_duplicate.md)
  * [Shortest Word Distance I/II/III](shortest_word_distance.md)
