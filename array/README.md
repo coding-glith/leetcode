@@ -25,6 +25,8 @@ If need to find unique solution, need to use sort() and set() some time.
 
 > * [Find Peak Element](find_peak_element.md)
 
+> * [Find the Celebrity](find_the_celebrity.md)
+
 ### Array and area with axis
 
 > * [Largest Rectangle in Histogram ](largest_rectangle_in_histogram.md)
@@ -117,6 +119,5 @@ If need to find unique solution, need to use sort() and set() some time.
  * [Meeting Rooms](meeting_rooms.md)
  * [Range Addition](range_addition.md)
  * [Next Permutation](next_permutation.md)
- * [Find the Celebrity](find_the_celebrity.md)
  * [H-Index I/II](h_index.md)
  * [Top K Frequent Elements](top_k_frequent_elements.md)
