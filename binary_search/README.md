@@ -38,7 +38,7 @@ Binary search search a particular item by comparing the middle most item of the 
 
 > * Find Peak Element
 
-> * [Search a 2D Matrix I/II](search_a_2d_matrix)
+> * [Search a 2D Matrix I/II](search_a_2d_matrix.md)
 
 ### Search Insert Position
 
