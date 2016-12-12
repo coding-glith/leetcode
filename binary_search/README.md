@@ -30,7 +30,7 @@ Binary search search a particular item by comparing the middle most item of the 
 
 > * First Bad Version
 
-> * Search for a Range
+> * [Search for a Range](../array/search_for_a_range.md)
 
 > * Search Insert Position
 
@@ -38,7 +38,7 @@ Binary search search a particular item by comparing the middle most item of the 
 
 > * Find Peak Element
 
-> * Search a 2D Matrix I/II
+> * [Search a 2D Matrix I/II](../array/search_for_a_2d_matrix.md)
 
 ### Search Insert Position
 
