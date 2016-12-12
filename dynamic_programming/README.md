@@ -12,6 +12,8 @@
 
 > * [Triangle](triangle.md)
 
+> * [Jump Game I/II](jump_game.md)
+
 ### Maintain two dimensional array to track the status
 
 > * [Regular Expression Matching](regular_expression_matching.md)
