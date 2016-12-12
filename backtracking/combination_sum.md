@@ -171,7 +171,7 @@ Therefore the output is 7.
 
 If negative numbers are allowed, then need to limit the number of times a value can be used in the array, otherwise it will be infinite number of results.
 
-DP solution
+DP solution. The index in res is the goal in every round. Then check the values in nums, if larger, break of course because of we've sorted the array. if equal, then this value itself becomes a result, if smaller, then need to combine with other results, that is current goal - current value.
 
 ```Python
 class Solution(object):
