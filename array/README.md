@@ -109,12 +109,13 @@ If need to find unique solution, need to use sort() and set() some time.
 
 > * [Pascal's Triangle](pascal's_triangle.md)
 
+> * [Shortest Word Distance I/II/III](shortest_word_distance.md)
+
  
 
  * [Palindrome Number](palindrome_number.md)
  * [Search Insert Position / Longest Increasing Subsequence / Increasing Triplet Subsequence / Russian Doll Envelopes](search_insert_position.md)
  * [Contains Duplicate](contains_duplicate.md)
- * [Shortest Word Distance I/II/III](shortest_word_distance.md)
  * [Intersection of Two Arrays I/II](intersection_of_two_arrays.md)
  * [Meeting Rooms](meeting_rooms.md)
  * [Range Addition](range_addition.md)
