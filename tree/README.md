@@ -30,7 +30,7 @@
 
 > * [Lowest Common Ancestor of a Binary Search Tree/Binary Tree](lowest_common_ancestor_of_a_binary_search_tree.md)
 
-> * Unique Binary Search Trees I/II
+> * [Unique Binary Search Trees](unique_binary_search_trees.md)
 
 > * [Sum of Left Leaves](sum_of_left_leaves.md)
 
