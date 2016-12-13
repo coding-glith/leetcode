@@ -23,15 +23,13 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        if n <= 1:
-            return 1
-        BSTnum = [0 for indx in range(n+1)]
-        BSTnum[0] = 1
-        BSTnum[1] = 1
-        for indx in range(2, n+1):
-            for left in range(indx):
-                BSTnum[indx] += BSTnum[left] * BSTnum[indx-left-1]
-        return BSTnum[n]
+        if n <= 1: return 1
+        dp = [0] * (n+1)
+        dp[0] = 1
+        for i in xrange(1, n+1):
+            for left in xrange(i):
+                dp[i] += dp[left] * dp[i-1-left]
+        return dp[n]
 ```
 
 # Unique Binary Search Trees II
