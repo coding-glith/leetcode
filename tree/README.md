@@ -40,7 +40,7 @@
 
 ### Path sum, DFS, root to leaf
 
-> * [Path Sum I/II](path_sum.md)
+> * [Path Sum I/II/III](path_sum.md)
 
 > * [Binary Tree Maximum Path Sum](path_sum.md)
 
