@@ -115,6 +115,95 @@ class Solution(object):
         pathList.pop()
 ```
 
+# Path Sum III
+
+> You are given a binary tree in which each node contains an integer value.
+
+> Find the number of paths that sum to a given value.
+
+> The path does not need to start or end at the root or a leaf, but it must go downwards (traveling only from parent nodes to child nodes).
+
+> The tree has no more than 1,000 nodes and the values are in the range -1,000,000 to 1,000,000.
+
+> Example:
+
+> ```
+root = [10,5,-3,3,2,null,11,3,-2,null,1], sum = 8
+      10
+     /  \
+    5   -3
+   / \    \
+  3   2   11
+ / \   \
+3  -2   1
+Return 3. The paths that sum to 8 are:
+1.  5 -> 3
+2.  5 -> 2 -> 1
+3. -3 -> 11
+```
+
+Check explanation from leetcode [discussion](https://discuss.leetcode.com/topic/65100/2-python-solutions-with-detailed-explanation).
+
+```Python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def pathSum(self, root, sum):
+        """
+        :type root: TreeNode
+        :type sum: int
+        :rtype: int
+        """
+        return self.getSum(root, sum, 0, {0:1})
+    
+    def getSum(self, root, target, cur, sumDict):
+        if not root: return 0
+        res, tmp = 0, cur + root.val - target
+        if tmp in sumDict:
+            res += sumDict[tmp]
+        if cur + root.val not in sumDict:
+            sumDict[cur+root.val] = 1
+        else: sumDict[cur+root.val] += 1
+        res += self.getSum(root.left, target, cur+root.val, sumDict)
+        res += self.getSum(root.right, target, cur+root.val, sumDict)
+        sumDict[cur+root.val] -= 1
+        return res
+```
+
+```Python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def pathSum(self, root, sum):
+        """
+        :type root: TreeNode
+        :type sum: int
+        :rtype: int
+        """
+        if root:
+            return self.getPath(root, sum) + \
+                   self.pathSum(root.left, sum) + \
+                   self.pathSum(root.right, sum)
+        return 0
+    
+    def getPath(self, root, target):
+        if root:
+            return int(root.val == target) + \
+                   self.getPath(root.left, target-root.val) + \
+                   self.getPath(root.right, target-root.val)
+        return 0
+```
+
 # Binary Tree Maximum Path Sum
 
 > Given a binary tree, find the maximum path sum.
