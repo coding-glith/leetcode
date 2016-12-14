@@ -24,13 +24,15 @@
 
 > * [Rotate List](rotate_list.md)
 
+> * [Odd Even Linked List](odd_even_linked_list.md)
+
 > * [Reorder List](reorder_list.md)
 
 > * [(Insertion) Sort List](sort_list.md)
 
 > * [Copy List with Random Pointer](copy_list_with_random_pointer.md)
 
-### Slow fast pointer, find the middle point of the list
+### Slow fast pointer, find the middle point of the list, deal with list length
 
 > * [Palindrome Linked List](palindrome_linked_list.md)
 
@@ -38,11 +40,4 @@
 
 > * [Intersection of Two Linked Lists](intersection_of_two_linked_lists.md)
 
-
-
-
-
-
-* [Remove Nth Node From End of List](remove_nth_node_from_end_of_list.md)
-* [Odd Even Linked List](odd_even_linked_list.md)
-* [Plus One Linked List](plus_one_linked_list.md)
+> * [Remove Nth Node From End of List](remove_nth_node_from_end_of_list.md)
