@@ -6,7 +6,7 @@
 
 > * [Merge Two/k Sorted Lists](merge_k_sorted_lists.md)
 
-> * [Remove Duplicates from Sorted List](remove_duplicates_from_sorted_list.md)
+> * [Remove Duplicates from Sorted List I/II](remove_duplicates_from_sorted_list.md)
 
 ### Linked list modification
 
