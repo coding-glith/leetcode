@@ -88,6 +88,5 @@
 
 > * [Find Leaves of Binary Tree](find_leaves_of_binary_tree.md)
 
-* [Flatten Binary Tree to Linked List](flatten_binary_tree_to_linked_list.md)
 * [Verify Preorder Sequence in Binary Search Tree](verify_preorder_sequence_in_binary_search_tree.md)
 * [Binary Search Tree Iterator](binary_search_tree_iterator.md)
