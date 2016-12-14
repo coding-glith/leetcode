@@ -16,6 +16,8 @@
 
 > * The first node is considered odd, the second node even and so on ...
 
+Maintain a pointer for previous odd node, and go through the list, once find the next odd node, move it ahead.
+
 ```Python
 # Definition for singly-linked list.
 # class ListNode(object):
