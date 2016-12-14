@@ -14,7 +14,7 @@
 
 > * [Remove Linked List Elements](remove_linked_list_elements.md)
 
-> * [Reverse Linked List](reverse_linked_list.md)
+> * [Reverse Linked List I/II](reverse_linked_list.md)
 
 > * [Rotate List](rotate_list.md)
 
