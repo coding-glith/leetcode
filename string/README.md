@@ -44,6 +44,10 @@
 
 > * [Longest Palindromic Substring](longest_palindromic_substring.md)
 
+### Anagram, use dictionary or sort strings
+
+> * [Valid Anagram/Group Anagrams](valid_anagram.md)
+
  * [Reverse String](reverse_string.md)
  * [Add Binary](add_binary.md)
  * [Ransom Note](ransom_note.md)
@@ -59,7 +63,6 @@
  * [Palindrome Permutation I/II](palindrome_permutation.md)
  * [Compare Version Numbers](compare_version_numbers.md)
  * [Reverse Vowels of a String](reverse_vowels_of_a_string.md)
- * [Valid Anagram/Group Anagrams](valid_anagram.md)
  * [Bulls and Cows](bulls_and_cows.md)
  * [Isomorphic Strings](isomorphic_strings.md)
  * [Word Pattern](word_pattern.md)
