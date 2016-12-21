@@ -10,6 +10,8 @@
 
 > Return true because "leetcode" can be segmented as "leet code".
 
+The idea is to maintain an array res to store the "canBreak status" up till this character. For example, when we at the last character in "leetcode", we check "code" is in the dictionary, and its previous status res[4] is true, so current status can be set true.
+
 ```Python
 class Solution(object):
     def wordBreak(self, s, wordDict):
