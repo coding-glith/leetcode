@@ -27,3 +27,28 @@ class Solution(object):
                 return i
         return -1
 ```
+
+Using dictionary, check key in dictionary is O(1) complexity.
+
+```Python
+class Solution(object):
+    def firstUniqChar(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        res, charDict = -1, {}
+        for i in xrange(len(s)):
+            if s[i] not in charDict:
+                charDict[s[i]] = 1
+                if res == -1: res = i
+            else:
+                charDict[s[i]] += 1
+                if res != -1 and charDict[s[res]] > 1:
+                    for j in xrange(res, i+1):
+                        if charDict[s[j]] == 1:
+                            res = j; break
+                        else:
+                            if j == i: res = -1
+        return res
+```
