@@ -30,6 +30,8 @@
 
 > * [Repeated Substring Pattern](repeated_substring-pattern.md)
 
+> * [First Unique Character in a String](first_unique_character_in_a_string.md)
+
 ### Parenthesis, stack and pattern matching
 
 > * [Valid Parentheses](valid_parentheses.md)
@@ -69,7 +71,6 @@
  * [Repeated DNA Sequences](repeated_dna_sequences.md)
  * [Multiply Strings](multiply_strings.md)
  * [Find the Difference](find_the_difference.md)
- * [First Unique Character in a String](first_unique_character_in_a_string.md)
  * [Valid Number](valid_number.md)
  * [Is Subsequence](is_subsequence.md)
  * [One Edit Distance](one_edit_distance.md)
