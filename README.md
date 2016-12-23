@@ -11,3 +11,7 @@
 * [Class Design](class/README.md)
 * [Greedy](greedy/README.md)
 * [Bit Manipulation](bit/README.md)
+
+### Dynamic Programming and String
+
+> * [Word Break I/II](word_break.md), [Concatenated Words](concatenated_words.md)
