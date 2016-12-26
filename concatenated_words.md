@@ -24,6 +24,65 @@ Explanation: "catsdogcats" can be concatenated by "cats", "dog" and "cats";
 
 > * The returned elements order does not matter.
 
+Trie Solution. Trie is dictionary of dictionary, check letter in dictionary is fast. O(N^2) ???
+
+```Python
+class Solution(object):
+    def findAllConcatenatedWordsInADict(self, words):
+        """
+        :type words: List[str]
+        :rtype: List[str]
+        """
+        result = []
+        # creat trie: O(N*len(word))
+        self.trie = Trie()
+        for word in words:
+            self.trie.insert(word)
+        # search trie: O(N*??)
+        for word in words:
+            if self.search(word): result.append(word)
+        return result
+
+    def search(self, word):
+        node = self.trie.root
+        for i, letter in enumerate(word):
+            node = node.children.get(letter)
+            if not node: return False
+            suffix = word[i+1:]
+            # check suffix is word: self.trie.search(suffix)
+            # check suffix can break: self.search(suffix)
+            if node.isWord and (self.trie.search(suffix) or self.search(suffix)):
+                return True
+        return False
+            
+
+class TrieNode(object):
+    def __init__(self):
+        self.children = {}
+        self.isWord = False
+
+class Trie(object):
+    def __init__(self):
+        self.root = TrieNode()
+
+    def insert(self, word):
+        node = self.root
+        for letter in word:
+            child = node.children.get(letter)
+            if not child:
+                child = TrieNode()
+                node.children[letter] = child
+            node = child
+        node.isWord = True
+
+    def search(self, word):
+        node = self.root
+        for letter in word:
+            node = node.children.get(letter)
+            if not node: return False
+        return node.isWord
+```
+
 DFS solution from word break. go through the words and check if each word can be break into concatenate words from others. This solution is O(N^3). TLE.
 
 ```Python
