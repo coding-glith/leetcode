@@ -15,3 +15,7 @@
 ### Dynamic Programming and String
 
 > * [Word Break I/II](word_break.md), [Concatenated Words](concatenated_words.md)
+
+Trie related.
+
+> * [Implement Trie (Prefix Tree)](implement_trie.md)
