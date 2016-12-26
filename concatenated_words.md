@@ -24,7 +24,7 @@ Explanation: "catsdogcats" can be concatenated by "cats", "dog" and "cats";
 
 > * The returned elements order does not matter.
 
-Straightforward solution from word break. go through the words and check if each word can be break into concatenate words from others. This solution is O(N^3). TLE.
+DFS solution from word break. go through the words and check if each word can be break into concatenate words from others. This solution is O(N^3). TLE.
 
 ```Python
 class Solution(object):
