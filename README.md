@@ -18,4 +18,4 @@
 
 Trie related.
 
-> * [Implement Trie (Prefix Tree)](implement_trie.md)
+> * [Implement Trie (Prefix Tree)](implement_trie.md), [Add and Search Word - Data structure design](add_and_search_word.md)
