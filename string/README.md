@@ -46,6 +46,8 @@
 
 > * [Longest Palindromic Substring](longest_palindromic_substring.md)
 
+> * [Palindrome Pairs](palindrome_pairs.md)
+
 ### Anagram, use dictionary or sort strings
 
 > * [Valid Anagram/Group Anagrams](valid_anagram.md)
