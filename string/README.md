@@ -50,6 +50,8 @@
 
 > * [Palindrome Permutation I/II](palindrome_permutation.md)
 
+> * [Shortest Palindrome](shortest_palindrome.md)
+
 ### Anagram, use dictionary or sort strings
 
 > * [Valid Anagram/Group Anagrams](valid_anagram.md)
