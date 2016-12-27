@@ -48,6 +48,8 @@
 
 > * [Palindrome Pairs](palindrome_pairs.md)
 
+> * [Palindrome Permutation I/II](palindrome_permutation.md)
+
 ### Anagram, use dictionary or sort strings
 
 > * [Valid Anagram/Group Anagrams](valid_anagram.md)
@@ -64,7 +66,6 @@
  * [Implement strStr()](implement_strstr.md)
  * [Valid Palindrome](valid_palindrome.md)
  * [Palindrome Partitioning](palindrome_partitioning.md)
- * [Palindrome Permutation I/II](palindrome_permutation.md)
  * [Compare Version Numbers](compare_version_numbers.md)
  * [Reverse Vowels of a String](reverse_vowels_of_a_string.md)
  * [Bulls and Cows](bulls_and_cows.md)
