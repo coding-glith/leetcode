@@ -82,6 +82,59 @@ class Solution(object):
                         queue.append((i, j))
 ```
 
+Union Find. O(MNlogMN)
+
+```Python
+class Solution(object):
+    def numIslands(self, grid):
+        """
+        :type grid: List[List[str]]
+        :rtype: int
+        """
+        if not grid or not grid[0]: return 0
+        UF = UnionFind(grid)
+        for i, row in enumerate(grid):
+            for j, val in enumerate(row):
+                if val == "1":
+                    for (x, y) in ((i+1, j), (i, j+1)):
+                        if 0 <= x < len(grid) and 0 <= y < len(grid[0]) and grid[x][y] == "1":
+                            p, q = i * len(grid[0]) + j, x * len(grid[0]) + y
+                            UF.union(p, q)
+        return UF.countHead
+                
+
+
+class UnionFind(object):
+    def __init__(self, grid):
+        self.N = len(grid) * len(grid[0])
+        self.idArray = [i for i in xrange(self.N)]
+        self.sizeArray = [1] * self.N
+        self.countHead = 0
+        for i, row in enumerate(grid):
+            for j, val in enumerate(row):
+                if val == "1": self.countHead += 1
+
+    def root(self, i):
+        while self.idArray[i] != i:
+            self.idArray[i] = self.idArray[self.idArray[i]]
+            i = self.idArray[i]
+        return i
+
+    def connected(self, p, q):
+        return self.root(p) == self.root(q)
+
+    def union(self, p, q):
+        i, j = self.root(p), self.root(q)
+        if i == j: return
+        if self.sizeArray[i] < self.sizeArray[j]:
+            self.idArray[i] = j
+            self.sizeArray[j] += self.sizeArray[i]
+        else:
+            self.idArray[j] = i
+            self.sizeArray[i] += self.sizeArray[j]
+        self.countHead -= 1
+```
+
 # Number of Islands II
 
 > A 2d grid map of m rows and n columns is initially filled with water. We may perform an addLand operation which turns the water at position (row, col) into a land. Given a list of positions to operate, count the number of islands after each addLand operation. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
