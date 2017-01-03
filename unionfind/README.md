@@ -1,5 +1,7 @@
 # Union Find
 
+> * [Number of Islands I/II](../array/number_of_islands.md)
+
 ### Weighted Quick Union with Path Compression
 
 Keep the tree almost flat. O(logN)
