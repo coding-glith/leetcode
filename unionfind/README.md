@@ -1,5 +1,7 @@
 # Union Find
 
+> * [Number of Connected Components in an Undirected Graph](NumberofConnectedComponentsinanUndirectedGraph.md), add countHead.
+
 > * [Number of Islands I/II](../array/number_of_islands.md), one dimensional idArray or use {} to implement idArray.
 
 ### Weighted Quick Union with Path Compression
