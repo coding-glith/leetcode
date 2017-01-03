@@ -1,12 +1,7 @@
 # [leetcode notebook](https://leetcode.com/problemset/algorithms/)
 
 * [Union Find](unionfind/README.md)
-
 * [Graph DFS/BFS - array based](graph/README.md)
-
-
-
-
 * [Binary Search](binary_search/README.md)
 * [Tree](tree/README.md)
 * [Backtracking](backtracking/README.md)
