@@ -17,6 +17,8 @@ Given n = 5 and edges = [[0, 1], [1, 2], [2, 3], [1, 3], [1, 4]], return false.
 
 > * Note: you can assume that no duplicate edges will appear in edges. Since all edges are undirected, [0, 1] is the same as [1, 0] and thus will not appear together in edges.
 
+A valid tree of N nodes has N-1 edges and is acyclic / has N-1 edges and is connected.
+
 ```Python
 class Solution(object):
     def validTree(self, n, edges):
