@@ -2,6 +2,8 @@
 
 * [Union Find](unionfind/README.md)
 
+* [Graph DFS/BFS - array based](graph/README.md)
+
 
 
 
