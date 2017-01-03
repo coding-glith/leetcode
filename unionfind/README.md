@@ -1,6 +1,6 @@
 # Union Find
 
-> * [Number of Islands I/II](../array/number_of_islands.md)
+> * [Number of Islands I/II](../array/number_of_islands.md), one dimensional idArray or use {} to implement idArray.
 
 ### Weighted Quick Union with Path Compression
 
