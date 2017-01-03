@@ -101,8 +101,6 @@ class Solution(object):
                             p, q = i * len(grid[0]) + j, x * len(grid[0]) + y
                             UF.union(p, q)
         return UF.countHead
-                
-
 
 class UnionFind(object):
     def __init__(self, grid):
