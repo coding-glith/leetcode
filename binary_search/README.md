@@ -8,9 +8,9 @@ Binary search search a particular item by comparing the middle most item of the 
 
 ### Recursion / divide and conquer:
 
-> * Pow(x, n)
+> * [Pow(x, n)](pow_x_n.md)
 
-> * Super Pow
+> * [Super Pow](pow_x_n.md)
 
 ### Binary Search:
 
