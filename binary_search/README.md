@@ -14,9 +14,9 @@ Binary search search a particular item by comparing the middle most item of the 
 
 ### Binary Search:
 
-> * Sqrt(x)
+> * [Sqrt(x)](sqrt_x.md)
 
-> * Valid Perfect Square
+> * [Valid Perfect Square](sqrt_x.md)
 
 > * [Median of Two Sorted Arrays](../array/median_of_two_sorted_arrays.md)
 
