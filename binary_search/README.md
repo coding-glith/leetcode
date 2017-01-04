@@ -22,7 +22,7 @@ Binary search search a particular item by comparing the middle most item of the 
 
 ### Binary Search for rotated array:
 
-> * Find Minimum in Rotated Sorted Array I/II
+> * [Find Minimum in Rotated Sorted Array I/II](../array/find_minimum_in_rotated_sorted_array.md)
 
 > * Search in Rotated Sorted Array I/II
 
