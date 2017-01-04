@@ -3,6 +3,7 @@
 * [Union Find](unionfind/README.md)
 * [Graph DFS/BFS - array based](graph/README.md)
 * [Binary Search](binary_search/README.md)
+* [Stack and Queue](StackQueue/README.md)
 * [Array](array/README.md)
 * [Tree](tree/README.md)
 * [Backtracking](backtracking/README.md)
