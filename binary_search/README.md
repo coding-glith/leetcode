@@ -12,6 +12,8 @@ Binary search search a particular item by comparing the middle most item of the 
 
 > * [Super Pow](pow_x_n.md)
 
+> * [Integer to English Words](integer_to_english_words.md)
+
 ### Binary Search:
 
 > * [Sqrt(x)](sqrt_x.md)
