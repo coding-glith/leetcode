@@ -103,3 +103,33 @@ class Solution(object):
             col += dj
         return res
 ```
+
+```Python
+class Solution(object):
+    def generateMatrix(self, n):
+        """
+        :type n: int
+        :rtype: List[List[int]]
+        """
+        result = [[0] * n for _ in xrange(n)]
+        self.spiral(result, 1, 0, n-1, 0, n-1)
+        return result
+    
+    def spiral(self, result, startVal, startRow, endRow, startCol, endCol):
+        if startRow > endRow or startCol > endCol: return
+        for i in xrange(startCol, endCol+1):
+            result[startRow][i] = startVal
+            startVal += 1
+        for i in xrange(startRow+1, endRow+1):
+            result[i][endCol] = startVal
+            startVal += 1
+        if startRow != endRow:
+            for i in xrange(endCol-1, startCol-1, -1):
+                result[endRow][i] = startVal
+                startVal += 1
+        if startCol != endCol:
+            for i in xrange(endRow-1, startRow, -1):
+                result[i][startCol] = startVal
+                startVal += 1
+        self.spiral(result, startVal, startRow + 1, endRow - 1, startCol + 1, endCol - 1)
+```
