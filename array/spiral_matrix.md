@@ -42,6 +42,30 @@ class Solution(object):
         return res
 ```
 
+```Python
+class Solution(object):
+    def spiralOrder(self, matrix):
+        """
+        :type matrix: List[List[int]]
+        :rtype: List[int]
+        """
+        if not matrix or not matrix[0]: return []
+        result = []
+        self.spiral(result, matrix, 0, len(matrix)-1, 0, len(matrix[0])-1)
+        return result
+    
+    def spiral(self, result, matrix, startRow, endRow, startCol, endCol):
+        if startRow > endRow or startCol > endCol: return
+        result += matrix[startRow][startCol:endCol+1]
+        for i in xrange(startRow+1, endRow+1):
+            result += [matrix[i][endCol]]
+        if startRow != endRow: result += matrix[endRow][startCol:endCol][::-1]
+        if startCol != endCol:
+            for j in xrange(endRow-1, startRow, -1):
+                result += [matrix[j][startCol]]
+        self.spiral(result, matrix, startRow + 1, endRow - 1, startCol + 1, endCol - 1)
+```
+
 # Spiral Matrix II
 
 > Given an integer n, generate a square matrix filled with elements from 1 to n^2 in spiral order.
