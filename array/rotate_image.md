@@ -22,3 +22,20 @@ class Solution(object):
                 matrix[row][col], matrix[col][~row], matrix[~row][~col], matrix[~col][row] = \
                 matrix[~col][row], matrix[row][col], matrix[col][~row], matrix[~row][~col]
 ```
+
+or use the following index traverse.
+
+```Python
+class Solution(object):
+    def rotate(self, matrix):
+        """
+        :type matrix: List[List[int]]
+        :rtype: void Do not return anything, modify matrix in-place instead.
+        """
+        if not matrix: return
+        n = len(matrix)
+        for row in xrange(n/2+1):
+            for col in xrange(row, n/2+1):
+                matrix[row][col], matrix[col][~row], matrix[~row][~col], matrix[~col][row] = \
+                matrix[~col][row], matrix[row][col], matrix[col][~row], matrix[~row][~col]
+```
