@@ -8,6 +8,18 @@
 
 > Could you do this in-place?
 
+```
+always just check the left side.
+1 2 | 3
+4 5 | 6
+7 8 | 9
+
+1  2  | 3  4
+5  6  | 7  8
+9  10 | 11 12
+13 14 | 15 16
+```
+
 ```Python
 class Solution(object):
     def rotate(self, matrix):
@@ -19,23 +31,6 @@ class Solution(object):
         for row in xrange(N / 2):
             for col in xrange(N - N / 2): # for odd cases, need to use N-N/2 instead of N/2
                 # array[~i] is the same as array[len-1-i]
-                matrix[row][col], matrix[col][~row], matrix[~row][~col], matrix[~col][row] = \
-                matrix[~col][row], matrix[row][col], matrix[col][~row], matrix[~row][~col]
-```
-
-or use the following index traverse.
-
-```Python
-class Solution(object):
-    def rotate(self, matrix):
-        """
-        :type matrix: List[List[int]]
-        :rtype: void Do not return anything, modify matrix in-place instead.
-        """
-        if not matrix: return
-        n = len(matrix)
-        for row in xrange(n/2+1):
-            for col in xrange(row, n/2+1):
                 matrix[row][col], matrix[col][~row], matrix[~row][~col], matrix[~col][row] = \
                 matrix[~col][row], matrix[row][col], matrix[col][~row], matrix[~row][~col]
 ```
