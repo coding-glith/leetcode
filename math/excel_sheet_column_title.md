@@ -61,12 +61,11 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        if s == "":
-            return 0
-        capitals, res = {}, 0
+        capitals = {}
         for i in xrange(1, 27):
-            capitals[chr(ord('A')+i-1)] = i
-        for i in xrange(len(s)):
-            res += capitals[s[i]] * 26**(len(s)-i-1)
-        return res
+            capitals[chr(ord("A") + i - 1)] = i
+        result = 0
+        for char in s:
+            result = result * 26 + capitals[char]
+        return result
 ```
