@@ -1,10 +1,12 @@
 # Math
 
-### Division
+### Division, deal with integer digits
 
 > * [Divide Two Integers](divide_two_integers.md)
 
 > * [Fraction to Recurring Decimal](fraction_to_recurring_decimal.md)
+
+> * [Excel Sheet Column Title/Number](excel_sheet_column_title.md)
 
 ### Array points form a line
 
@@ -23,7 +25,6 @@
  * [Strobogrammatic Number I/II](strobogrammatic_number.md)
  * [Happy Number](happy_number.md)
  * [Power of Two/Three/Four](power_of_two.md)
- * [Excel Sheet Column Title/Number](excel_sheet_column_title.md)
  * [Count Primes](count_primes.md)
  * [Factorial Trailing Zeroes](factorial_trailing_zeroes.md)
  * [Group Shifted Strings](group_shifted_strings.md)
