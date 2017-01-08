@@ -24,30 +24,17 @@ class Solution(object):
         :type l2: ListNode
         :rtype: ListNode
         """
-        if not l1:
-            return l2
-        if not l2:
-            return l1
         dummy = ListNode(0)
-        p = dummy
-        count = 0
+        p, calculate = dummy, 0
         while l1 or l2:
-            if not l1:
-                sumVal = l2.val + count
-            elif not l2:
-                sumVal = l1.val + count
-            else:
-                sumVal = l1.val + l2.val + count
-            p.next = ListNode(sumVal % 10)
-            count = sumVal / 10
-            if l1:
-                l1 = l1.next
-            if l2:
-                l2 = l2.next
+            if l1: calculate += l1.val; l1 = l1.next
+            if l2: calculate += l2.val; l2 = l2.next
+            p.next = ListNode(calculate % 10)
+            calculate /= 10
             p = p.next
-        if count != 0:
-            p.next = ListNode(count)
-        return dummy.next   
+        if calculate == 1:
+            p.next = ListNode(calculate)
+        return dummy.next
 ```
 
 # Add Two Numbers II
