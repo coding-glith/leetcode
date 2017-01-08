@@ -16,25 +16,17 @@ class Solution(object):
         :type l2: ListNode
         :rtype: ListNode
         """
-        if not l1:
-            return l2
-        if not l2:
-            return l1
         dummy = ListNode(0)
-        result = dummy
+        p = dummy
         while l1 and l2:
-            if l1.val <= l2.val:
-                dummy.next = l1
-                l1 = l1.next
-            else:
-                dummy.next = l2
-                l2 = l2.next
-            dummy = dummy.next
-        if l1:
-            dummy.next = l1
-        if l2:
-            dummy.next = l2
-        return result.next
+            if l1.val < l2.val: p.next = ListNode(l1.val); l1 = l1.next
+            else: p.next = ListNode(l2.val); l2 = l2.next
+            p = p.next
+        tmp = l1 if l1 else l2
+        while tmp:
+            p.next = ListNode(tmp.val)
+            tmp, p = tmp.next, p.next
+        return dummy.next
 ```
 
 # Merge k Sorted Lists
