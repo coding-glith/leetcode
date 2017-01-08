@@ -1,5 +1,7 @@
 # Stack and Queue
 
+> * [Simplify Path](simplify_path.md)
+
 ### Stack
 
 Linkedlist implementation below. For array implementation, need to resize the array size.
