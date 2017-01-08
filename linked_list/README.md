@@ -2,7 +2,7 @@
 
 ### Introducing dummy node
 
-> * [Add Two Numbers](add_two_numbers.md)
+> * [Add Two Numbers I/II](add_two_numbers.md)
 
 > * [Merge Two/k Sorted Lists](merge_k_sorted_lists.md)
 
