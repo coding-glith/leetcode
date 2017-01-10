@@ -229,23 +229,21 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[int]
         """
-        if root == None:
-            return []
-        result, stack = [], []
-        tmpNode = root
-        lastVisited = None
-        while tmpNode or stack != []:
-            while tmpNode:
-                stack.append(tmpNode)
-                tmpNode = tmpNode.left
-            currentNode = stack[-1]
-            if currentNode.right == None or currentNode.right == lastVisited:
-                result.append(currentNode.val)
-                stack.pop()       # only pop out after checked the value
-                lastVisited = currentNode
-                tmpNode = None    # make sure to check all node at the left tree first
+        if not root: return []
+        result, stack, curNode = [], [], root
+        lastVisit = None
+        while curNode or stack:
+            while curNode:
+                stack.append(curNode)
+                curNode = curNode.left
+            curNode = stack[-1]
+            if not curNode.right or curNode.right == lastVisit:
+                result.append(curNode.val)
+                stack.pop()
+                lastVisit = curNode
+                curNode = None
             else:
-                tmpNode = currentNode.right
+                curNode = curNode.right
         return result
 ```
 
