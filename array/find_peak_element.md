@@ -14,6 +14,8 @@
 
 > Your solution should be in logarithmic complexity.
 
+The reason this question can be solved by binary search is because for a random number cur, we can choose to go either side to find the peak, for example, if cur < cur + 1 and we go right, there must be a peak, otherwise cur + 1 < cur + 2 < ... < n-1 < n (n's the peak), if n-1 > n, then n-1's the peak.
+
 ```Python
 class Solution(object):
     def findPeakElement(self, nums):
