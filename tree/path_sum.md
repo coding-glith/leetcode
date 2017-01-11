@@ -69,7 +69,36 @@ class Solution(object):
 ]
 ```
 
-Don't understand why need to add list() statement when appending pathList to result.
+The difference between the two solution is the first one modify sub at the time of calling the method, but the second solution change the sub first, so it needs to pop out the value once done with the path of current root.
+
+```Python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def pathSum(self, root, sum):
+        """
+        :type root: TreeNode
+        :type sum: int
+        :rtype: List[List[int]]
+        """
+        if not root: return []
+        result = []
+        self.getPath(result, [], root, sum)
+        return result
+    
+    def getPath(self, result, sub, root, target):
+        if not root: return
+        if not root.left and not root.right:
+            if target == root.val:
+                result.append(list(sub+[root.val]))
+        self.getPath(result, sub+[root.val], root.left, target-root.val)
+        self.getPath(result, sub+[root.val], root.right, target-root.val)
+```
 
 ```Python
 # Definition for a binary tree node.
