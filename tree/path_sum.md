@@ -33,22 +33,13 @@ class Solution(object):
         :type sum: int
         :rtype: bool
         """
-        if root == None:
-            return False
-        return self.dfs(root, sum, 0)
-
-    def dfs(self, root, target, pathSum):
-        if root == None:
-            return False
-        pathSum += root.val
-        if root.left == None and root.right == None:
-            if pathSum == target:
-                return True
-            else:
-                return False
-        left = self.dfs(root.left, target, pathSum)
-        right = self.dfs(root.right, target, pathSum)
-        return left or right
+        if not root: return False
+        return self.pathSum(root, sum)
+    
+    def pathSum(self, root, target):
+        if not root: return False  # this only happens at a node with one child
+        if not root.left and not root.right: return target == root.val
+        return self.pathSum(root.left, target - root.val) or self.pathSum(root.right, target - root.val)
 ```
 
 # Path Sum II
