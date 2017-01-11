@@ -186,7 +186,7 @@ N  8 18 {0: 1, 7: 1, 10: 1, 15: 0, 16: 0, 17: 0, 18: 1, 21: 0}
 N  8 18 {0: 1, 7: 1, 10: 1, 15: 0, 16: 0, 17: 0, 18: 1, 21: 0}
 ```
 
-Check explanation from leetcode [discussion](https://discuss.leetcode.com/topic/65100/2-python-solutions-with-detailed-explanation).
+O(N) solution. Check explanation from leetcode [discussion](https://discuss.leetcode.com/topic/65100/2-python-solutions-with-detailed-explanation).
 
 ```Python
 # Definition for a binary tree node.
@@ -219,6 +219,8 @@ class Solution(object):
         return res
 ```
 
+O(NlogN) solution. For each node, need to trace down to the leaf.
+
 ```Python
 # Definition for a binary tree node.
 # class TreeNode(object):
@@ -234,18 +236,14 @@ class Solution(object):
         :type sum: int
         :rtype: int
         """
-        if root:
-            return self.getPath(root, sum) + \
-                   self.pathSum(root.left, sum) + \
-                   self.pathSum(root.right, sum)
-        return 0
+        if not root: return 0
+        return self.getPath(root, sum) + self.pathSum(root.left, sum) \
+                                       + self.pathSum(root.right, sum)
     
     def getPath(self, root, target):
-        if root:
-            return int(root.val == target) + \
-                   self.getPath(root.left, target-root.val) + \
-                   self.getPath(root.right, target-root.val)
-        return 0
+        if not root: return 0
+        return int(root.val == target) + self.getPath(root.left, target - root.val) \
+                                       + self.getPath(root.right, target - root.val)
 ```
 
 # Binary Tree Maximum Path Sum
