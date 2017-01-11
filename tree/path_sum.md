@@ -162,6 +162,30 @@ Return 3. The paths that sum to 8 are:
 3. -3 -> 11
 ```
 
+Step by step result for above example. The idea for this solution is to use a dictionary to keep track of the path sum from root to current node. The check cur+root.val-target inside dictionary means delete some previous path, there's a way to get the target sum.
+
+```
+10 8 0  {0: 1}
+5  8 10 {0: 1, 10: 1}
+3  8 15 {0: 1, 10: 1, 15: 1}
+3  8 18 {0: 1, 10: 1, 18: 1, 15: 1}
+N  8 21 {0: 1, 10: 1, 21: 1, 18: 1, 15: 1}
+N  8 21 {0: 1, 10: 1, 21: 1, 18: 1, 15: 1}
+-2 8 18 {0: 1, 10: 1, 21: 0, 18: 1, 15: 1}
+N  8 16 {0: 1, 10: 1, 15: 1, 16: 1, 18: 1, 21: 0}
+N  8 16 {0: 1, 10: 1, 15: 1, 16: 1, 18: 1, 21: 0}
+2  8 15 {0: 1, 10: 1, 15: 1, 16: 0, 18: 0, 21: 0}
+N  8 17 {0: 1, 10: 1, 15: 1, 16: 0, 17: 1, 18: 0, 21: 0}
+1  8 17 {0: 1, 10: 1, 15: 1, 16: 0, 17: 1, 18: 0, 21: 0}
+N  8 18 {0: 1, 10: 1, 15: 1, 16: 0, 17: 1, 18: 1, 21: 0}
+N  8 18 {0: 1, 10: 1, 15: 1, 16: 0, 17: 1, 18: 1, 21: 0}
+-3 8 10 {0: 1, 10: 1, 15: 0, 16: 0, 17: 0, 18: 0, 21: 0}
+N  8 7 {0: 1, 7: 1, 10: 1, 15: 0, 16: 0, 17: 0, 18: 0, 21: 0}
+11 8 7 {0: 1, 7: 1, 10: 1, 15: 0, 16: 0, 17: 0, 18: 0, 21: 0}
+N  8 18 {0: 1, 7: 1, 10: 1, 15: 0, 16: 0, 17: 0, 18: 1, 21: 0}
+N  8 18 {0: 1, 7: 1, 10: 1, 15: 0, 16: 0, 17: 0, 18: 1, 21: 0}
+```
+
 Check explanation from leetcode [discussion](https://discuss.leetcode.com/topic/65100/2-python-solutions-with-detailed-explanation).
 
 ```Python
