@@ -20,6 +20,8 @@
 
 > Return the sum = 12 + 13 = 25.
 
+Since the height of the subtree is different, so we cannot calculate the result along the path traverse. Here, we use a list to store every root to leaf sum value.
+
 ```Python
 # Definition for a binary tree node.
 # class TreeNode(object):
@@ -34,18 +36,15 @@ class Solution(object):
         :type root: TreeNode
         :rtype: int
         """
-        res = []
-        self.getNum(res, 0, root)
-        return sum(res)
-
-    def getNum(self, res, num, root):
-        if not root:
-            return
+        result = []
+        self.getSum(result, 0, root)
+        return sum(result)
+    
+    def getSum(self, result, sumTill, root):
+        if not root: return
         if not root.left and not root.right:
-            res.append(num*10+root.val)
+            result.append(sumTill*10 + root.val)
             return
-        if root.left:
-            self.getNum(res, num*10+root.val, root.left)
-        if root.right:
-            self.getNum(res, num*10+root.val, root.right)
+        self.getSum(result, sumTill*10 + root.val, root.left)
+        self.getSum(result, sumTill*10 + root.val, root.right)
 ```
