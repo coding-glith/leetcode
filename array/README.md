@@ -105,13 +105,15 @@ If need to find unique solution, need to use sort() and set() some time.
 
 ### X-axis intervals
 
-> * [Minimum Number of Arrows to Burst Balloons](minimum_number_of_arrows_to_burst_balloons.md)
-
 > * [Merge Intervals](merge_intervals.md)
 
 > * [Insert Interval](insert_interval.md)
 
 > * [Meeting Rooms I/II](meeting_rooms.md)
+
+> * [Minimum Number of Arrows to Burst Balloons](minimum_number_of_arrows_to_burst_balloons.md)
+
+> * [Non-overlapping Intervals](non_overlapping_intervals.md)
 
 ### Addition, deal with carry and array index
 
