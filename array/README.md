@@ -109,6 +109,8 @@ If need to find unique solution, need to use sort() and set() some time.
 
 > * [Merge Intervals](merge_intervals.md)
 
+> * [Insert Interval](insert_interval.md)
+
 ### Addition, deal with carry and array index
 
 > * [Plus One](plus_one.md)
