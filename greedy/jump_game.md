@@ -12,6 +12,8 @@
 
 > A = [3,2,1,0,4], return false.
 
+The idea here is to maintain an iterator index, and maxReach, as index will go from start to end one by one, if cannot reach to the end of array, index will be larger than maxReach starting from some point.
+
 ```Python
 class Solution(object):
     def canJump(self, nums):
@@ -69,7 +71,7 @@ class Solution(object):
 
 > You can assume that you can always reach the last index.
 
-need to further think of this solution.
+This is still O(N) solution. For start index, check the maxReach from range(start, end+1), this ensures the maxReach to be the final value of this range, so after this check, we can increase result by 1.
 
 ```Python
 class Solution(object):
@@ -78,14 +80,11 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        if len(nums) <= 1:
-            return 0
-        start, end, step, reach = 0, nums[0], 1, nums[0]
-        while end < len(nums) - 1:
-            for indx in xrange(start + 1, end + 1):
-                reach = max(reach, indx + nums[indx])
-            start = end
-            end = reach
-            step += 1
-        return step
+        result, maxReach, start, end = 0, 0, 0, 0
+        while maxReach < len(nums) - 1:
+            for i in xrange(start, end+1):
+                maxReach = max(maxReach, i + nums[i])
+            start, end = end + 1, maxReach
+            result += 1
+        return result
 ```
