@@ -46,6 +46,8 @@
 
 > * [Valid Palindrome](valid_palindrome.md)
 
+> * [Palindrome Number](palindrome_number.md)
+
 > * [Longest Palindromic Substring](longest_palindromic_substring.md)
 
 > * [Palindrome Pairs](palindrome_pairs.md)
