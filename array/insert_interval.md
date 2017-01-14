@@ -14,11 +14,42 @@
 
 > This is because the new interval [4,9] overlaps with [3,5],[6,7],[8,10].
 
+construct the left, right and merge part during the way of traversing the list.
+
+```Python
+# Definition for an interval.
+# class Interval(object):
+#     def __init__(self, s=0, e=0):
+#         self.start = s
+#         self.end = e
+
+class Solution(object):
+    def insert(self, intervals, newInterval):
+        """
+        :type intervals: List[Interval]
+        :type newInterval: Interval
+        :rtype: List[Interval]
+        """
+        startVal, endVal = newInterval.start, newInterval.end
+        left, right = [], []
+        for val in intervals:
+            if val.end < startVal:
+                left += [val]
+            elif val.start > endVal:
+                right += [val]
+            else:
+                startVal = min(startVal, val.start)
+                endVal = max(endVal, val.end)
+        return left + [Interval(startVal, endVal)] + right
+```
+
 when meeting val.end >= newInterval.start, cases to be consider:
 
 > * insert before current interval
 
 > * merge with current interval, update both start and end
+
+> * check if merged the interval or not at the very end
 
 ```Python
 # Definition for an interval.
