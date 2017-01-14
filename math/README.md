@@ -16,6 +16,8 @@
 
 > * [Rectangle Area](rectangle_area.md)
 
+> * [Water and Jug Problem](water_and_jug_problem.md)
+
  * [Reverse Integer](reverse_integer.md)
  * [Nim Game](nim_game.md)
  * [Flip Game I/II](flip_game.md)
