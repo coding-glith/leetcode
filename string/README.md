@@ -44,6 +44,8 @@
 
 ### Palindrome
 
+> * [Valid Palindrome](valid_palindrome.md)
+
 > * [Longest Palindromic Substring](longest_palindromic_substring.md)
 
 > * [Palindrome Pairs](palindrome_pairs.md)
@@ -68,7 +70,6 @@
  * [Longest Common Prefix](longest_common_prefix.md)
  * [Count and Say](count_and_say.md)
  * [Implement strStr()](implement_strstr.md)
- * [Valid Palindrome](valid_palindrome.md)
  * [Palindrome Partitioning](palindrome_partitioning.md)
  * [Compare Version Numbers](compare_version_numbers.md)
  * [Reverse Vowels of a String](reverse_vowels_of_a_string.md)
