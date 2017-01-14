@@ -111,6 +111,8 @@ If need to find unique solution, need to use sort() and set() some time.
 
 > * [Insert Interval](insert_interval.md)
 
+> * [Meeting Rooms I/II](meeting_rooms.md)
+
 ### Addition, deal with carry and array index
 
 > * [Plus One](plus_one.md)
@@ -125,7 +127,6 @@ If need to find unique solution, need to use sort() and set() some time.
  * [Search Insert Position / Longest Increasing Subsequence / Increasing Triplet Subsequence / Russian Doll Envelopes](search_insert_position.md)
  * [Contains Duplicate](contains_duplicate.md)
  * [Intersection of Two Arrays I/II](intersection_of_two_arrays.md)
- * [Meeting Rooms](meeting_rooms.md)
  * [Next Permutation](next_permutation.md)
  * [H-Index I/II](h_index.md)
  * [Top K Frequent Elements](top_k_frequent_elements.md)
