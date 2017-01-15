@@ -6,6 +6,8 @@
 
 > * [Sentence Screen Fitting](sentence_screen_fitting.md)
 
+> * [Flip Game I/II](flip_game.md)
+
 ### Word abbreviation
 
 > * [Unique Word Abbreviation](unique_word_abbreviation.md)
