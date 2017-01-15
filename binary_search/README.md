@@ -44,12 +44,12 @@ Binary search search a particular item by comparing the middle most item of the 
 
 ### Search Insert Position
 
-> * Search Insert Position
+> * [Search Insert Position](../array/search_insert_position.md)
 
-> * Longest Increasing Subsequence
+> * [Longest Increasing Subsequence](../array/search_insert_position.md)
 
-> * Increasing Triplet Subsequence
+> * [Increasing Triplet Subsequence](../array/search_insert_position.md)
 
-> * Russian Doll Envelopes
+> * [Russian Doll Envelopes](../array/search_insert_position.md)
 
 > * H-Index I/II
