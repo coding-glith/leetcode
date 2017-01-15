@@ -75,6 +75,17 @@ You end up paying $5 + $7 + $9 = $21.
 
 > * Check out this article if you're still stuck.
 
+The dp table with index start,end is the result for that range. for example for 1,2,3, table should be:
+
+> ```
+0 0 0 0
+0 0 1 2
+0 0 0 2
+0 0 0 0
+```
+
+that means, we check range (1,2)=1, (2,3)=2, (1,3)=2.
+
 ```Python
 class Solution(object):
     def getMoneyAmount(self, n):
