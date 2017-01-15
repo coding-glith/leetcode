@@ -64,6 +64,10 @@
 
 > * [Valid Anagram/Group Anagrams](valid_anagram.md)
 
+### KMP
+
+> * [Implement strStr()](implement_strstr.md)
+
  * [Reverse String](reverse_string.md)
  * [Add Binary](add_binary.md)
  * [Ransom Note](ransom_note.md)
@@ -73,7 +77,6 @@
  * [Read N Characters Given Read4](read_n_characters_given_read4.md)
  * [Longest Common Prefix](longest_common_prefix.md)
  * [Count and Say](count_and_say.md)
- * [Implement strStr()](implement_strstr.md)
  * [Palindrome Partitioning](palindrome_partitioning.md)
  * [Compare Version Numbers](compare_version_numbers.md)
  * [Reverse Vowels of a String](reverse_vowels_of_a_string.md)
