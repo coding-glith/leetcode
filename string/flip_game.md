@@ -44,6 +44,21 @@ class Solution(object):
 
 > * Derive your algorithm's runtime complexity.
 
-```Python
+Using memorization to store the status of substring, so previous results can be reused to save time. Check leetcode [discussion](https://discuss.leetcode.com/topic/27291/memoization-3150ms-130ms-44ms-python).
 
+```Python
+class Solution(object):
+    def canWin(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+        memo = {}
+        
+        def can(s):
+            if s not in memo:
+                memo[s] = any(s[i:i+2] == "++" and not can(s[:i]+"-"+s[i+2:]) for i in xrange(len(s)))
+            return memo[s]
+        
+        return can(s)
 ```
