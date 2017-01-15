@@ -36,7 +36,7 @@ Binary search search a particular item by comparing the middle most item of the 
 
 > * Search Insert Position
 
-> * Guess Number Higher or Lower I/II
+> * [Guess Number Higher or Lower I/II](../math/guess_number_higher_or_lower.md)
 
 > * Find Peak Element
 
