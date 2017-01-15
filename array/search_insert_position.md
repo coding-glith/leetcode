@@ -22,19 +22,16 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-        left, right = 0, len(nums) - 1
-        while left <= right:
+        left, right = 0, len(nums)
+        while left < right:
             mid = left + (right - left) / 2
             if nums[mid] == target:
                 return mid
             elif nums[mid] > target:
-                right = mid - 1
-                if right < left:
-                    return right + 1
+                right = mid  # mid - 1 might be smaller, so check with mid again
             else:
-                left = mid + 1
-                if left > right:
-                    return left
+                left = mid + 1     # if current smaller, must be inserting at later index
+        return left   # at this point, left = right, so return either one is ok
 ```
 
 ```Python
