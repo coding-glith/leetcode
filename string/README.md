@@ -58,8 +58,6 @@
 
 > * [Longest Palindrome](longest_palindrome.md)
 
-> * [Shortest Palindrome](shortest_palindrome.md)
-
 ### Anagram, use dictionary or sort strings
 
 > * [Valid Anagram/Group Anagrams](valid_anagram.md)
@@ -67,6 +65,8 @@
 ### KMP
 
 > * [Implement strStr()](implement_strstr.md)
+
+> * [Shortest Palindrome](shortest_palindrome.md)
 
  * [Reverse String](reverse_string.md)
  * [Add Binary](add_binary.md)
