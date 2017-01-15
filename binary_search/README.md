@@ -30,7 +30,7 @@ Binary search search a particular item by comparing the middle most item of the 
 
 ### Search for a range: (play with left/right pointer)
 
-> * First Bad Version
+> * [First Bad Version](../array/first_bad_version.md)
 
 > * [Search for a Range](../array/search_for_a_range.md)
 
