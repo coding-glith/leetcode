@@ -25,6 +25,18 @@ Output: True
 Explanation: It's the substring "abc" four times. (And the substring "abcabc" twice.)
 ```
 
+Check leetcode [discussion](https://discuss.leetcode.com/topic/68206/easy-python-solution-with-explaination). since there must be at least one repeat pattern, if concatenate the two string and delete one char from start and end, which is deleting one pattern for each of them, there should still be string in the concatenated string. 
+
+```Python
+class Solution(object):
+    def repeatedSubstringPattern(self, str):
+        """
+        :type str: str
+        :rtype: bool
+        """
+        return (str + str)[1:-1].find(str) != -1
+```
+
 ```Python
 class Solution(object):
     def repeatedSubstringPattern(self, str):
