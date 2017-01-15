@@ -130,6 +130,24 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
+        i, j, k = -1, -1, -1
+        for idx, val in enumerate(nums):
+            if i == -1 or val <= nums[i]:
+                i = idx
+            elif j == -1 or val <= nums[j]:
+                j = idx
+            else:
+                return True
+        return k != -1
+```
+
+```Python
+class Solution(object):
+    def increasingTriplet(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
         if len(nums) < 3:
             return False
         dp = [0] * len(nums)
