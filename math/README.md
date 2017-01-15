@@ -12,6 +12,14 @@
 
 > * [Number of Boomerangs](number_of_boomerangs.md)
 
+### Some games, usually use memorization to store the status
+
+> * [Nim Game](nim_game.md)
+
+> * [Guess Number Higher or Lower I/II](guess_number_higher_or_lower.md)
+
+> * [Can I Win](can_i_win.md)
+
 ### Others
 
 > * [Rectangle Area](rectangle_area.md)
@@ -19,7 +27,6 @@
 > * [Water and Jug Problem](water_and_jug_problem.md)
 
  * [Reverse Integer](reverse_integer.md)
- * [Nim Game](nim_game.md)
  * [Add Digits](add_digits.md)
  * [Ugly Number I/II](ugly_number.md)
  * [Roman to Integer/Integer to Roman](roman_to_integer.md)
@@ -34,7 +41,6 @@
  * [Number of 1 Bits](number_of_1_bits.md)
  * [Reverse Bits](reverse_bits.md)
  * [Valid Sudoku](valid_sudoku.md)
- * [Guess Number Higher or Lower I/II](guess_number_higher_or_lower.md)
  * [Line Reflection](line_reflection.md)
  * [Sort Transformed Array](sort_transformed_array.md)
  * [Perfect Squares/Valid Perfect Square](perfect_squares.md)
