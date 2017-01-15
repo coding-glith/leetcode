@@ -65,7 +65,7 @@ class Solution(object):
 
 > Follow up: Could you improve it to O(n log n) time complexity?
 
-The longest increasing sequence is a sorted array. Every time we find a smaller one, we replace it in right position, every time we find the largest one, we append it at the very end.
+The longest increasing sequence is a sorted array. Every time we find a smaller value, we replace it in longest at the right position, every time we find a larger one, we append it in longest at the very end.
 
 ```Python
 class Solution(object):
