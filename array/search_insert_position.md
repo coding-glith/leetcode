@@ -187,8 +187,42 @@ class Solution(object):
 
 > Given envelopes = [[5,4],[6,4],[6,7],[2,3]], the maximum number of envelopes you can Russian doll is 3 ([2,3] => [5,4] => [6,7]).
 
-Don't understand why sort by width with increasing order and height with decreasing order would put this the same question as above "Longest Increasing Subsequence".
+The idea is that after sorting the envelopes by width and if width is the same, sort the height by descending order. Then the question becomes the same as above "Longest Increasing Subsequence".
+
+> ```
+Given envelopes = [[5,4],[6,4],[6,7],[2,3]],
+after sort: [[2,3],[5,4],[6,7],[6,4]]
+putting [6,7] before [6,4] is the key here.
+```
 
 ```Python
-
+class Solution(object):
+    def maxEnvelopes(self, envelopes):
+        """
+        :type envelopes: List[List[int]]
+        :rtype: int
+        """
+        if not envelopes: return 0
+        envelopes.sort(key=lambda x: (x[0], -x[1]))
+        longest = [0] * len(envelopes)
+        longest[0], idx = envelopes[0][1], 0
+        for i, val in enumerate(envelopes, 1):
+            pos = self.insert(longest, idx, val[1])
+            if val[1] <= longest[pos]:
+                longest[pos] = val[1]
+            else:
+                longest[idx+1] = val[1]
+                idx += 1
+        return idx + 1
+    
+    def insert(self, longest, end, target):
+        left, right = 0, end
+        while left < right:
+            mid = left + (right - left) / 2
+            if longest[mid] == target: return mid
+            elif longest[mid] > target:
+                right = mid
+            else:
+                left = mid + 1
+        return left
 ```
