@@ -49,11 +49,11 @@ class Solution(object):
         while indx >= 0:
             subList[indx] += 1   # take advantage of value from 1 to n
             if subList[indx] > n:
-                indx -= 1
+                indx -= 1     # reaches to the last, need to increase previous value
             elif indx == k - 1:
                 result.append(list(subList))
             else:
-                indx += 1
+                indx += 1    # increase later idx values for incrementation
                 subList[indx] = subList[indx - 1]
         return result
 ```
