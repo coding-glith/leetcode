@@ -24,8 +24,7 @@ class Solution(object):
         :type digits: str
         :rtype: List[str]
         """
-        if digits == '':
-            return []
+        if not digits: return []
         # create mapping dictionary
         letterDict = {}
         letterDict['0'] = ['']
@@ -39,16 +38,13 @@ class Solution(object):
         letterDict['8'] = ['t', 'u', 'v']
         letterDict['9'] = ['w', 'x', 'y', 'z']
         result = []
-        self.letterCombine(result, '', 0, letterDict, digits)
+        self.helper(result, [], 0, digits, letterDict)
         return result
-
-    def letterCombine(self, result, combineStr, digitIndx, letterDict, digits):
-        if len(combineStr) == len(digits) and combineStr not in result:
-            result.append(str(combineStr))
-            return
-        dictKey = digits[digitIndx]
-        for indx in range(len(letterDict[dictKey])):
-            combineStr += letterDict[dictKey][indx]
-            self.letterCombine(result, combineStr, digitIndx + 1, letterDict, digits)
-            combineStr = combineStr[:-1]
+    
+    def helper(self, result, sub, idx, digits, letterDict):
+        if len(sub) == len(digits): result.append("".join(sub)); return
+        for val in letterDict[digits[idx]]:
+            sub.append(val)
+            self.helper(result, sub, idx+1, digits, letterDict)
+            sub.pop()
 ```
