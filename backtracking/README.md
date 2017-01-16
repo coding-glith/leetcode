@@ -5,7 +5,7 @@ In backtracking algorithms you try to build a solution one step at a time. If at
 
 ### Permutations, consider duplicates exist or not
 
-> * [Permutations](permutations.md)
+> * [Permutations I/II](permutations.md)
 
 > * [Next Permutation](../array/next_permutation.md)
 
