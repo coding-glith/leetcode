@@ -62,3 +62,20 @@ class Solution(object):
                     start += 1
         return res
 ```
+
+Staightforward solution, O(mn). Time limit exceeded.
+
+```Python
+class Solution(object):
+    def findAnagrams(self, s, p):
+        """
+        :type s: str
+        :type p: str
+        :rtype: List[int]
+        """
+        result = []
+        for i in xrange(len(s)-len(p)+1):
+            if collections.Counter(s[i:i+len(p)]) == collections.Counter(p):
+                result.append(i)
+        return result
+```
