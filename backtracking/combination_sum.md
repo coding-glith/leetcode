@@ -72,6 +72,31 @@ class Solution(object):
 ]
 ```
 
+```Python
+class Solution(object):
+    def combinationSum2(self, candidates, target):
+        """
+        :type candidates: List[int]
+        :type target: int
+        :rtype: List[List[int]]
+        """
+        result = []
+        candidates.sort()
+        visited = [False] * len(candidates)
+        self.helper(result, [], 0, visited, candidates, target)
+        return result
+    
+    def helper(self, result, sub, start, visited, nums, target):
+        if target == 0 and sub:
+            result.append(list(sub)); return
+        for i in xrange(start, len(nums)):
+            if target - nums[i] >= 0:
+                if i == 0 or (i != 0 and (nums[i] > nums[i-1] or (nums[i] == nums[i-1] and visited[i-1]))):
+                    sub.append(nums[i]); visited[i] = True
+                    self.helper(result, sub, i+1, visited, nums, target-nums[i])
+                    sub.pop(); visited[i] = False
+```
+
 Sort the array and check if sub in list.
 
 ```Python
