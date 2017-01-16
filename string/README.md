@@ -58,6 +58,8 @@
 
 > * [Longest Palindrome](longest_palindrome.md)
 
+> * [Palindrome Partitioning I/II](palindrome_partitioning.md)
+
 ### Anagram, use dictionary or sort strings
 
 > * [Valid Anagram/Group Anagrams](valid_anagram.md)
@@ -77,7 +79,6 @@
  * [Read N Characters Given Read4](read_n_characters_given_read4.md)
  * [Longest Common Prefix](longest_common_prefix.md)
  * [Count and Say](count_and_say.md)
- * [Palindrome Partitioning](palindrome_partitioning.md)
  * [Compare Version Numbers](compare_version_numbers.md)
  * [Reverse Vowels of a String](reverse_vowels_of_a_string.md)
  * [Bulls and Cows](bulls_and_cows.md)
