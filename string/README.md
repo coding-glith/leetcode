@@ -64,6 +64,8 @@
 
 > * [Valid Anagram/Group Anagrams](valid_anagram.md)
 
+> * [Group Shifted Strings](group_shifted_strings.md)
+
 ### KMP
 
 > * [Implement strStr()](implement_strstr.md)
