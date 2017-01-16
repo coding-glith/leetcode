@@ -29,19 +29,18 @@ class Solution(object):
         :type k: int
         :rtype: str
         """
-        # create string list
+        # create list to refer
+        # ['1', '2', '3'] for n = 3
         nums = map(str, xrange(1, n+1))
-        k -= 1
-        # calculate (n-1)!
+        k -= 1    # let k start with 0
         factor = 1
         for i in range(1, n):
-            factor *= i
+            factor *= i     # factor = (n-1)!
         res = []
         for i in reversed(range(n)):
             res.append(nums[k / factor])
             nums.remove(nums[k / factor])
             if i != 0:
-                k %= factor
-                factor /= i
+                k %= factor; factor /= i
         return "".join(res)
 ```
