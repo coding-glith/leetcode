@@ -26,6 +26,10 @@
 
 > * [Water and Jug Problem](water_and_jug_problem.md)
 
+### Bit Manipulation
+
+> * [Number of 1 Bits](number_of_1_bits.md)
+
  * [Reverse Integer](reverse_integer.md)
  * [Add Digits](add_digits.md)
  * [Ugly Number I/II](ugly_number.md)
@@ -38,7 +42,6 @@
  * [Group Shifted Strings](group_shifted_strings.md)
  * [Nested List Weight Sum I/II](nested_list_weight_sum.md)
  * [Sum of Two Integers](sum_of_two_integers.md)
- * [Number of 1 Bits](number_of_1_bits.md)
  * [Reverse Bits](reverse_bits.md)
  * [Valid Sudoku](valid_sudoku.md)
  * [Line Reflection](line_reflection.md)
