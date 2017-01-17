@@ -23,7 +23,13 @@ Output: 2
 
 > Can you do it in O(n) time?
 
-The comment part is really important.
+The comment part is really important. The idea of this solution is to check both start with positive difference and negative difference. If satisfy the condition, result += 1, else, update the prev to be the necessary value, either greater or smaller depends on the sign to be checked.
+
+> ```
+for [1,17,5,10,13,15,10,5,16,8]
+    [1,17,5,10]
+    [1,17,5,      15,10,  16,8]
+```
 
 ```Python
 class Solution(object):
