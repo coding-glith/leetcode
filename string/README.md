@@ -44,6 +44,8 @@
 
 > * [Remove Invalid Parentheses](remove_invalid_parentheses.md)
 
+> * [Different Ways to Add Parentheses](different_ways_to_add_parentheses.md)
+
 ### Palindrome
 
 > * [Valid Palindrome](valid_palindrome.md)
