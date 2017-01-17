@@ -11,3 +11,7 @@
 > * [OA2 work simulation](http://www.jianshu.com/p/013e35d551ba)
 
 > * [OA2 coding](http://www.jianshu.com/p/807fc0ec0bc3)
+
+### Microsoft
+
+> * [discussion1](http://www.1point3acres.com/bbs/thread-204765-1-1.html)
