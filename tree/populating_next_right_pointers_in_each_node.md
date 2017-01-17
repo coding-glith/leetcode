@@ -129,6 +129,41 @@ class Solution:
     4-> 5 -> 7 -> NULL
 ```
 
+This latest code is using BFS to traverse each level. and for each node, use helper() function to get the next node to be point to.
+
+```Python
+# Definition for binary tree with next pointer.
+# class TreeLinkNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+#         self.next = None
+
+class Solution:
+    # @param root, a tree link node
+    # @return nothing
+    def connect(self, root):
+        if not root: return
+        stack = [root]
+        while stack:
+            level = []
+            for node in stack:
+                if node.left:
+                    node.left.next = node.right if node.right else self.helper(node)
+                    level.append(node.left)
+                if node.right:
+                    node.right.next = self.helper(node)
+                    level.append(node.right)
+            stack = level
+    
+    def helper(self, prev):
+        if not prev or not prev.next: return None
+        if prev.next.left: return prev.next.left
+        if prev.next.right: return prev.next.right
+        return self.helper(prev.next)
+```
+
 The idea is to use a function called popNext() to help get the nextNode in the same level and itsChild. Moreover, when moving to the next level, popNext() helps to check if the node is a leaf, if yes, it will check its next neighbor otherwise return None and finish the loop.
 
 ```Python
