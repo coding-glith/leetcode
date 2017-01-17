@@ -43,6 +43,8 @@ If need to find unique solution, need to use sort() and set() some time.
 
 > * [Wiggle Sort I/II](wiggle_sort.md)
 
+> * [Wiggle Subsequence](../dynamic_programming/wiggle_subsequence.md)
+
 > * [Sort Colors](sort_colors.md)
 
 > * [Find the Difference](find_the_difference.md)
