@@ -7,7 +7,6 @@
 > ```
 Given "bcabc"
 Return "abc"
-
 Given "cbacdcbc"
 Return "acdb"
 ```
