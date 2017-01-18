@@ -24,16 +24,9 @@ class Solution(object):
         :type H: int
         :rtype: int
         """
-        def hasOverlap():
-            if E >= A:
-                if F >= D or H <= B or E >= C:
-                    return False
-            else:
-                if G <= A or F >= D or H <= B:
-                    return False
-            return True
-        if hasOverlap():
-            return abs(A-C)*abs(B-D)+abs(E-G)*abs(F-H)-abs(max(A,E)-min(C,G))*abs(max(B,F)-min(D,H))
+        area = abs(A-C) * abs(B-D) + abs(E-G) * abs(F-H)
+        if E >= C or F >= D or H <= B or G <= A:
+            return area
         else:
-            return abs(A-C)*abs(B-D)+abs(E-G)*abs(F-H)
+            return area - abs(max(A,E)-min(C,G)) * abs(max(B,F)-min(D,H))
 ```
