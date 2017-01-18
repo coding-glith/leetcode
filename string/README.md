@@ -74,6 +74,10 @@
 
 > * [Shortest Palindrome](shortest_palindrome.md)
 
+### Remove letters in string
+
+> * [Remove Duplicate Letters](remove_duplicate_letters.md)
+
  * [Reverse String](reverse_string.md)
  * [Add Binary](add_binary.md)
  * [Ransom Note](ransom_note.md)
