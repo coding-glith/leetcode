@@ -25,6 +25,69 @@ cache.get(3);       // returns 3
 cache.get(4);       // returns 4
 ```
 
-```Python
+dictionary and double linked list. maintain head and tail to do quick add and delete.
 
+```Python
+class Node(object):
+    def __init__(self, key, val):
+        self.key = key
+        self.val = val
+        self.next = None
+        self.prev = None
+        
+class LRUCache(object):
+
+    def __init__(self, capacity):
+        """
+        :type capacity: int
+        """
+        self.capacity = capacity
+        self.dic = {}
+        self.head = Node(0, 0)
+        self.tail = Node(0, 0)
+        self.head.next = self.tail
+        self.tail.prev = self.head
+        
+
+    def get(self, key):
+        """
+        :type key: int
+        :rtype: int
+        """
+        if key in self.dic:
+            n = self.dic[key]
+            self.listRemove(n)
+            self.listAdd(n)
+            return n.val
+        return -1
+        
+
+    def put(self, key, value):
+        """
+        :type key: int
+        :type value: int
+        :rtype: void
+        """
+        if key in self.dic:
+            self.listRemove(self.dic[key])
+        n = Node(key, value)
+        self.listAdd(n)
+        self.dic[key] = n
+        if len(self.dic) > self.capacity:
+            n = self.head.next
+            self.listRemove(n)
+            del self.dic[n.key]
+    
+    
+    def listRemove(self, node):
+        node.prev.next, node.next.prev = node.next, node.prev
+    
+    def listAdd(self, node):
+        self.tail.prev.next, self.tail.prev, node.prev, node.next = node, node, self.tail.prev, self.tail
+
+
+# Your LRUCache object will be instantiated and called as such:
+# obj = LRUCache(capacity)
+# param_1 = obj.get(key)
+# obj.put(key,value)
 ```
