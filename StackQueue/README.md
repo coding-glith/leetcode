@@ -2,6 +2,8 @@
 
 > * [Simplify Path](simplify_path.md)
 
+> * [Sort Array Using Stack](sort_array_using_stack.md)
+
 ### Stack
 
 Linkedlist implementation below. For array implementation, need to resize the array size.
