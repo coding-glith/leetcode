@@ -58,3 +58,63 @@ class Solution:
                     nodeDict[n].neighbors.append(nodeDict[nb])
         return nodeCopy
 ```
+
+DFS iteratively. The only difference to BFS above is that BFS uses queue while DFS uses stack.
+
+```Python
+# Definition for a undirected graph node
+# class UndirectedGraphNode:
+#     def __init__(self, x):
+#         self.label = x
+#         self.neighbors = []
+
+class Solution:
+    # @param node, a undirected graph node
+    # @return a undirected graph node
+    def cloneGraph(self, node):
+        if not node: return node
+        nodeCopy = UndirectedGraphNode(node.label)
+        nodeDict = {node: nodeCopy}
+        stack = [node]
+        while stack:
+            n = stack.pop()
+            for nb in n.neighbors:
+                if nb not in nodeDict:
+                    nbCopy = UndirectedGraphNode(nb.label)
+                    nodeDict[nb] = nbCopy
+                    nodeDict[n].neighbors.append(nbCopy)
+                    stack.append(nb)
+                else:
+                    nodeDict[n].neighbors.append(nodeDict[nb])
+        return nodeCopy
+```
+
+DFS recursively.
+
+```Python
+# Definition for a undirected graph node
+# class UndirectedGraphNode:
+#     def __init__(self, x):
+#         self.label = x
+#         self.neighbors = []
+
+class Solution:
+    # @param node, a undirected graph node
+    # @return a undirected graph node
+    def cloneGraph(self, node):
+        if not node: return node
+        nodeCopy = UndirectedGraphNode(node.label)
+        nodeDict = {node: nodeCopy}
+        self.dfs(node, nodeDict)
+        return nodeCopy
+    
+    def dfs(self, n, nodeDict):
+        for nb in n.neighbors:
+            if nb not in nodeDict:
+                nbCopy = UndirectedGraphNode(nb.label)
+                nodeDict[nb] = nbCopy
+                nodeDict[n].neighbors.append(nbCopy)
+                self.dfs(nb, nodeDict)
+            else:
+                nodeDict[n].neighbors.append(nodeDict[nb])
+```
