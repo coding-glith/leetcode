@@ -6,9 +6,11 @@
 
 > * [Design Tic-Tac-Toe](design_tic_tac_toe.md)
 
-### Cache
+### Cache, hash table, double linked list
 
 > * [LRU Cache](lru_cache.md)
+
+> * [LFU Cache](lfu_cache.md)
 
  * [Logger Rate Limiter](logger_rate_limiter.md)
  * [Moving Average from Data Stream](moving_average_from_data_stream.md)
