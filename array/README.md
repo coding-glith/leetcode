@@ -27,6 +27,8 @@ If need to find unique solution, need to use sort() and set() some time.
 
 > * [Find the Celebrity](find_the_celebrity.md)
 
+> * [Kth Largest Element in an Array](kth_largest_element_in_an_array.md)
+
 ### Array and area with axis
 
 > * [Largest Rectangle in Histogram ](largest_rectangle_in_histogram.md)
