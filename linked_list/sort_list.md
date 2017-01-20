@@ -17,7 +17,7 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        if not head or not head.next:
+        if not head or not head.next:  # should have checked head.next as well
             return head
         fast, slow = head, head
         # cut the list in half
