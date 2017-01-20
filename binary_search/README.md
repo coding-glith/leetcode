@@ -42,6 +42,8 @@ Binary search search a particular item by comparing the middle most item of the 
 
 > * [Search a 2D Matrix I/II](search_a_2d_matrix.md)
 
+> * [Kth Smallest Element in a Sorted Matrix](kth_smallest_element_in_a_sorted_matrix.md)
+
 ### Search Insert Position
 
 > * [Search Insert Position](../array/search_insert_position.md)
