@@ -119,6 +119,8 @@ If need to find unique solution, need to use sort() and set() some time.
 
 > * [Non-overlapping Intervals](non_overlapping_intervals.md)
 
+> * [The Skyline Problem](the_skyline_problem.md)
+
 ### Addition, deal with carry and array index
 
 > * [Plus One](plus_one.md)
