@@ -20,6 +20,36 @@
 
 > Given target = 3, return true.
 
+First, do binary search to find the row, then do binary search for that row.
+
+```Python
+class Solution(object):
+    def searchMatrix(self, matrix, target):
+        """
+        :type matrix: List[List[int]]
+        :type target: int
+        :rtype: bool
+        """
+        if not matrix or not matrix[0]: return False
+        left, right = 0, len(matrix)-1
+        while left < right-1:
+            mid = left + (right - left) / 2
+            if matrix[mid][0] == target: return True
+            elif matrix[mid][0] < target:
+                left = mid
+            else:
+                right = mid
+        if matrix[right][0] <= target:
+            left = right
+        small, large = 0, len(matrix[left])-1
+        while small <= large:
+            mid = small + (large - small) / 2
+            if matrix[left][mid] == target: return True
+            elif matrix[left][mid] > target: large = mid - 1
+            else: small = mid + 1
+        return False
+```
+
 ```Python
 class Solution(object):
     def searchMatrix(self, matrix, target):
