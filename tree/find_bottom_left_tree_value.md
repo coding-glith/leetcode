@@ -58,3 +58,36 @@ class Solution(object):
             level = nextLevel
         return result
 ```
+
+DFS.
+
+```Python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def findBottomLeftValue(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        if not root: return None
+        if not root.left and not root.right: return root.val
+        leftLeaf, leftH = self.getLeafHeight(root.left)
+        rightLeaf, rightH = self.getLeafHeight(root.right)
+        return leftLeaf.val if leftH >= rightH else rightLeaf.val
+    
+    def getLeafHeight(self, root):
+        if not root: return None, 0
+        if not root.left and not root.right: return root, 1
+        left, leftH = self.getLeafHeight(root.left)
+        right, rightH = self.getLeafHeight(root.right)
+        if leftH >= rightH:
+            return left, leftH + 1
+        else:
+            return right, rightH + 1
+```
