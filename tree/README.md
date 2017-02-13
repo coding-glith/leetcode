@@ -10,6 +10,8 @@
 
 > * [Find Bottom Left Tree Value](find_bottom_left_tree_value.md)
 
+> * [Find Largest Value in Each Tree Row](find_largest_value_in_each_tree_row.md)
+
 ### Preorder/Inorder/Postorder traversal (both recusively and iteratively)
 
 > * [Binary Tree Preorder/Inorder/Postorder  Traversal](binary_tree_depth_order_traversal.md)
