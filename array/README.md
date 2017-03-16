@@ -2,7 +2,11 @@
 
 ### Search through array
 
+> #### For K Sum:
 
+> The base idea is to use hash table in 2sum to make it O(N) complexity.
+
+> If need to find unique solution, need to use sort() and set() sometimes.
 
 > * [K Sum](k_sum.md)
 
