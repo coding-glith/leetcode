@@ -41,3 +41,5 @@
 > * [Intersection of Two Linked Lists](intersection_of_two_linked_lists.md)
 
 > * [Remove Nth Node From End of List](remove_nth_node_from_end_of_list.md)
+
+> * [Middle of the Linked List](middle_of_the_linked_list.md)
